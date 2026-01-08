@@ -2,9 +2,10 @@
 
 A modern, responsive website for CAD Outsource, a UK-based CAD design and engineering services company. Built with Astro, React, and Tailwind CSS.
 
-## 🚀 Project Overview
+## Project Overview
 
 This is a full-featured business website showcasing CAD design services including:
+
 - 2D Drafting & Designing
 - 3D Modeling & Rendering
 - As-Built Drawings
@@ -15,7 +16,7 @@ This is a full-featured business website showcasing CAD design services includin
 - CAD Conversion Services
 - Facilities Mapping & GIS
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework**: [Astro](https://astro.build) v5.12.0
 - **UI Library**: React 19.1.0
@@ -25,14 +26,14 @@ This is a full-featured business website showcasing CAD design services includin
 - **Package Manager**: Bun
 - **Deployment**: Vercel (configured)
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have the following installed:
 
 - [Bun](https://bun.sh) (latest version)
 - Node.js 18+ (if using npm as fallback)
 
-## 🔧 Installation
+## Installation
 
 1. **Clone the repository** (if applicable):
    ```bash
@@ -47,7 +48,7 @@ Before you begin, ensure you have the following installed:
 
    This will install all project dependencies defined in `package.json`.
 
-## ⚙️ Environment Setup
+## Environment Setup
 
 1. **Create a `.env` file** in the root directory:
    ```bash
@@ -61,9 +62,9 @@ Before you begin, ensure you have the following installed:
    OFFICIAL_EMAIL=hamadsami672@gmail.com
    ```
 
-   > **Note**: Replace `your_resend_api_key_here` with your actual Resend API key. You can get one from [resend.com](https://resend.com).
+   **Note**: Replace `your_resend_api_key_here` with your actual Resend API key. You can get one from [resend.com](https://resend.com).
 
-## 🏃 Running the Project
+## Running the Project
 
 ### Development Server
 
@@ -93,7 +94,7 @@ Preview the production build locally:
 bun run preview
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 cad-designing-qbk/
@@ -133,7 +134,7 @@ cad-designing-qbk/
 └── .env                    # Environment variables (create this)
 ```
 
-## 🔌 API Endpoints
+## API Endpoints
 
 The project includes two API endpoints for form submissions:
 
@@ -153,7 +154,7 @@ Both endpoints:
 - Send thank you emails to customers
 - Use Resend API for email delivery
 
-## 📧 Email Configuration
+## Email Configuration
 
 The project uses [Resend](https://resend.com) for email delivery:
 
@@ -162,9 +163,9 @@ The project uses [Resend](https://resend.com) for email delivery:
 3. **Add it to your `.env` file** as `RESEND_API_KEY`
 4. **Set `OFFICIAL_EMAIL`** to the email address where you want to receive form submissions
 
-> **Note**: For testing, you can use `onboarding@resend.dev` as the from email. For production, you'll need to verify your domain in Resend.
+**Note**: For testing, you can use `onboarding@resend.dev` as the from email. For production, you'll need to verify your domain in Resend.
 
-## 🎨 Styling
+## Styling
 
 The project uses Tailwind CSS 4.x with:
 - Custom color schemes
@@ -173,14 +174,14 @@ The project uses Tailwind CSS 4.x with:
 - Gradient backgrounds
 - Modern UI components
 
-## 📝 Available Scripts
+## Available Scripts
 
 - `bun run dev` - Start development server
 - `bun run build` - Build for production
 - `bun run preview` - Preview production build
 - `bun run astro` - Run Astro CLI commands
 
-## 🚀 Deployment
+## Deployment
 
 The project is configured for deployment on Vercel:
 
@@ -192,13 +193,13 @@ The project is configured for deployment on Vercel:
    - `OFFICIAL_EMAIL`
 4. **Deploy** - Vercel will automatically build and deploy
 
-## 📱 Contact Information
+## Contact Information
 
 - **Phone**: +923138576996
 - **Email**: hamadsami672@gmail.com
 - **Location**: Birmingham, UK
 
-## 🔒 Environment Variables
+## Environment Variables
 
 | Variable | Description | Required |
 |----------|-------------|----------|
@@ -206,7 +207,7 @@ The project is configured for deployment on Vercel:
 | `RESEND_FROM_EMAIL` | Email address to send from | Yes |
 | `OFFICIAL_EMAIL` | Email to receive form submissions | Yes |
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Port Already in Use
 If port 4321 is already in use, Astro will automatically try the next available port.
@@ -222,7 +223,7 @@ If port 4321 is already in use, Astro will automatically try the next available 
 - Delete `node_modules` and reinstall: `rm -rf node_modules && bun install`
 - Check that all environment variables are set
 
-## 📚 Additional Resources
+## Additional Resources
 
 - [Astro Documentation](https://docs.astro.build)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
@@ -230,10 +231,10 @@ If port 4321 is already in use, Astro will automatically try the next available 
 - [Resend Documentation](https://resend.com/docs)
 - [Bun Documentation](https://bun.sh/docs)
 
-## 📄 License
+## License
 
 © 2025 CAD Outsource. All rights reserved.
 
 ---
 
-**Built with ❤️ using Astro, React, and Tailwind CSS**
+Built with Astro, React, and Tailwind CSS
