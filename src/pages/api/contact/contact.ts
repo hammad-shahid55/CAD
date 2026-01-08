@@ -29,6 +29,7 @@ const contactSchema = z.object({
 export const POST: APIRoute = async ({ request }) => {
   const secret = import.meta.env.RESEND_API_KEY;
   const resend = new Resend(secret);
+  const fromEmail = import.meta.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev';
   const officialMail = import.meta.env.OFFICIAL_EMAIL;
 
   try {
@@ -38,7 +39,7 @@ export const POST: APIRoute = async ({ request }) => {
 
     // Send email to official address
     const { data: recieveEmailData, error: recieveEmailError } = await resend.emails.send({
-      from: `CadOutSource <${officialMail}>`,
+      from: `CadOutSource <${fromEmail}>`,
       to: officialMail,
 
       subject: `New Contact Form Submission from ${name}`,
@@ -60,7 +61,7 @@ export const POST: APIRoute = async ({ request }) => {
 
     // Send thank you email to the user
     const { data: sendMailData, error: sendMailError } = await resend.emails.send({
-      from: `CadOutSource <${officialMail}>`,
+      from: `CadOutSource <${fromEmail}>`,
       to: email,
       subject: 'Thank you for contacting us!',
       react: ThankYouTemplate({ name }),
