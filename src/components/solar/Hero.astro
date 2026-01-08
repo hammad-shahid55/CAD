@@ -1,0 +1,75 @@
+---
+import { Zap, Sun, FileText} from 'lucide-react';
+---
+
+<section class="relative bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white py-20 px-4 overflow-hidden  ">
+  <!-- Background Pattern -->
+  <div class="absolute inset-0 opacity-10">
+    <div class={`"absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23FBA94C" fill-opacity="0.4"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"`}></div>
+  </div>
+  
+  <div class="relative max-w-7xl mx-auto">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Content -->
+      <div class="space-y-8">
+        <div class="space-y-4">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+            Solar PV 
+            <span class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+              Layouts & Wiring
+            </span>
+          </h1>
+          <p class="text-xl text-amber-200 leading-relaxed">
+            Professional CAD services for precise solar photovoltaic system design, layout optimization, and electrical wiring documentation
+          </p>
+        </div>
+        
+        <!-- Key Features -->
+        <div class="grid sm:grid-cols-3 gap-6">
+          <div class="flex items-center space-x-3 bg-white/10 backdrop-blur-sm rounded-lg p-4">
+            <Sun className="w-8 h-8 text-yellow-400 flex-shrink-0" />
+            <div>
+              <h3 class="font-semibold text-sm">Panel Layout</h3>
+              <p class="text-xs text-amber-200">Optimal Positioning</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-3 bg-white/10 backdrop-blur-sm rounded-lg p-4">
+            <Zap className="w-8 h-8 text-orange-400 flex-shrink-0" />
+            <div>
+              <h3 class="font-semibold text-sm">Wiring Design</h3>
+              <p class="text-xs text-amber-200">Code Compliant</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-3 bg-white/10 backdrop-blur-sm rounded-lg p-4">
+            <FileText className="w-8 h-8 text-red-400 flex-shrink-0" />
+            <div>
+              <h3 class="font-semibold text-sm">CAD Precision</h3>
+              <p class="text-xs text-amber-200">Industry Standard</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- CTA Buttons -->
+
+      </div>
+      
+      <!-- Hero Image -->
+      <div class="relative">
+        <div class="relative bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+          <img 
+            src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&h=400&fit=crop&crop=entropy&auto=format&q=80" 
+            alt="Solar panel installation and wiring design"
+            class="w-full h-80 object-cover rounded-xl shadow-2xl"
+          />
+          <!-- Floating elements -->
+          <div class="absolute -top-4 -right-4 bg-yellow-500 text-white p-3 rounded-full shadow-lg">
+            <Sun className="w-6 h-6" />
+          </div>
+          <div class="absolute -bottom-4 -left-4 bg-orange-500 text-white p-3 rounded-full shadow-lg">
+            <Zap className="w-6 h-6" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

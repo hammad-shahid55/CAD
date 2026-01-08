@@ -1,0 +1,77 @@
+---
+// src/components/about/AboutUkOperationsSection.astro
+import { MapPin, Clock, Shield, Truck } from 'lucide-react';
+---
+
+<section class="py-20 lg:py-32 bg-white relative overflow-hidden">
+  <!-- Background Elements -->
+  <div class="absolute inset-0 bg-gradient-to-br from-slate-50 to-indigo-50/30"></div>
+  <div class="absolute top-1/4 left-0 w-1/3 h-1/3 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-full blur-3xl opacity-30"></div>
+  <div class="absolute bottom-1/4 right-0 w-1/3 h-1/3 bg-gradient-to-br from-cyan-100 to-blue-100 rounded-full blur-3xl opacity-30"></div>
+  
+  <div class="relative container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-16 lg:mb-20">
+        <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm border border-indigo-200 text-indigo-700 rounded-full text-sm font-medium mb-6">
+          <MapPin size={16} />
+          UK Operations
+        </div>
+        
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 leading-tight">
+          Serving the United Kingdom
+          <span class="block text-indigo-600">From Coast to Coast</span>
+        </h2>
+        
+        <p class="text-lg lg:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+          Based in birmingham with a nationwide reach, we provide comprehensive CAD design services across England, Scotland, Wales, and Northern Ireland, supporting projects of all scales with local expertise and global standards.
+        </p>
+      </div>
+      
+      <!-- Main Content Grid -->
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-16">
+        
+        <!-- UK Map Visual -->
+        <div class="relative">
+          <div class="bg-gradient-to-br from-indigo-50 to-cyan-50 rounded-3xl p-8 lg:p-12 relative overflow-hidden">
+            <!-- Placeholder for UK map or office image -->
+            <img 
+              src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="UK Operations - birmingham Office"
+              class="w-full h-auto rounded-2xl shadow-xl"
+            />
+            
+            <!-- Location Pins -->
+            <div class="absolute top-1/4 left-1/3 w-4 h-4 bg-indigo-500 rounded-full animate-pulse shadow-lg"></div>
+            <div class="absolute top-1/3 right-1/4 w-3 h-3 bg-cyan-500 rounded-full animate-pulse shadow-lg"></div>
+            <div class="absolute bottom-1/3 left-1/4 w-3 h-3 bg-purple-500 rounded-full animate-pulse shadow-lg"></div>
+            
+            <!-- Headquarters Badge -->
+            <div class="absolute top-6 left-6 bg-white/90 backdrop-blur-sm rounded-xl px-4 py-2 shadow-lg">
+              <div class="text-sm font-semibold text-slate-900">🏢 HQ: birmingham</div>
+              <div class="text-xs text-slate-600">Established 2021</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Content -->
+        <div class="space-y-8">
+          <div class="space-y-6">
+            <h3 class="text-2xl lg:text-3xl font-bold text-slate-900">
+              Local Expertise, National Reach
+            </h3>
+            
+            <p class="text-slate-600 leading-relaxed">
+              Our birmingham headquarters serves as the central hub for operations across the entire United Kingdom. With deep understanding of British building standards, planning regulations, and industry practices, we ensure every project meets local requirements while exceeding international quality standards.
+            </p>
+            
+            <p class="text-slate-600 leading-relaxed">
+              From residential developments in Edinburgh to commercial projects in Cardiff, industrial facilities in Belfast to heritage renovations in Bath, our team brings consistent excellence to every corner of the UK.
+            </p>
+          </div>
+          
+          <!-- Key Features -->
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div class="flex items-start gap-3 p-4 bg-white/60 backdrop-blur-sm rounded-xl border border-indigo-100">
+              <div class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center flex-shrink-0">

@@ -1,0 +1,240 @@
+---
+// Premium Sector Stats Component
+const stats = [
+  {
+    number: '75%',
+    label: 'Faster Documentation',
+    description: 'Reduction in compliance documentation time across healthcare facilities',
+    icon: 'clock',
+    gradient: 'from-blue-500 to-cyan-500',
+    color: 'blue'
+  },
+  {
+    number: '250+',
+    label: 'Healthcare Facilities',
+    description: 'Hospitals, clinics, and medical centers served across UK & US',
+    icon: 'building',
+    gradient: 'from-rose-500 to-pink-500',
+    color: 'rose'
+  },
+  {
+    number: '98%',
+    label: 'Client Retention',
+    description: 'Long-term partnerships built on trust and excellence',
+    icon: 'heart',
+    gradient: 'from-green-500 to-emerald-500',
+    color: 'green'
+  },
+  {
+    number: '1000+',
+    label: 'Manufacturing Projects',
+    description: 'Production optimization and equipment layouts since 2015',
+    icon: 'factory',
+    gradient: 'from-purple-500 to-violet-500',
+    color: 'purple'
+  }
+];
+---
+
+<section class="relative py-24 md:py-32 bg-white overflow-hidden">
+  <!-- Background Decorative Elements -->
+  <div class="absolute inset-0 bg-gradient-to-br from-gray-50 via-blue-50/30 to-purple-50/30"></div>
+  <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-40">
+    <div class="absolute top-20 right-20 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+    <div class="absolute bottom-20 left-20 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+    <div class="absolute top-40 left-1/2 w-72 h-72 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <!-- Section Header -->
+    <div class="text-center mb-16 md:mb-20">
+      <div class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 mb-6">
+        <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" />
+        </svg>
+        <span class="text-gray-700 font-bold text-sm uppercase tracking-wider">Proven Track Record</span>
+      </div>
+
+      <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+        Delivering
+        <span class="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+          Measurable Results
+        </span>
+      </h2>
+
+      <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Numbers that demonstrate our commitment to excellence across every industry we serve
+      </p>
+    </div>
+
+    <!-- Stats Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-16">
+      {stats.map((stat, index) => (
+        <div
+          class="group relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-gray-200 hover:-translate-y-2"
+        >
+          <!-- Background Gradient Glow -->
+          <div class={`absolute -inset-0.5 bg-gradient-to-r ${stat.gradient} opacity-0 group-hover:opacity-20 blur-2xl rounded-3xl transition-opacity duration-500`}></div>
+
+          <!-- Content -->
+          <div class="relative">
+            <!-- Icon -->
+            <div class="mb-6">
+              <div class={`relative w-16 h-16 rounded-2xl bg-gradient-to-br from-${stat.color}-50 to-${stat.color}-100 border-2 border-${stat.color}-200 flex items-center justify-center group-hover:scale-110 group-hover:-rotate-6 transition-all duration-300`}>
+                <div class={`absolute inset-0 bg-gradient-to-r ${stat.gradient} opacity-10 rounded-2xl blur-lg`}></div>
+                {stat.icon === 'clock' && (
+                  <svg class={`relative w-8 h-8 text-${stat.color}-600`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                )}
+                {stat.icon === 'building' && (
+                  <svg class={`relative w-8 h-8 text-${stat.color}-600`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  </svg>
+                )}
+                {stat.icon === 'heart' && (
+                  <svg class={`relative w-8 h-8 text-${stat.color}-600`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                )}
+                {stat.icon === 'factory' && (
+                  <svg class={`relative w-8 h-8 text-${stat.color}-600`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                  </svg>
+                )}
+              </div>
+            </div>
+
+            <!-- Number -->
+            <div class="mb-4">
+              <h3 class={`text-5xl md:text-6xl font-bold bg-gradient-to-r ${stat.gradient} bg-clip-text text-transparent group-hover:scale-105 transition-transform duration-300 inline-block`}>
+                {stat.number}
+              </h3>
+            </div>
+
+            <!-- Label -->
+            <h4 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
+              {stat.label}
+            </h4>
+
+            <!-- Description -->
+            <p class="text-gray-600 leading-relaxed text-sm">
+              {stat.description}
+            </p>
+          </div>
+
+          <!-- Decorative Corner -->
+          <div class={`absolute top-0 right-0 w-20 h-20 bg-gradient-to-br ${stat.gradient} opacity-5 rounded-bl-full`}></div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Premium CTA Section -->
+    <div class="relative bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 rounded-3xl p-12 md:p-16 overflow-hidden shadow-2xl">
+      <!-- Background Pattern -->
+      <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjAzIiBzdHJva2Utd2lkdGg9IjEiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiLz48L3N2Zz4=')] opacity-40"></div>
+
+      <!-- Floating Orbs -->
+      <div class="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 left-0 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl"></div>
+
+      <div class="relative z-10 text-center">
+        <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+          Ready to Join Our
+          <span class="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            Success Stories?
+          </span>
+        </h3>
+
+        <p class="text-lg md:text-xl text-blue-100 mb-10 max-w-2xl mx-auto leading-relaxed">
+          Our team understands the unique documentation requirements of your industry.
+          Let's discuss how we can deliver similar results for your projects.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <a
+            href="/contact?#contact-form"
+            class="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl font-bold text-white overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/50"
+          >
+            <span class="relative z-10 flex items-center gap-2">
+              Get Free Consultation
+              <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </span>
+            <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </a>
+
+          <a
+            href="tel:+923138576996"
+            class="group flex items-center gap-3 px-8 py-4 border-2 border-white/30 rounded-2xl font-bold text-white backdrop-blur-sm hover:bg-white/10 hover:border-white/50 transition-all duration-300"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            Call: +923138576996
+          </a>
+        </div>
+
+        <!-- Trust Badges -->
+        <div class="mt-12 flex flex-wrap justify-center gap-8 items-center">
+          <div class="flex items-center gap-2 text-blue-200">
+            <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-sm font-medium">ISO Certified</span>
+          </div>
+          <div class="flex items-center gap-2 text-blue-200">
+            <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-sm font-medium">24/7 Support</span>
+          </div>
+          <div class="flex items-center gap-2 text-blue-200">
+            <svg class="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-sm font-medium">Money-Back Guarantee</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes fadeInScale {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes blob {
+    0%, 100% {
+      transform: translate(0, 0) scale(1);
+    }
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+  }
+
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+</style>

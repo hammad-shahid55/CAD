@@ -1,0 +1,288 @@
+---
+// src/components/LegionellaSection.astro
+const relatedServices = [
+  { name: "Solar PV System Wiring", href: "/solar-pv-layouts-and-wiring" },
+  { name: "As Built Drawings", href: "/as-built-drawings" },
+  { name: "Facilities Mapping & GIS", href: "/facilities-mapping-and-gis" },
+  { name: "HVAC Drawings", href: "/hvac-drawings" }
+];
+---
+
+<section class="py-16 md:py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+  <!-- Decorative elements -->
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute top-0 left-0 w-64 h-64 bg-blue-200 rounded-full filter blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 w-64 h-64 bg-indigo-200 rounded-full filter blur-3xl"></div>
+  </div>
+
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <!-- Hero Header -->
+    <div class="text-center max-w-4xl mx-auto mb-16">
+      <span class="inline-block px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold mb-4">CAD SERVICES</span>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+        Legionella <span class="text-blue-600">Schematic</span> Drawing
+      </h1>
+      <p class="text-xl text-gray-600 leading-relaxed">
+        Our premium Legionella CAD services provide detailed schematic drawings of hot and cold water systems essential for compliance with health and safety regulations. We create accurate representations of complex water systems to help identify potential risk areas and ensure regulatory compliance.
+      </p>
+    </div>
+
+    <!-- Key Features Grid -->
+    <div class="mb-24">
+      <div class="flex flex-col md:flex-row items-center justify-between mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+          Key <span class="text-blue-600">Features</span>
+        </h2>
+        <p class="text-lg text-gray-500 mt-4 md:mt-0 max-w-md">
+          Comprehensive solutions tailored to your water system requirements
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {[
+          { 
+            title: "Complete System Schematics", 
+            description: "Detailed drawings of entire water systems with all components clearly labeled",
+            icon: "M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
+          },
+          { 
+            title: "Risk Area Identification", 
+            description: "Highlighting of sentinel outlets and TMV positions for risk assessment",
+            icon: "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+          },
+          { 
+            title: "Regulatory Compliance", 
+            description: "Full compliance with ACOP L8 and HSG274 requirements",
+            icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+          },
+          { 
+            title: "Flow Direction Mapping", 
+            description: "Clear indicators showing water flow directions throughout the system",
+            icon: "M13 5h2.586a1 1 0 01.707.293l2.414 2.414a1 1 0 01.293.707V19a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5v2zM9 11h6m-6 4h6m-3-8h1"
+          },
+          { 
+            title: "Digital & Print Formats", 
+            description: "Delivered in multiple formats including DWG, PDF and high-quality prints",
+            icon: "M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2zM13 3v6h6"
+          },
+          { 
+            title: "Expert Review", 
+            description: "Comprehensive review process with water safety specialists",
+            icon: "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+          }
+        ].map((feature) => (
+          <div class="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200 transform hover:-translate-y-2">
+            <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-100 transition-colors duration-300">
+              <svg class="w-8 h-8 text-blue-600 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={feature.icon}></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">{feature.title}</h3>
+            <p class="text-gray-600">{feature.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Our Process -->
+    <div class="mb-24">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Our <span class="text-blue-600">Process</span>
+        </h2>
+        <p class="text-xl text-gray-500 max-w-3xl mx-auto">
+          A streamlined workflow ensuring precision and compliance at every stage
+        </p>
+      </div>
+      
+      <div class="relative">
+        <!-- Process line -->
+        <div class="hidden md:block absolute left-1/2 top-0 h-full w-0.5 bg-gray-200 transform -translate-x-1/2"></div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+          {[
+            {
+              title: "Site Survey & Data Collection",
+              description: "Our team conducts thorough site surveys or works with your existing documentation to gather all necessary system data. We capture pipe routes, component locations, and system specifications with precision.",
+              icon: "M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0zM12 3a1 1 0 011 1v7.268l2.098-1.063a1 1 0 011.402 1.426l-3.2 3.2a1 1 0 01-1.414 0l-3.2-3.2a1 1 0 011.402-1.426L11 11.268V4a1 1 0 011-1z"
+            },
+            {
+              title: "CAD Drafting & Design",
+              description: "Using industry-leading software, our CAD specialists create detailed schematics that accurately represent your water systems. We include all critical components and highlight potential risk areas.",
+              icon: "M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
+            },
+            {
+              title: "Review & Delivery",
+              description: "We conduct internal quality checks and incorporate your feedback before delivering final compliant documents in your preferred formats, ready for submission and implementation.",
+              icon: "M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"
+            }
+          ].map((step, index) => (
+            <div class="relative group">
+              <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200 h-full">
+                <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 md:left-0 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg z-10">
+                  {index + 1}
+                </div>
+                <div class="mt-6 md:mt-0 md:ml-10">
+                  <h3 class="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300">{step.title}</h3>
+                  <p class="text-gray-600">{step.description}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Applications -->
+    <div class="mb-24">
+      <div class="flex flex-col md:flex-row items-center justify-between mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+          Industry <span class="text-blue-600">Applications</span>
+        </h2>
+        <p class="text-lg text-gray-500 mt-4 md:mt-0 max-w-md">
+          Trusted by organizations across multiple sectors
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {[
+          {
+            title: "Healthcare Facilities",
+            description: "Hospitals, clinics, and care homes requiring strict water safety compliance and risk management for vulnerable populations.",
+            icon: "M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10",
+            stats: "100+ healthcare facilities served"
+          },
+          {
+            title: "Commercial Buildings",
+            description: "Office complexes, retail spaces, and public facilities needing comprehensive water system documentation for safety and maintenance.",
+            icon: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4",
+            stats: "500+ commercial projects"
+          },
+          {
+            title: "Educational Institutions",
+            description: "Schools, universities, and student accommodation requiring legionella control for large, complex water systems serving diverse users.",
+            icon: "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253",
+            stats: "200+ educational clients"
+          },
+          {
+            title: "Industrial Facilities",
+            description: "Factories, warehouses, and manufacturing plants with complex water systems requiring detailed schematic documentation.",
+            icon: "M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16",
+            stats: "300+ industrial systems mapped"
+          }
+        ].map((app) => (
+          <div class="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200 h-full transform hover:-translate-y-2">
+            <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-100 transition-colors duration-300">
+              <svg class="w-8 h-8 text-blue-600 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={app.icon}></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">{app.title}</h3>
+            <p class="text-gray-600 mb-4">{app.description}</p>
+            <div class="text-sm text-blue-600 font-medium">{app.stats}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Compliance Section -->
+    <div class="bg-primary rounded-3xl p-10 md:p-16 mb-24 text-white overflow-hidden relative">
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-white rounded-full filter blur-3xl"></div>
+      </div>
+      <div class="relative z-10">
+        <div class="max-w-4xl mx-auto">
+          <div class="flex items-center mb-6">
+            <div class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
+              <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold">
+              Regulatory Compliance Assurance
+            </h2>
+          </div>
+          <p class="text-lg md:text-xl leading-relaxed mb-8 text-blue-100">
+            The HSE's guidelines (HSG 274 Part 2) mandate Legionella Schematic Drawings as essential components of water safety programs. Our drawings meet all requirements of ACOP L8, HSG274, BS 8558, and HTM04-01, providing you with documentation that satisfies even the most stringent regulatory audits.
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {[
+              { name: "ACOP L8", value: "Fully Compliant" },
+              { name: "HSG274 Part 2", value: "Verified" },
+              { name: "BS 8558", value: "Certified" },
+              { name: "HTM04-01", value: "Approved" }
+            ].map((item) => (
+              <div class="bg-white bg-opacity-10 p-4 rounded-xl border border-white border-opacity-20">
+                <div class="text-primary text-sm mb-1">{item.name}</div>
+                <div class="text-gray-700 font-bold">{item.value}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service Details -->
+    <div class="mb-24">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+        Service <span class="text-blue-600">Details</span>
+      </h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {[
+          {
+            title: "Delivery Timeframe",
+            description: "3-10 business days depending on project complexity and size",
+            icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+          },
+          {
+            title: "File Formats",
+            description: "DWG, DXF, PDF, PNG (other formats available upon request)",
+            icon: "M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+          },
+          {
+            title: "Software Expertise",
+            description: "AutoCAD, Revit, SolidWorks, BricsCAD with specialized libraries",
+            icon: "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+          },
+          {
+            title: "Quality Assurance",
+            description: "Dual-stage review process with water safety specialists",
+            icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+          }
+        ].map((detail) => (
+          <div class="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200 h-full transform hover:-translate-y-2">
+            <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-100 transition-colors duration-300">
+              <svg class="w-8 h-8 text-blue-600 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={detail.icon}></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">{detail.title}</h3>
+            <p class="text-gray-600">{detail.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Related Services -->
+    <div class="mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+        Explore <span class="text-blue-600">Related Services</span>
+      </h2>
+      
+      <div class="flex flex-wrap justify-center gap-6">
+        {relatedServices.map((service) => (
+          <a 
+            href={service.href} 
+            class="group px-8 py-4 bg-white text-gray-700 rounded-xl border border-gray-200 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-3"
+          >
+            <svg class="w-6 h-6 text-gray-400 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7"></path>
+            </svg>
+            <span class="font-medium">{service.name}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

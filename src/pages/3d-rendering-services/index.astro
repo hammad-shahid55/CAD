@@ -1,0 +1,46 @@
+---
+// src/pages/3d-rendering-modeling/index.astro
+import Layout from '@/layouts/main.astro';
+import RenderingHero from '@/components/rendering/RenderingHero.astro';
+import RenderingIntroSection from '@/components/rendering/RenderingIntroSection.astro';
+import RenderingServicesSection from '@/components/rendering/RenderingServicesSection.astro';
+import RenderingStandardsSection from '@/components/rendering/RenderingStandardsSection.astro';
+import RenderingBenefitsSection from '@/components/rendering/RenderingBenefitsSection.astro';
+import RenderingImpactSection from '@/components/rendering/RenderingImpactSection.astro';
+import RenderingTechnicalSection from '@/components/rendering/RenderingTechnicalSection.astro';
+import RenderingFaqSection from '@/components/rendering/RenderingFaqSection.astro';
+import RenderingCtaSection from '@/components/rendering/RenderingCtaSection.astro';
+---
+
+<Layout
+  title="3D CAD Modeling & Rendering Services UK | Architectural Visualization"
+  description="Professional 3D CAD modeling and rendering services in Birmingham. Expert architectural visualization, product modeling, photorealistic rendering, and 3D design solutions for construction and manufacturing."
+  keywords={[
+    '3D CAD modeling UK',
+    '3D rendering services',
+    'architectural visualization',
+    'photorealistic rendering',
+    '3D product modeling',
+    '3D design Birmingham',
+    'architectural rendering',
+    'BIM modeling',
+    '3D CAD services',
+    'visualization services'
+  ]}
+  schemaType="Service"
+  canonical="/3d-rendering-and-modeling"
+  breadcrumbs={[
+    { name: 'Home', url: '/' },
+    { name: '3D Rendering & Modeling', url: '/3d-rendering-and-modeling' }
+  ]}
+>
+  <RenderingHero />
+  <RenderingIntroSection />
+  <RenderingServicesSection />
+  <RenderingStandardsSection />
+  <RenderingBenefitsSection />
+  <RenderingImpactSection />
+  <RenderingTechnicalSection />
+  <RenderingFaqSection />
+  <RenderingCtaSection />
+</Layout>

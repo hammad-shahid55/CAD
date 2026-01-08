@@ -1,0 +1,239 @@
+---
+import { Building, Zap, Droplets, Wind, Wrench, Layout } from 'lucide-react';
+---
+
+<section class="py-20 px-4 bg-white">
+  <div class="max-w-7xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        As-built Drawing Services
+      </h2>
+      <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+        Comprehensive documentation services for all building systems and construction elements, 
+        providing accurate as-built drawings for facility management, maintenance, and future renovations.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="grid lg:grid-cols-2 gap-8 mb-16">
+      <!-- Architectural As-builts -->
+      <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl border border-blue-100">
+        <div class="flex items-start space-x-4 mb-6">
+          <div class="bg-primary p-4 rounded-xl">
+            <Building className="w-10 h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Architectural As-built Drawings</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Detailed documentation of all architectural elements including floor plans, elevations, 
+              sections, and construction details as actually built in the field.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-6">
+          <div class="bg-white/70 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1">Floor Plans</h4>
+            <p class="text-sm text-gray-600">Room layouts, dimensions, door/window locations</p>
+          </div>
+          <div class="bg-white/70 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1">Building Sections</h4>
+            <p class="text-sm text-gray-600">Ceiling heights, structural elements, finishes</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Electrical As-builts -->
+      <div class="bg-gradient-to-br from-cyan-50 to-blue-50 p-8 rounded-2xl border border-cyan-100">
+        <div class="flex items-start space-x-4 mb-6">
+          <div class="bg-cyan-500 p-4 rounded-xl">
+            <Zap className="w-10 h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Electrical System As-builts</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Complete electrical system documentation including power distribution, lighting circuits, 
+              control wiring, and telecommunication infrastructure as installed.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-6">
+          <div class="bg-white/70 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1">Power Distribution</h4>
+            <p class="text-sm text-gray-600">Panel locations, circuit routing, outlet placement</p>
+          </div>
+          <div class="bg-white/70 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1">Lighting Systems</h4>
+            <p class="text-sm text-gray-600">Fixture locations, switching, emergency lighting</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plumbing As-builts -->
+      <div class="bg-gradient-to-br from-indigo-50 to-purple-50 p-8 rounded-2xl border border-indigo-100">
+        <div class="flex items-start space-x-4 mb-6">
+          <div class="bg-indigo-500 p-4 rounded-xl">
+            <Droplets className="w-10 h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Plumbing System As-builts</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Accurate documentation of water supply, drainage, and specialty plumbing systems 
+              with pipe routing, fixture locations, and connection details.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-6">
+          <div class="bg-white/70 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1">Water Distribution</h4>
+            <p class="text-sm text-gray-600">Supply lines, shutoff valves, fixture connections</p>
+          </div>
+          <div class="bg-white/70 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1">Drainage Systems</h4>
+            <p class="text-sm text-gray-600">Waste lines, vents, floor drains, cleanouts</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- HVAC As-builts -->
+      <div class="bg-gradient-to-br from-green-50 to-teal-50 p-8 rounded-2xl border border-green-100">
+        <div class="flex items-start space-x-4 mb-6">
+          <div class="bg-green-500 p-4 rounded-xl">
+            <Wind className="w-10 h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">HVAC System As-builts</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Complete HVAC system documentation including ductwork layout, equipment locations, 
+              controls, and piping systems as actually installed and configured.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-6">
+          <div class="bg-white/70 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1">Ductwork Systems</h4>
+            <p class="text-sm text-gray-600">Supply/return ducts, dampers, grilles, diffusers</p>
+          </div>
+          <div class="bg-white/70 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1">Equipment Layout</h4>
+            <p class="text-sm text-gray-600">Units, controls, piping, access requirements</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Structural & Specialty Systems -->
+    <div class="grid lg:grid-cols-2 gap-8 mb-16">
+      <div class="bg-gradient-to-br from-red-50 to-orange-50 p-8 rounded-2xl border border-red-100">
+        <div class="flex items-start space-x-4 mb-6">
+          <div class="bg-red-500 p-4 rounded-xl">
+            <Wrench className="w-10 h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Structural As-built Documentation</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Structural system documentation including foundations, framing, connections, 
+              and modifications made during construction.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <div class="bg-white/70 p-3 rounded-lg">
+            <span class="text-sm font-medium text-gray-900">✓ Foundation & Footings</span>
+          </div>
+          <div class="bg-white/70 p-3 rounded-lg">
+            <span class="text-sm font-medium text-gray-900">✓ Structural Framing</span>
+          </div>
+          <div class="bg-white/70 p-3 rounded-lg">
+            <span class="text-sm font-medium text-gray-900">✓ Connection Details</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl border border-purple-100">
+        <div class="flex items-start space-x-4 mb-6">
+          <div class="bg-purple-500 p-4 rounded-xl">
+            <Layout className="w-10 h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Specialty System As-builts</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Documentation of specialty systems including fire protection, security, 
+              telecommunications, and building automation systems.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <div class="bg-white/70 p-3 rounded-lg">
+            <span class="text-sm font-medium text-gray-900">✓ Fire Protection Systems</span>
+          </div>
+          <div class="bg-white/70 p-3 rounded-lg">
+            <span class="text-sm font-medium text-gray-900">✓ Security & Access Control</span>
+          </div>
+          <div class="bg-white/70 p-3 rounded-lg">
+            <span class="text-sm font-medium text-gray-900">✓ Building Automation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Excellence -->
+    <div class="bg-gradient-to-r from-slate-800 to-slate-900 text-white p-8 md:p-12 rounded-2xl">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h3 class="text-3xl font-bold mb-6">Professional Standards & Accuracy</h3>
+          <p class="text-slate-300 leading-relaxed mb-8">
+            Our as-built drawings meet industry CAD standards and provide the accuracy needed 
+            for effective facility management, renovation planning, and compliance documentation.
+          </p>
+          
+          <div class="space-y-4">
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+              <span class="text-slate-300">Field-verified measurements and locations</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+              <span class="text-slate-300">Industry-standard CAD formats and layering</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-indigo-400 rounded-full"></div>
+              <span class="text-slate-300">Comprehensive annotation and documentation</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-green-400 rounded-full"></div>
+              <span class="text-slate-300">Quality assurance and accuracy verification</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20">
+            <div class="grid grid-cols-2 gap-6">
+              <div>
+                <div class="text-4xl font-bold text-blue-400 mb-2">400+</div>
+                <div class="text-slate-300 mb-2">Projects Documented</div>
+                <div class="text-xs text-slate-400">Various building types</div>
+              </div>
+              <div>
+                <div class="text-4xl font-bold text-cyan-400 mb-2">99.5%</div>
+                <div class="text-slate-300 mb-2">Field Accuracy</div>
+                <div class="text-xs text-slate-400">Measurement precision</div>
+              </div>
+              <div>
+                <div class="text-4xl font-bold text-indigo-400 mb-2">100%</div>
+                <div class="text-slate-300 mb-2">CAD Standards</div>
+                <div class="text-xs text-slate-400">Industry compliance</div>
+              </div>
+              <div>
+                <div class="text-4xl font-bold text-green-400 mb-2">Fast</div>
+                <div class="text-slate-300 mb-2">Turnaround</div>
+                <div class="text-xs text-slate-400">Efficient delivery</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,173 @@
+---
+// SEO Component for CadOutSource
+// Handles meta tags, Open Graph, Twitter Cards, and Schema.org structured data
+
+export interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  image?: string;
+  imageAlt?: string;
+  type?: 'website' | 'article' | 'service';
+  noindex?: boolean;
+  nofollow?: boolean;
+  keywords?: string[];
+  author?: string;
+  publishedTime?: string;
+  modifiedTime?: string;
+  schemaType?: 'WebPage' | 'Service' | 'Organization' | 'FAQPage';
+  breadcrumbs?: Array<{ name: string; url: string }>;
+}
+
+const {
+  title,
+  description,
+  canonical = Astro.url.href,
+  image = '/og-image.jpg',
+  imageAlt = 'CAD Outsource - Professional CAD Design Services',
+  type = 'website',
+  noindex = false,
+  nofollow = false,
+  keywords = [],
+  author = 'CAD Outsource',
+  publishedTime,
+  modifiedTime,
+  schemaType = 'WebPage',
+  breadcrumbs = []
+} = Astro.props;
+
+const siteName = 'CAD Outsource';
+const siteUrl = 'https://cadoutsource.co.uk';
+const fullImageUrl = image.startsWith('http') ? image : `${siteUrl}${image}`;
+const fullCanonicalUrl = canonical.startsWith('http') ? canonical : `${siteUrl}${canonical}`;
+
+// Default keywords for all pages
+const defaultKeywords = [
+  'CAD services',
+  'CAD outsourcing',
+  'CAD design',
+  'technical drawing',
+  '2D drafting',
+  '3D modeling',
+  'as-built drawings',
+  'HVAC drawings',
+  'solar PV layouts',
+  'commissioning drawings',
+  'legionella schematic',
+  'CAD conversion',
+  'facilities mapping',
+  'GIS services',
+  'UK CAD services',
+  'Birmingham CAD services'
+];
+
+const allKeywords = [...new Set([...defaultKeywords, ...keywords])].join(', ');
+
+// Robots meta
+const robotsContent = `${noindex ? 'noindex' : 'index'}, ${nofollow ? 'nofollow' : 'follow'}`;
+
+// Organization Schema for all pages
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: siteName,
+  url: siteUrl,
+  logo: `${siteUrl}/logo.png`,
+  description: 'Professional CAD design and engineering solutions provider',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Birmingham',
+    postalCode: 'B16 8DD',
+    addressCountry: 'UK'
+  },
+  contactPoint: {
+    '@type': 'ContactPoint',
+    telephone: '+923138576996',
+    contactType: 'customer service',
+    email: 'hamadsami672@gmail.com',
+    availableLanguage: 'English'
+  },
+  sameAs: [
+    // Add social media URLs when available
+  ]
+};
+
+// Page-specific Schema
+let pageSchema: any = {
+  '@context': 'https://schema.org',
+  '@type': schemaType,
+  name: title,
+  description: description,
+  url: fullCanonicalUrl,
+};
+
+if (breadcrumbs.length > 0) {
+  pageSchema.breadcrumb = {
+    '@type': 'BreadcrumbList',
+    itemListElement: breadcrumbs.map((crumb, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: crumb.name,
+      item: `${siteUrl}${crumb.url}`
+    }))
+  };
+}
+
+if (publishedTime) {
+  pageSchema.datePublished = publishedTime;
+}
+
+if (modifiedTime) {
+  pageSchema.dateModified = modifiedTime;
+}
+---
+
+<!-- Primary Meta Tags -->
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+<meta name="keywords" content={allKeywords} />
+<meta name="author" content={author} />
+<meta name="robots" content={robotsContent} />
+<meta name="googlebot" content={robotsContent} />
+<link rel="canonical" href={fullCanonicalUrl} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content={type} />
+<meta property="og:url" content={fullCanonicalUrl} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={fullImageUrl} />
+<meta property="og:image:alt" content={imageAlt} />
+<meta property="og:site_name" content={siteName} />
+<meta property="og:locale" content="en_GB" />
+
+{publishedTime && <meta property="article:published_time" content={publishedTime} />}
+{modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content={fullCanonicalUrl} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={fullImageUrl} />
+<meta name="twitter:image:alt" content={imageAlt} />
+
+<!-- Additional Meta Tags -->
+<meta name="theme-color" content="#0066CC" />
+<meta name="format-detection" content="telephone=no" />
+
+<!-- Geographic Tags -->
+<meta name="geo.region" content="GB-BIR" />
+<meta name="geo.placename" content="Birmingham" />
+<meta name="geo.position" content="52.4862;-1.8904" />
+<meta name="ICBM" content="52.4862, -1.8904" />
+
+<!-- Business/Industry Tags -->
+<meta name="industry" content="CAD Services, Engineering, Design" />
+<meta name="coverage" content="Worldwide" />
+<meta name="target" content="all" />
+
+<!-- Schema.org structured data -->
+<script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(pageSchema)} />

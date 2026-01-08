@@ -1,0 +1,222 @@
+---
+// src/components/about/AboutCtaSection.astro
+import { ArrowRight, Phone, Mail, MessageCircle, Clock, Award, Users } from 'lucide-react';
+---
+
+<section class="py-20 lg:py-32 relative overflow-hidden">
+  <!-- Premium Background -->
+  <div class="absolute inset-0 bg-gradient-to-br from-slate-50 via-indigo-50 to-cyan-50"></div>
+  <div class={`absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%23818cf8" fill-opacity="0.08"%3E%3Cpath d="m30 15 15 15-15 15-15-15z"/%3E%3C/g%3E%3C/svg%3E')] opacity-50`}></div>
+  
+  <!-- Floating Decorative Elements -->
+  <div class="absolute top-20 left-10 w-20 h-20 bg-gradient-to-br from-indigo-400/20 to-purple-400/20 rounded-full blur-xl animate-pulse"></div>
+  <div class="absolute bottom-20 right-10 w-32 h-32 bg-gradient-to-br from-cyan-400/20 to-blue-400/20 rounded-full blur-xl animate-pulse" style="animation-delay: 1s;"></div>
+  
+  <div class="relative container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      
+      <!-- Main CTA Header -->
+      <div class="text-center mb-16 lg:mb-20">
+        <div class="inline-flex items-center gap-2 px-6 py-3 bg-white/70 backdrop-blur-sm border border-indigo-200 text-indigo-700 rounded-full text-sm font-medium mb-8 shadow-lg">
+          <div class="w-2 h-2 bg-indigo-500 rounded-full animate-pulse"></div>
+          Ready to Get Started?
+        </div>
+        
+        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-8 leading-tight">
+          Transform Your Vision Into
+          <span class="block text-transparent bg-gradient-to-r from-indigo-600 via-purple-600 to-cyan-500 bg-clip-text">
+            Technical Reality
+          </span>
+        </h2>
+        
+        <p class="text-xl lg:text-2xl text-slate-600 leading-relaxed mb-12 max-w-4xl mx-auto">
+          Whether you're planning a residential development, commercial project, or industrial facility anywhere in the UK, our expert team is ready to bring your vision to life with unmatched precision and creativity.
+        </p>
+        
+        <!-- Primary Action Buttons -->
+        <div class="flex flex-col sm:flex-row gap-6 justify-center mb-16">
+          <a href="/contact?#contact-form" class="group relative overflow-hidden">
+            <div class="absolute inset-0  rounded-2xl blur-lg opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div class="relative inline-flex items-center gap-3 px-10 py-5 bg-primary text-white rounded-2xl font-bold text-lg  transition-all duration-300 transform hover:scale-105 shadow-xl">
+              Start Your Project Today
+              <ArrowRight size={24} className="group-hover:translate-x-2 transition-transform duration-300" />
+            </div>
+          </a>
+          
+          <a href="/contact?#contact-form" class="group inline-flex items-center gap-3 px-10 py-5 bg-white/80 backdrop-blur-sm border-2 border-indigo-200 text-indigo-700 rounded-2xl font-bold text-lg hover:bg-white hover:border-indigo-300 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+            <Phone size={20} />
+            Schedule Free Consultation
+          </a>
+        </div>
+      </div>
+      
+      <!-- Contact Methods Grid -->
+      <div class="grid md:grid-cols-3 gap-8 lg:gap-10 mb-20">
+        
+        <!-- Phone Contact -->
+        <div class="group relative">
+          <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-indigo-500/10 rounded-3xl transform group-hover:scale-105 transition-all duration-300 blur-sm"></div>
+          <div class="relative p-8 lg:p-10 bg-white/80 backdrop-blur-sm rounded-3xl border border-blue-200/50 hover:border-blue-300 hover:shadow-2xl transition-all duration-300">
+            <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-xl">
+              <Phone size={40} className="text-white" />
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900 mb-4 text-center">Call Our Experts</h3>
+            <p class="text-slate-600 text-center mb-6 leading-relaxed">
+              Speak directly with our certified CAD specialists for immediate assistance and project consultation.
+            </p>
+            <div class="text-center">
+              <a href="tel:+923138576996" class="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors duration-300">
+                +923138576996
+              </a>
+              <div class="text-sm text-slate-500 mt-2">Available Mon-Fri, 9AM-6PM GMT</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Email Contact -->
+        <div class="group relative">
+          <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-blue-500/10 rounded-3xl transform group-hover:scale-105 transition-all duration-300 blur-sm"></div>
+          <div class="relative p-8 lg:p-10 bg-white/80 backdrop-blur-sm rounded-3xl border border-cyan-200/50 hover:border-cyan-300 hover:shadow-2xl transition-all duration-300">
+            <div class="w-20 h-20 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-xl">
+              <Mail size={40} className="text-white" />
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900 mb-4 text-center">Email Us</h3>
+            <p class="text-slate-600 text-center mb-6 leading-relaxed">
+              Send us your project requirements and receive a detailed proposal within 24 hours.
+            </p>
+            <div class="text-center">
+              <a href="mailto:support@cadservice.com" class="text-2xl font-bold text-cyan-600 hover:text-cyan-700 transition-colors duration-300">
+                support@cadservice.com
+              </a>
+              <div class="text-sm text-slate-500 mt-2">24-hour response guarantee</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Live Chat -->
+        <div class="group relative">
+          <div class="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-3xl transform group-hover:scale-105 transition-all duration-300 blur-sm"></div>
+          <div class="relative p-8 lg:p-10 bg-white/80 backdrop-blur-sm rounded-3xl border border-purple-200/50 hover:border-purple-300 hover:shadow-2xl transition-all duration-300">
+            <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-xl">
+              <MessageCircle size={40} className="text-white" />
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900 mb-4 text-center">Live Chat</h3>
+            <p class="text-slate-600 text-center mb-6 leading-relaxed">
+              Get instant answers to your questions from our technical support team.
+            </p>
+            <div class="text-center">
+              <button class="text-2xl font-bold text-purple-600 hover:text-purple-700 transition-colors duration-300">
+                Start Chat Now
+              </button>
+              <div class="text-sm text-slate-500 mt-2">Online support available</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Why Choose Us Section -->
+      <div class="bg-gradient-to-br from-white/60 to-indigo-50/80 backdrop-blur-sm rounded-3xl p-10 lg:p-16 border border-indigo-200/50 shadow-2xl mb-20">
+        <div class="text-center mb-12">
+          <h3 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">
+            Why 1000+ UK Clients Choose Us
+          </h3>
+          <p class="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
+            Experience the difference that comes with working with the UK's most trusted CAD design consultancy.
+          </p>
+        </div>
+        
+        <!-- Benefits Grid -->
+        <div class="grid md:grid-cols-3 gap-8 lg:gap-12 mb-12">
+          
+          <!-- UK Based & Compliant -->
+          <div class="text-center group">
+            <div class="w-20 h-20 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+              <span class="text-4xl">🇬🇧</span>
+            </div>
+            <h4 class="text-xl font-bold text-slate-900 mb-3">UK Based & Compliant</h4>
+            <p class="text-slate-600 leading-relaxed">
+              Full understanding of British building standards, planning regulations, and local requirements across England, Scotland, Wales, and Northern Ireland.
+            </p>
+          </div>
+          
+          <!-- Expert Team -->
+          <div class="text-center group">
+            <div class="w-20 h-20 bg-gradient-to-br from-cyan-100 to-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+              <Users size={40} className="text-cyan-600" />
+            </div>
+            <h4 class="text-xl font-bold text-slate-900 mb-3">50+ Expert Professionals</h4>
+            <p class="text-slate-600 leading-relaxed">
+              Certified CAD specialists with 10+ years of experience across architecture, engineering, and technical design disciplines.
+            </p>
+          </div>
+          
+          <!-- Quality Guaranteed -->
+          <div class="text-center group">
+            <div class="w-20 h-20 bg-gradient-to-br from-emerald-100 to-teal-100 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+              <Award size={40} className="text-emerald-600" />
+            </div>
+            <h4 class="text-xl font-bold text-slate-900 mb-3">Quality Guaranteed</h4>
+            <p class="text-slate-600 leading-relaxed">
+              99.9% accuracy rate with comprehensive quality control processes and professional certification on all deliverables.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Trust Metrics -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8 pt-8 border-t border-indigo-200">
+          
+          <div class="text-center group">
+            <div class="text-3xl lg:text-4xl font-bold text-indigo-600 mb-2 group-hover:scale-110 transition-transform duration-300">4.9/5</div>
+            <div class="text-slate-600 font-medium">Client Rating</div>
+            <div class="text-xs text-slate-500 mt-1">Based on 500+ reviews</div>
+          </div>
+          
+          <div class="text-center group">
+            <div class="text-3xl lg:text-4xl font-bold text-cyan-600 mb-2 group-hover:scale-110 transition-transform duration-300">1000+</div>
+            <div class="text-slate-600 font-medium">Happy Clients</div>
+            <div class="text-xs text-slate-500 mt-1">Across the UK</div>
+          </div>
+          
+          <div class="text-center group">
+            <div class="text-3xl lg:text-4xl font-bold text-purple-600 mb-2 group-hover:scale-110 transition-transform duration-300">5000+</div>
+            <div class="text-slate-600 font-medium">Projects Delivered</div>
+            <div class="text-xs text-slate-500 mt-1">Since 2021</div>
+          </div>
+          
+          <div class="text-center group">
+            <div class="text-3xl lg:text-4xl font-bold text-emerald-600 mb-2 group-hover:scale-110 transition-transform duration-300">98%</div>
+            <div class="text-slate-600 font-medium">Client Retention</div>
+            <div class="text-xs text-slate-500 mt-1">Long-term partnerships</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Final CTA -->
+      <div class="text-center">
+        <div class="inline-flex flex-col lg:flex-row items-center gap-6 lg:gap-8 p-8 lg:p-12 bg-gradient-to-r from-slate-900 via-indigo-900 to-slate-900 rounded-3xl text-white shadow-2xl">
+          
+          <div class="flex-grow text-center lg:text-left">
+            <h4 class="text-2xl lg:text-3xl font-bold text-white mb-4">
+              Ready to Start Your Next Project?
+            </h4>
+            <p class="text-lg text-slate-300 leading-relaxed">
+              Join 1000+ satisfied clients across the UK who trust us with their most important projects. Let's transform your vision into reality with precision and excellence.
+            </p>
+          </div>
+          
+          <div class="flex flex-col sm:flex-row gap-4 flex-shrink-0">
+            <a href="/contact?#contact-form" class="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-xl font-bold text-lg hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 hover:scale-105 shadow-lg whitespace-nowrap">
+              Get Free Quote
+            </a>
+            <a  
+
+            href="tel:+923138576996"
+            class="px-8 py-4 border-2 border-white/30 text-white rounded-xl font-bold text-lg hover:bg-white/10 transition-all duration-300 hover:scale-105 whitespace-nowrap"  href="/contact?#contact-form" >
+              Schedule Call
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,48 @@
+---
+// src/pages/2d-drafting-designing/index.astro
+import Layout from '@/layouts/main.astro';
+import DraftingHero from '@/components/drafting/DraftingHero.astro';
+import DraftingIntroSection from '@/components/drafting/DraftingIntroSection.astro';
+import DraftingProcessSection from '@/components/drafting/DraftingProcessSection.astro';
+import DraftingServicesSection from '@/components/drafting/DraftingServicesSection.astro';
+import DraftingStandardsSection from '@/components/drafting/DraftingStandardsSection.astro';
+import DraftingBenefitsSection from '@/components/drafting/DraftingBenefitsSection.astro';
+import DraftingImpactSection from '@/components/drafting/DraftingImpactSection.astro';
+import DraftingTechnicalSection from '@/components/drafting/DraftingTechnicalSection.astro';
+import DraftingFaqSection from '@/components/drafting/DraftingFaqSection.astro';
+import DraftingCtaSection from '@/components/drafting/DraftingCtaSection.astro';
+---
+
+<Layout
+  title="2D CAD Drafting & Technical Drawing Services UK | Professional Design"
+  description="Expert 2D CAD drafting and technical drawing services in Birmingham. Professional architectural, mechanical, and engineering drafting solutions for construction, manufacturing, and design projects."
+  keywords={[
+    '2D CAD drafting UK',
+    '2D technical drawing services',
+    'architectural CAD drafting',
+    'mechanical drafting services',
+    'engineering drawings',
+    '2D design services Birmingham',
+    'technical illustration CAD',
+    'production drawings',
+    'fabrication drawings',
+    'construction drawings CAD'
+  ]}
+  schemaType="Service"
+  canonical="/2d-drafting-and-designing"
+  breadcrumbs={[
+    { name: 'Home', url: '/' },
+    { name: '2D Drafting & Designing', url: '/2d-drafting-and-designing' }
+  ]}
+>
+  <DraftingHero />
+  <DraftingIntroSection />
+  <DraftingProcessSection />
+  <DraftingServicesSection />
+  <DraftingStandardsSection />
+  <DraftingBenefitsSection />
+  <DraftingImpactSection />
+  <DraftingTechnicalSection />
+  <DraftingFaqSection />
+  <DraftingCtaSection />
+</Layout>

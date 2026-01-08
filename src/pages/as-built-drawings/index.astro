@@ -1,0 +1,41 @@
+---
+import Layout from '@/layouts/main.astro';
+import AsbuiltHero from '@/components/asbuilt/AsbuiltHero.astro';
+import AsbuiltIntroSection from '@/components/asbuilt/AsbuiltIntroSection.astro';
+import AsbuiltServicesSection from '@/components/asbuilt/AsbuiltServicesSection.astro';
+import AsbuiltBenefitsSection from '@/components/asbuilt/AsbuiltBenefitsSection.astro';
+import AsbuiltTechnicalSection from '@/components/asbuilt/AsbuiltTechnicalSection.astro';
+import AsbuiltFaqSection from '@/components/asbuilt/AsbuiltFaqSection.astro';
+import AsbuiltCtaSection from '@/components/asbuilt/AsbuiltCtaSection.astro';
+---
+
+<Layout
+  title="As-Built CAD Drawings UK | Professional Record Documentation Services"
+  description="Expert as-built CAD drawing services in Birmingham. Accurate record drawings, post-construction documentation, and building survey CAD conversions for construction, renovation, and facility management projects."
+  keywords={[
+    'as-built drawings UK',
+    'as-built CAD services',
+    'record drawings',
+    'post-construction documentation',
+    'building survey CAD',
+    'measured building surveys',
+    'as-built documentation Birmingham',
+    'construction record drawings',
+    'facility record drawings',
+    'as-built drawing services'
+  ]}
+  schemaType="Service"
+  canonical="/as-built-drawings"
+  breadcrumbs={[
+    { name: 'Home', url: '/' },
+    { name: 'As-Built Drawings', url: '/as-built-drawings' }
+  ]}
+>
+  <AsbuiltHero />
+  <AsbuiltIntroSection />
+  <AsbuiltServicesSection />
+  <AsbuiltBenefitsSection />
+  <AsbuiltTechnicalSection />
+  <AsbuiltFaqSection />
+  <AsbuiltCtaSection />
+</Layout>

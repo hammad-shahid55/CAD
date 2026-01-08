@@ -1,0 +1,106 @@
+---
+// src/components/about/AboutStorySection.astro - Clean minimal redesign
+import { Image } from 'astro:assets';
+---
+
+<section class="py-20 md:py-28 bg-gray-50">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+
+      <!-- Story Content -->
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20">
+
+        <!-- Left Content -->
+        <div class="space-y-6">
+          <div class="inline-flex items-center gap-2 px-4 py-2 bg-gray-200 rounded-full text-sm font-medium text-gray-700">
+            Our Story
+          </div>
+
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+            Building the Future of CAD Design
+          </h2>
+
+          <div class="space-y-4 text-lg text-gray-600 leading-relaxed">
+            <p>
+              Founded in Birmingham with a vision to deliver exceptional technical drawing services, we have grown into a comprehensive CAD consultancy serving clients across the United Kingdom.
+            </p>
+
+            <p>
+              Our team combines cutting-edge technology with decades of collective experience to deliver CAD solutions that exceed expectations. From architectural blueprints to complex 3D visualizations, we transform your concepts into reality.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Visual -->
+        <div class="relative">
+          <div class="relative bg-gray-100 rounded-2xl p-6">
+            <Image
+              src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="CAD Design Team"
+              width={800}
+              height={600}
+              class="w-full h-auto rounded-xl"
+            />
+
+            <!-- Stats Overlay -->
+            <div class="absolute -bottom-4 -left-4 bg-white rounded-xl shadow-lg p-4 border border-gray-200">
+              <div class="text-3xl font-bold text-gray-900">2021</div>
+              <div class="text-sm text-gray-600">Founded</div>
+            </div>
+
+            <div class="absolute -top-4 -right-4 bg-white rounded-xl shadow-lg p-4 border border-gray-200">
+              <div class="text-3xl font-bold text-gray-900">1000+</div>
+              <div class="text-sm text-gray-600">Projects</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Values Grid -->
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Precision -->
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:border-gray-300 transition-all">
+          <div class="w-14 h-14 bg-gray-100 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Precision</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Every measurement, every line, every detail is crafted with meticulous attention to accuracy, ensuring your projects meet the highest standards.
+          </p>
+        </div>
+
+        <!-- Quality -->
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:border-gray-300 transition-all">
+          <div class="w-14 h-14 bg-gray-100 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+            </svg>
+          </div>
+
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Quality</h3>
+          <p class="text-gray-600 leading-relaxed">
+            We deliver exceptional results that not only meet your requirements but exceed your expectations at every stage of your project.
+          </p>
+        </div>
+
+        <!-- Reliability -->
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 hover:border-gray-300 transition-all">
+          <div class="w-14 h-14 bg-gray-100 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-7 h-7 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Reliability</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Consistent on-time delivery and dependable support have made us a trusted partner for clients across multiple industries.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

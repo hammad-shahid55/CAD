@@ -1,0 +1,111 @@
+---
+import { Phone, Mail, MessageCircle, Map, Shield, Clock } from 'lucide-react';
+---
+
+<section class="py-16 sm:py-20 px-4 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white relative overflow-hidden">
+  <!-- Background Pattern -->
+  <div class="absolute inset-0 opacity-10">
+    <div class={`"absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.4"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"`}></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto">
+    <!-- Main CTA -->
+    <div class="text-center mb-12 sm:mb-16">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
+        Ready to Unlock the Power of
+        <span class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+          Spatial Intelligence?
+        </span>
+      </h2>
+      <p class="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto mb-6 sm:mb-8 leading-relaxed">
+        Transform your data into actionable insights with professional GIS and facilities mapping solutions. 
+        Make smarter decisions with location intelligence and spatial analysis.
+      </p>
+      
+      <!-- Primary CTA Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mb-10 sm:mb-12">
+        <a href="/contact?#contact-form" class="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-bold px-8 sm:px-10 py-3 sm:py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg text-base sm:text-lg">
+          Start Your Project
+        </a>
+        <a href="/contact?#contact-form" class="border-2 border-white/20 hover:border-white/40 text-white font-bold px-8 sm:px-10 py-3 sm:py-4 rounded-xl transition-all duration-300 backdrop-blur-sm text-base sm:text-lg">
+          Start Working With Us
+        </a>
+      </div>
+    </div>
+
+    <!-- Contact Options -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
+      <div class="bg-white/10 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-white/20 text-center hover:bg-white/15 transition-all duration-300">
+        <div class="bg-blue-500 w-12 sm:w-16 h-12 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+          <Phone className="w-6 sm:w-8 h-6 sm:h-8 text-white" />
+        </div>
+        <h3 class="text-lg sm:text-xl font-bold mb-2 sm:mb-3">Call Our GIS Experts</h3>
+        <p class="text-slate-300 mb-3 sm:mb-4 text-sm sm:text-base">Discuss your mapping and spatial analysis needs</p>
+        <p class="text-blue-400 font-semibold text-sm sm:text-base">+923138576996</p>
+      </div>
+
+      <div class="bg-white/10 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-white/20 text-center hover:bg-white/15 transition-all duration-300">
+        <div class="bg-cyan-500 w-12 sm:w-16 h-12 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+          <Mail className="w-6 sm:w-8 h-6 sm:h-8 text-white" />
+        </div>
+        <h3 class="text-lg sm:text-xl font-bold mb-2 sm:mb-3">Email Us</h3>
+        <p class="text-slate-300 mb-3 sm:mb-4 text-sm sm:text-base">Send us your project requirements</p>
+        <p class="text-cyan-400 font-semibold text-sm sm:text-base">gis@cadoutsource.com</p>
+      </div>
+
+      <div class="bg-white/10 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-white/20 text-center hover:bg-white/15 transition-all duration-300 sm:col-span-2 lg:col-span-1">
+        <div class="bg-indigo-500 w-12 sm:w-16 h-12 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+          <MessageCircle className="w-6 sm:w-8 h-6 sm:h-8 text-white" />
+        </div>
+        <h3 class="text-lg sm:text-xl font-bold mb-2 sm:mb-3">Live Consultation</h3>
+        <p class="text-slate-300 mb-3 sm:mb-4 text-sm sm:text-base">Instant technical support and advice</p>
+        <p class="text-indigo-400 font-semibold text-sm sm:text-base">Start Chat</p>
+      </div>
+    </div>
+
+    <!-- Service Highlights -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
+      <div class="flex items-center space-x-4 bg-white/5 backdrop-blur-sm p-4 sm:p-6 rounded-xl border border-white/10">
+        <div class="bg-blue-500/20 p-3 rounded-lg">
+          <Map className="w-6 sm:w-8 h-6 sm:h-8 text-blue-400" />
+        </div>
+        <div>
+          <h4 class="font-bold text-base sm:text-lg">Enterprise GIS</h4>
+          <p class="text-slate-300 text-xs sm:text-sm">Scalable solutions</p>
+        </div>
+      </div>
+
+      <div class="flex items-center space-x-4 bg-white/5 backdrop-blur-sm p-4 sm:p-6 rounded-xl border border-white/10">
+        <div class="bg-cyan-500/20 p-3 rounded-lg">
+          <Clock className="w-6 sm:w-8 h-6 sm:h-8 text-cyan-400" />
+        </div>
+        <div>
+          <h4 class="font-bold text-base sm:text-lg">Fast Deployment</h4>
+          <p class="text-slate-300 text-xs sm:text-sm">12-16 week delivery</p>
+        </div>
+      </div>
+
+      <div class="flex items-center space-x-4 bg-white/5 backdrop-blur-sm p-4 sm:p-6 rounded-xl border border-white/10 sm:col-span-2 lg:col-span-1">
+        <div class="bg-indigo-500/20 p-3 rounded-lg">
+          <Shield className="w-6 sm:w-8 h-6 sm:h-8 text-indigo-400" />
+        </div>
+        <div>
+          <h4 class="font-bold text-base sm:text-lg">24/7 Support</h4>
+          <p class="text-slate-300 text-xs sm:text-sm">Continuous monitoring</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final Call to Action -->
+    <div class="text-center bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-white/20">
+      <h3 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Stop Making Decisions in the Dark</h3>
+      <p class="text-slate-300 mb-4 sm:mb-6 max-w-2xl mx-auto text-sm sm:text-base">
+        Without spatial intelligence, you're missing critical insights that could save costs, improve efficiency, 
+        and drive better outcomes. Transform your data into a competitive advantage.
+      </p>
+      <a href="/contact?#contact-form" class="bg-gradient-to-r from-green-500 to-teal-500 hover:from-green-600 hover:to-teal-600 text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg inline-block text-sm sm:text-base">
+        Start Working With Us Today
+      </a>
+    </div>
+  </div>
+</section>

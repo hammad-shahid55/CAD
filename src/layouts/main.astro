@@ -1,0 +1,50 @@
+---
+
+import Header from '@/components/globalComponents/Header.astro';
+import SEO from '@/components/SEO.astro';
+import '../styles/global.css';
+import Footer from '@/components/globalComponents/Footer.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  keywords?: string[];
+  canonical?: string;
+  image?: string;
+  schemaType?: 'WebPage' | 'Service' | 'Organization' | 'FAQPage';
+  breadcrumbs?: Array<{ name: string; url: string }>;
+}
+
+const {
+  title,
+  description = 'Professional CAD design and engineering services. Specializing in 2D drafting, 3D modeling, as-built drawings, HVAC, solar PV layouts, and more. Expert CAD outsourcing solutions.',
+  keywords = [],
+  canonical,
+  image,
+  schemaType = 'WebPage',
+  breadcrumbs = []
+} = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+		<SEO
+			title={title}
+			description={description}
+			keywords={keywords}
+			canonical={canonical}
+			image={image}
+			schemaType={schemaType}
+			breadcrumbs={breadcrumbs}
+		/>
+	</head>
+	<body>
+		<Header />
+		<slot />
+		<Footer />
+	</body>
+</html>

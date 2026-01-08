@@ -1,0 +1,239 @@
+---
+import { Wind, Zap, Droplets, Flame, Building2, Cpu } from 'lucide-react';
+---
+
+<section class="py-20 px-4 bg-white">
+  <div class="max-w-7xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        Commissioning Drawing Services
+      </h2>
+      <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+        Specialized CAD documentation for all building systems commissioning, ensuring proper installation, 
+        testing, and performance verification across mechanical, electrical, and plumbing systems.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="grid lg:grid-cols-2 gap-8 mb-16">
+      <!-- HVAC Systems -->
+      <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl border border-blue-100">
+        <div class="flex items-start space-x-4 mb-6">
+          <div class="bg-primary p-4 rounded-xl">
+            <Wind className="w-10 h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">HVAC System Commissioning</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Comprehensive HVAC commissioning documentation including air handling units, ductwork systems, 
+              controls integration, and energy management system verification.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-6">
+          <div class="bg-white/70 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1">Air Systems</h4>
+            <p class="text-sm text-gray-600">Flow rates, temperature control, IAQ verification</p>
+          </div>
+          <div class="bg-white/70 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1">Control Points</h4>
+            <p class="text-sm text-gray-600">BMS integration and sequence verification</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Electrical Systems -->
+      <div class="bg-gradient-to-br from-cyan-50 to-blue-50 p-8 rounded-2xl border border-cyan-100">
+        <div class="flex items-start space-x-4 mb-6">
+          <div class="bg-cyan-500 p-4 rounded-xl">
+            <Zap className="w-10 h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Electrical System Commissioning</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Power distribution, lighting controls, emergency systems, and renewable energy 
+              integration commissioning with detailed verification protocols.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-6">
+          <div class="bg-white/70 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1">Power Quality</h4>
+            <p class="text-sm text-gray-600">Load testing and power factor verification</p>
+          </div>
+          <div class="bg-white/70 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1">Safety Systems</h4>
+            <p class="text-sm text-gray-600">Emergency power and life safety testing</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plumbing Systems -->
+      <div class="bg-gradient-to-br from-indigo-50 to-purple-50 p-8 rounded-2xl border border-indigo-100">
+        <div class="flex items-start space-x-4 mb-6">
+          <div class="bg-indigo-500 p-4 rounded-xl">
+            <Droplets className="w-10 h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Plumbing System Commissioning</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Water supply, drainage, and specialty plumbing systems commissioning including 
+              flow testing, pressure verification, and water quality assessment.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-6">
+          <div class="bg-white/70 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1">Flow Testing</h4>
+            <p class="text-sm text-gray-600">Pressure, flow rates, and system balancing</p>
+          </div>
+          <div class="bg-white/70 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1">Water Quality</h4>
+            <p class="text-sm text-gray-600">Temperature control and safety verification</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fire Safety Systems -->
+      <div class="bg-gradient-to-br from-red-50 to-orange-50 p-8 rounded-2xl border border-red-100">
+        <div class="flex items-start space-x-4 mb-6">
+          <div class="bg-red-500 p-4 rounded-xl">
+            <Flame className="w-10 h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Fire Safety System Commissioning</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Fire alarm, sprinkler, smoke control, and emergency communication systems 
+              commissioning with integrated testing and verification protocols.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-6">
+          <div class="bg-white/70 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1">Detection Systems</h4>
+            <p class="text-sm text-gray-600">Alarm verification and response testing</p>
+          </div>
+          <div class="bg-white/70 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1">Suppression</h4>
+            <p class="text-sm text-gray-600">Water flow and pressure testing</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Building Automation & Controls -->
+    <div class="grid lg:grid-cols-2 gap-8 mb-16">
+      <div class="bg-gradient-to-br from-green-50 to-teal-50 p-8 rounded-2xl border border-green-100">
+        <div class="flex items-start space-x-4 mb-6">
+          <div class="bg-green-500 p-4 rounded-xl">
+            <Building2 className="w-10 h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Building Automation Systems</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Complete BAS commissioning including control sequences, integration testing, 
+              trending verification, and operator interface validation.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <div class="bg-white/70 p-3 rounded-lg">
+            <span class="text-sm font-medium text-gray-900">✓ Control Sequence Verification</span>
+          </div>
+          <div class="bg-white/70 p-3 rounded-lg">
+            <span class="text-sm font-medium text-gray-900">✓ System Integration Testing</span>
+          </div>
+          <div class="bg-white/70 p-3 rounded-lg">
+            <span class="text-sm font-medium text-gray-900">✓ Performance Trending</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl border border-purple-100">
+        <div class="flex items-start space-x-4 mb-6">
+          <div class="bg-purple-500 p-4 rounded-xl">
+            <Cpu className="w-10 h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Smart Building Technologies</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Advanced commissioning for IoT systems, energy management platforms, 
+              and integrated building technologies with performance analytics.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <div class="bg-white/70 p-3 rounded-lg">
+            <span class="text-sm font-medium text-gray-900">✓ IoT Device Integration</span>
+          </div>
+          <div class="bg-white/70 p-3 rounded-lg">
+            <span class="text-sm font-medium text-gray-900">✓ Energy Analytics Verification</span>
+          </div>
+          <div class="bg-white/70 p-3 rounded-lg">
+            <span class="text-sm font-medium text-gray-900">✓ Performance Optimization</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Excellence -->
+    <div class="bg-gradient-to-r from-slate-800 to-slate-900 text-white p-8 md:p-12 rounded-2xl">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h3 class="text-3xl font-bold mb-6">Professional Standards & Compliance</h3>
+          <p class="text-slate-300 leading-relaxed mb-8">
+            Our commissioning documentation adheres to ASHRAE Guidelines, LEED requirements, 
+            and local building codes ensuring comprehensive verification and optimal system performance.
+          </p>
+          
+          <div class="space-y-4">
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+              <span class="text-slate-300">ASHRAE Guideline 0 & 1.1 compliance</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+              <span class="text-slate-300">LEED v4.1 commissioning requirements</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-indigo-400 rounded-full"></div>
+              <span class="text-slate-300">Local jurisdiction compliance verification</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-green-400 rounded-full"></div>
+              <span class="text-slate-300">Warranty documentation support</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20">
+            <div class="grid grid-cols-2 gap-6">
+              <div>
+                <div class="text-4xl font-bold text-blue-400 mb-2">300+</div>
+                <div class="text-slate-300 mb-2">Projects Commissioned</div>
+                <div class="text-xs text-slate-400">Various building types</div>
+              </div>
+              <div>
+                <div class="text-4xl font-bold text-cyan-400 mb-2">95%</div>
+                <div class="text-slate-300 mb-2">First-Pass Success</div>
+                <div class="text-xs text-slate-400">Testing protocols</div>
+              </div>
+              <div>
+                <div class="text-4xl font-bold text-indigo-400 mb-2">100%</div>
+                <div class="text-slate-300 mb-2">LEED Compliance</div>
+                <div class="text-xs text-slate-400">Certification support</div>
+              </div>
+              <div>
+                <div class="text-4xl font-bold text-green-400 mb-2">24/7</div>
+                <div class="text-slate-300 mb-2">Support</div>
+                <div class="text-xs text-slate-400">Throughout process</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

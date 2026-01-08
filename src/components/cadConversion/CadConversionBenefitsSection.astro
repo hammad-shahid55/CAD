@@ -1,0 +1,120 @@
+---
+// src/components/cad/CadBenefitsSection.astro
+import { Image } from 'astro:assets';
+import { TrendingUp, Shield, Clock } from 'lucide-react';
+---
+
+<section class="py-16 sm:py-20 lg:py-24 bg-slate-50">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-12 lg:mb-16">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+          Why Professional CAD Conversion Is Essential
+        </h2>
+        <p class="text-lg lg:text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
+          Professional CAD conversion services provide the foundation for effective design modernization, workflow efficiency, and digital asset management with precise accuracy that ensures seamless integration with current CAD systems and industry standards.
+        </p>
+      </div>
+      
+      <!-- Main Content Grid -->
+      <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        
+        <!-- Left Content -->
+        <div class="space-y-8">
+          
+          <!-- Benefit 1: Digital Modernization -->
+          <div class="bg-blue-50 rounded-2xl p-6 lg:p-8 border border-blue-200 hover:shadow-xl hover:border-blue-300 transition-all duration-300">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center flex-shrink-0">
+                <TrendingUp size={24} className="text-white" />
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl lg:text-2xl font-bold text-slate-900 mb-3">
+                  Digital Asset Modernization
+                </h3>
+                <p class="text-slate-600 leading-relaxed">
+                  Professional CAD conversion transforms legacy drawings and obsolete formats into modern digital assets, enabling improved accessibility, editability, and integration with current design workflows and collaboration platforms.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Benefit 2: Workflow Efficiency -->
+          <div class="bg-cyan-50 rounded-2xl p-6 lg:p-8 border border-cyan-200 hover:shadow-xl hover:border-cyan-300 transition-all duration-300">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-cyan-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                <Shield size={24} className="text-white" />
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl lg:text-2xl font-bold text-slate-900 mb-3">
+                  Enhanced Workflow Efficiency
+                </h3>
+                <p class="text-slate-600 leading-relaxed">
+                  Accurate conversion ensures seamless integration with existing CAD systems, design standards, and project workflows while maintaining geometric precision and annotation integrity for continued productivity and design development.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Benefit 3: Cost & Time Savings -->
+          <div class="bg-purple-50 rounded-2xl p-6 lg:p-8 border border-purple-200 hover:shadow-xl hover:border-purple-300 transition-all duration-300">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                <Clock size={24} className="text-white" />
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl lg:text-2xl font-bold text-slate-900 mb-3">
+                  Cost & Time Optimization
+                </h3>
+                <p class="text-slate-600 leading-relaxed">
+                  Professional conversion eliminates the need for time-consuming manual redrawing, reduces project delays, and preserves valuable design data while enabling faster project delivery and improved resource allocation for enhanced profitability.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Image with Benefits -->
+        <div class="relative">
+          <div class="relative rounded-2xl overflow-hidden shadow-xl">
+            <Image
+              src="https://images.pexels.com/photos/3862379/pexels-photo-3862379.jpeg"
+              alt="CAD Conversion Benefits"
+              class="w-full h-auto rounded-2xl"
+              height={500}
+              width={500}
+            />
+            
+            <!-- Premium gradient overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
+          </div>
+          
+          <!-- Benefits Overlay -->
+          <div class="absolute bottom-6 right-6 bg-white/90 backdrop-blur-sm rounded-xl p-4 border border-white/20 shadow-lg">
+            <h4 class="font-semibold text-slate-900 mb-3">CAD Benefits</h4>
+            <div class="space-y-2">
+              <div class="flex items-center gap-2">
+                <div class="w-1.5 h-1.5 bg-slate-900 rounded-full"></div>
+                <span class="text-sm text-slate-700">Digital modernization</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-1.5 h-1.5 bg-cyan-600 rounded-full"></div>
+                <span class="text-sm text-slate-700">Workflow efficiency</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-1.5 h-1.5 bg-purple-600 rounded-full"></div>
+                <span class="text-sm text-slate-700">Cost optimization</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <div class="w-1.5 h-1.5 bg-green-600 rounded-full"></div>
+                <span class="text-sm text-slate-700">Format compatibility</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

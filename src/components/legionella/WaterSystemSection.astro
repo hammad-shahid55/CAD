@@ -1,0 +1,134 @@
+---
+import { Building2, Wrench, Users, BookOpen } from 'lucide-react';
+---
+
+<section class="py-20 px-4 bg-white">
+  <div class="max-w-7xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        Water System Drawings
+      </h2>
+      <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+        Detailed graphical representations that illustrate the layout, components, and functionality 
+        of water systems - essential tools for planning, design, construction, and maintenance.
+      </p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="grid lg:grid-cols-3 gap-8 mb-16">
+      <!-- Left Column - Description -->
+      <div class="lg:col-span-2 space-y-8">
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl border border-blue-100">
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">
+            Essential Infrastructure Documentation
+          </h3>
+          <p class="text-gray-700 leading-relaxed mb-6">
+            Water system drawings refer to detailed graphical representations or diagrams that illustrate 
+            the layout, components, and functionality of a water system. These drawings are essential tools 
+            in the planning, design, construction, and maintenance of water-related infrastructure.
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            They provide a visual guide for engineers, architects, water system operators, and other 
+            stakeholders involved in the development and management of water systems.
+          </p>
+        </div>
+
+        <!-- Benefits Grid -->
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div class="bg-white border border-gray-200 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300">
+            <div class="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+              <Building2 className="w-6 h-6 text-blue-600" />
+            </div>
+            <h4 class="text-lg font-semibold text-gray-900 mb-2">System Layout Clarity</h4>
+            <p class="text-gray-600 text-sm">
+              Clear visualization of pipe networks, tank locations, and outlet positions for comprehensive understanding.
+            </p>
+          </div>
+
+          <div class="bg-white border border-gray-200 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300">
+            <div class="bg-cyan-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+              <Wrench className="w-6 h-6 text-cyan-600" />
+            </div>
+            <h4 class="text-lg font-semibold text-gray-900 mb-2">Maintenance Planning</h4>
+            <p class="text-gray-600 text-sm">
+              Detailed component mapping enables efficient maintenance scheduling and troubleshooting.
+            </p>
+          </div>
+
+          <div class="bg-white border border-gray-200 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300">
+            <div class="bg-indigo-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+              <Users className="w-6 h-6 text-indigo-600" />
+            </div>
+            <h4 class="text-lg font-semibold text-gray-900 mb-2">Stakeholder Communication</h4>
+            <p class="text-gray-600 text-sm">
+              Universal visual language that bridges technical and non-technical team members.
+            </p>
+          </div>
+
+          <div class="bg-white border border-gray-200 p-6 rounded-xl hover:shadow-lg transition-shadow duration-300">
+            <div class="bg-green-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+              <BookOpen className="w-6 h-6 text-green-600" />
+            </div>
+            <h4 class="text-lg font-semibold text-gray-900 mb-2">Compliance Documentation</h4>
+            <p class="text-gray-600 text-sm">
+              Meets regulatory requirements for system documentation and risk assessment protocols.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column - Image -->
+      <div class="space-y-6">
+        <div class="relative">
+          <img 
+            src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=400&h=300&fit=crop&crop=entropy&auto=format&q=80"
+            alt="Technical water system blueprint"
+            class="w-full h-64 object-cover rounded-xl shadow-lg"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-xl"></div>
+          <div class="absolute bottom-4 left-4 text-white">
+            <h4 class="font-semibold">Blueprint Precision</h4>
+            <p class="text-sm opacity-90">CAD-level accuracy</p>
+          </div>
+        </div>
+
+        <div class="relative">
+          <img 
+            src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?w=400&h=300&fit=crop&crop=entropy&auto=format&q=80"
+            alt="Modern engineering workspace"
+            class="w-full h-64 object-cover rounded-xl shadow-lg"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-xl"></div>
+          <div class="absolute bottom-4 left-4 text-white">
+            <h4 class="font-semibold">Professional Standards</h4>
+            <p class="text-sm opacity-90">Industry compliance</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Specifications -->
+    <div class="bg-gradient-to-r from-gray-800 to-gray-900 text-white p-8 md:p-12 rounded-2xl">
+      <h3 class="text-2xl md:text-3xl font-bold mb-8 text-center">Technical Specifications</h3>
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="text-3xl font-bold text-blue-400 mb-2">CAD</div>
+          <div class="text-slate-300">Standard Format</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-cyan-400 mb-2">1:100</div>
+          <div class="text-slate-300">Scale Accuracy</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-indigo-400 mb-2">DWG</div>
+          <div class="text-slate-300">File Format</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-green-400 mb-2">ISO</div>
+          <div class="text-slate-300">Standards Compliant</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

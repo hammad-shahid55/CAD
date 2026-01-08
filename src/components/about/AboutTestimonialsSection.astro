@@ -1,0 +1,245 @@
+---
+// src/components/about/AboutTestimonialsSection.astro
+import { Star, Quote } from 'lucide-react';
+---
+
+<section class="py-20 lg:py-32 relative overflow-hidden">
+  <!-- Dynamic background -->
+  <div class="absolute inset-0 bg-gradient-to-br from-indigo-900 via-purple-900 to-slate-900"></div>
+  <div class={`absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-50`}></div>
+  
+  <div class="relative container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-16 lg:mb-20">
+        <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full text-sm font-medium mb-6">
+          <Star size={16} />
+          Client Testimonials
+        </div>
+        
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+          What Our Clients Say
+          <span class="block text-transparent bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text">
+            About Our Work
+          </span>
+        </h2>
+        
+        <p class="text-lg lg:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+          Don't just take our word for it. Here's what our clients across the UK have to say about their experience working with our team.
+        </p>
+      </div>
+      
+      <!-- Testimonials Grid -->
+      <div class="grid lg:grid-cols-3 gap-8 lg:gap-10 mb-16">
+        
+        <!-- Testimonial 1 -->
+        <div class="group relative">
+          <div class="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 rounded-3xl backdrop-blur-sm border border-white/20 transform group-hover:scale-105 transition-all duration-300"></div>
+          <div class="relative p-8 lg:p-10">
+            
+            <!-- Quote Icon -->
+            <div class="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-xl flex items-center justify-center mb-6">
+              <Quote size={24} className="text-white" />
+            </div>
+            
+            <!-- Stars -->
+            <div class="flex gap-1 mb-6">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} size={16} className="fill-yellow-400 text-yellow-400" />
+              ))}
+            </div>
+            
+            <!-- Testimonial Content -->
+            <blockquote class="text-white leading-relaxed mb-6">
+              "The architectural drawings for our birmingham office renovation were absolutely outstanding. Every detail was perfect, and the team's understanding of British building regulations saved us months of potential delays."
+            </blockquote>
+            
+            <!-- Client Info -->
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-full flex items-center justify-center">
+                <span class="text-white font-semibold">SM</span>
+              </div>
+              <div>
+                <div class="text-white font-semibold">Sarah Mitchell</div>
+                <div class="text-slate-400 text-sm">Project Manager, Canary Wharf Development</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Testimonial 2 -->
+        <div class="group relative">
+          <div class="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 rounded-3xl backdrop-blur-sm border border-white/20 transform group-hover:scale-105 transition-all duration-300"></div>
+          <div class="relative p-8 lg:p-10">
+            
+            <!-- Quote Icon -->
+            <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mb-6">
+              <Quote size={24} className="text-white" />
+            </div>
+            
+            <!-- Stars -->
+            <div class="flex gap-1 mb-6">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} size={16} className="fill-yellow-400 text-yellow-400" />
+              ))}
+            </div>
+            
+            <!-- Testimonial Content -->
+            <blockquote class="text-white leading-relaxed mb-6">
+              "We needed complex MEP drawings for our Manchester facility. The technical precision and 3D visualizations exceeded our expectations. The project was delivered on time and within budget."
+            </blockquote>
+            
+            <!-- Client Info -->
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-full flex items-center justify-center">
+                <span class="text-white font-semibold">JW</span>
+              </div>
+              <div>
+                <div class="text-white font-semibold">James Wilson</div>
+                <div class="text-slate-400 text-sm">Engineering Director, Northern Construction Ltd</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Testimonial 3 -->
+        <div class="group relative">
+          <div class="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 rounded-3xl backdrop-blur-sm border border-white/20 transform group-hover:scale-105 transition-all duration-300"></div>
+          <div class="relative p-8 lg:p-10">
+            
+            <!-- Quote Icon -->
+            <div class="w-12 h-12 bg-gradient-to-br from-emerald-500 to-cyan-500 rounded-xl flex items-center justify-center mb-6">
+              <Quote size={24} className="text-white" />
+            </div>
+            
+            <!-- Stars -->
+            <div class="flex gap-1 mb-6">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} size={16} className="fill-yellow-400 text-yellow-400" />
+              ))}
+            </div>
+            
+            <!-- Testimonial Content -->
+            <blockquote class="text-white leading-relaxed mb-6">
+              "Converting our legacy paper drawings to CAD format was seamless. The team preserved every detail while modernizing our entire documentation system. Highly recommended for any heritage project."
+            </blockquote>
+            
+            <!-- Client Info -->
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 bg-gradient-to-br from-amber-500 to-orange-500 rounded-full flex items-center justify-center">
+                <span class="text-white font-semibold">EH</span>
+              </div>
+              <div>
+                <div class="text-white font-semibold">Emma Harrison</div>
+                <div class="text-slate-400 text-sm">Architect, Edinburgh Heritage Trust</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Additional Testimonials Row -->
+      <div class="grid md:grid-cols-2 gap-8 lg:gap-10 mb-16">
+        
+        <!-- Testimonial 4 -->
+        <div class="group relative">
+          <div class="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 rounded-3xl backdrop-blur-sm border border-white/20 transform group-hover:scale-105 transition-all duration-300"></div>
+          <div class="relative p-8">
+            
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                <Quote size={20} className="text-white" />
+              </div>
+              
+              <div class="flex-grow">
+                <!-- Stars -->
+                <div class="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} size={14} className="fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                
+                <blockquote class="text-white leading-relaxed mb-4">
+                  "The solar PV layout drawings for our Birmingham warehouse were exceptional. The team understood our energy requirements perfectly and delivered comprehensive technical documentation."
+                </blockquote>
+                
+                <div>
+                  <div class="text-white font-semibold">Michael Chen</div>
+                  <div class="text-slate-400 text-sm">Facilities Manager, GreenTech Solutions</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Testimonial 5 -->
+        <div class="group relative">
+          <div class="absolute inset-0 bg-gradient-to-br from-white/10 to-white/5 rounded-3xl backdrop-blur-sm border border-white/20 transform group-hover:scale-105 transition-all duration-300"></div>
+          <div class="relative p-8">
+            
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-gradient-to-br from-rose-500 to-pink-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                <Quote size={20} className="text-white" />
+              </div>
+              
+              <div class="flex-grow">
+                <!-- Stars -->
+                <div class="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} size={14} className="fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                
+                <blockquote class="text-white leading-relaxed mb-4">
+                  "Working with this team on our Cardiff housing development was a pleasure. Their attention to detail and knowledge of Welsh planning requirements made the entire process smooth and efficient."
+                </blockquote>
+                
+                <div>
+                  <div class="text-white font-semibold">Rebecca Davies</div>
+                  <div class="text-slate-400 text-sm">Development Director, Cymru Homes</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Stats Summary -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8">
+        
+        <div class="text-center group">
+          <div class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+            <Star size={32} className="text-white" />
+          </div>
+          <div class="text-3xl font-bold text-white mb-2">4.9/5</div>
+          <div class="text-slate-400 text-sm">Client Rating</div>
+        </div>
+        
+        <div class="text-center group">
+          <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+            <span class="text-white text-2xl font-bold">98</span>
+          </div>
+          <div class="text-3xl font-bold text-white mb-2">98%</div>
+          <div class="text-slate-400 text-sm">Client Retention</div>
+        </div>
+        
+        <div class="text-center group">
+          <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+            <span class="text-white text-2xl font-bold">1K+</span>
+          </div>
+          <div class="text-3xl font-bold text-white mb-2">1000+</div>
+          <div class="text-slate-400 text-sm">Happy Clients</div>
+        </div>
+        
+        <div class="text-center group">
+          <div class="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+            <span class="text-white text-2xl font-bold">5K+</span>
+          </div>
+          <div class="text-3xl font-bold text-white mb-2">5000+</div>
+          <div class="text-slate-400 text-sm">Projects Delivered</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

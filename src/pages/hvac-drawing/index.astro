@@ -1,0 +1,43 @@
+---
+import Layout from '@/layouts/main.astro';
+import HvacHero from '@/components/hvac/HvacHero.astro';
+import HvacIntroSection from '@/components/hvac/HvacIntroSection.astro';
+import HvacServicesSection from '@/components/hvac/HvacServicesSection.astro';
+import HvacBenefitsSection from '@/components/hvac/HvacBenefitsSection.astro';
+import HvacTechnicalSection from '@/components/hvac/HvacTechnicalSection.astro';
+import HvacFaqSection from '@/components/hvac/HvacFaqSection.astro';
+import HvacCtaSection from '@/components/hvac/HvacCtaSection.astro';
+---
+
+<Layout
+  title="HVAC CAD Drawings & Design Services UK | Professional HVAC Engineering"
+  description="Expert HVAC CAD drawing and design services in Birmingham. Specializing in heating, ventilation, air conditioning system drawings, ductwork layouts, and mechanical engineering CAD solutions for commercial and residential projects."
+  keywords={[
+    'HVAC CAD drawings',
+    'HVAC design services UK',
+    'heating and cooling drawings',
+    'ventilation system design',
+    'air conditioning CAD',
+    'ductwork CAD drawings',
+    'mechanical engineering CAD',
+    'HVAC system design',
+    'commercial HVAC drawings',
+    'residential HVAC design',
+    'HVAC CAD services Birmingham',
+    'mechanical ventilation drawings'
+  ]}
+  schemaType="Service"
+  canonical="/hvac-drawing"
+  breadcrumbs={[
+    { name: 'Home', url: '/' },
+    { name: 'HVAC Drawings', url: '/hvac-drawing' }
+  ]}
+>
+  <HvacHero />
+  <HvacIntroSection />
+  <HvacServicesSection />
+  <HvacBenefitsSection />
+  <HvacTechnicalSection />
+  <HvacFaqSection />
+  <HvacCtaSection />
+</Layout>

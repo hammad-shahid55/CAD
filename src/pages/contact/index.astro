@@ -1,0 +1,33 @@
+---
+// src/pages/contact/index.astro
+import Layout from '../../layouts/main.astro';
+import ContactHero from '../../components/contact/ContactHero.astro';
+import ContactInfo from '../../components/contact/ContactInfo.astro';
+import ContactFormSection from '../../components/contact/ContactFormSection.astro';
+import ContactCta from '../../components/contact/ContactCta.astro';
+---
+
+<Layout
+  title="Contact CAD Outsource | Get Free Quote for CAD Services Birmingham UK"
+  description="Contact CAD Outsource for professional CAD design services. Get a free quote for 2D drafting, 3D modeling, HVAC drawings, and more. Located in Birmingham, serving clients across the UK."
+  keywords={[
+    'contact CAD services',
+    'CAD quote Birmingham',
+    'free CAD consultation',
+    'CAD services contact UK',
+    'Birmingham CAD company',
+    'get CAD quote',
+    'CAD outsourcing inquiry'
+  ]}
+  schemaType="WebPage"
+  canonical="/contact"
+  breadcrumbs={[
+    { name: 'Home', url: '/' },
+    { name: 'Contact Us', url: '/contact' }
+  ]}
+>
+  <ContactHero />
+  <ContactInfo />
+  <ContactFormSection />
+  <ContactCta />
+</Layout>

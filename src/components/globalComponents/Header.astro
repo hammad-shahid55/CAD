@@ -1,0 +1,226 @@
+---
+import { Image } from "astro:assets";
+---
+
+<header class="sticky top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border">
+  <div class="container mx-auto px-4">
+    <nav class="flex items-center justify-between h-16 px-8">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <a href="/" class="">
+            <Image src={"https://github.com/mr-zlaam/storage/blob/main/image.png?raw=true"} width={200} height={200} alt={"CADOutsource"} />
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden lg:flex items-center space-x-8">
+        <a href="/" class="text-sm font-medium text-foreground hover:text-primary transition-colors">
+          Home
+        </a>
+        
+        <!-- Services Dropdown -->
+        <div class="relative group">
+          <button class="flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors">
+            Services
+            <svg class="ml-1 w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          
+          <!-- Dropdown Menu -->
+          <div class="absolute top-full left-0 mt-1 w-72 bg-white border border-gray-200 rounded-lg shadow-lg transform translate-y-2 opacity-0 invisible group-hover:translate-y-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-out z-50">
+            <div class="py-3">
+              <a href="/legionella-schematic-drawing" class="block px-6 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors whitespace-nowrap">
+                Legionella Schematic Drawing
+              </a>
+              <a href="/solar-pv-layouts-and-wiring" class="block px-6 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors whitespace-nowrap">
+                Solar PV Layouts &amp; Wiring
+              </a>
+              <a href="/commissioning-pre-commissioning-drawing" class="block px-6 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors whitespace-nowrap">
+                Commissioning &amp; Pre-Commissioning
+              </a>
+              <a href="/as-built-drawings" class="block px-6 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors whitespace-nowrap">
+                As-Built Drawings
+              </a>
+              <a href="/hvac-drawing" class="block px-6 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors whitespace-nowrap">
+                HVAC Drawing
+              </a>
+              <a href="/facilities-mapping-and-gis" class="block px-6 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors whitespace-nowrap">
+                Facilities Mapping &amp; GIS
+              </a>
+              <a href="/3d-rendering-and-modeling" class="block px-6 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors whitespace-nowrap">
+                3D Rendering &amp; Modeling
+              </a>
+              <a href="/cad-conversion-services" class="block px-6 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors whitespace-nowrap">
+                
+                CAD Conversion
+              </a>
+              <a href="/2d-drafting-and-designing" class="block px-6 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-gray-900 transition-colors whitespace-nowrap">
+                2D Drafting &amp; Designing
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <a href="/sectors" class="text-sm font-medium text-foreground hover:text-primary transition-colors">
+          Sectors
+        </a>
+        <a href="/about" class="text-sm font-medium text-foreground hover:text-primary transition-colors">
+          About
+        </a>
+        <a href="/contact?#contact-form" class="text-sm font-medium text-foreground hover:text-primary transition-colors">
+          Contact
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button 
+        id="mobile-menu-btn"
+        class="lg:hidden p-2 text-foreground hover:text-primary transition-colors"
+        aria-label="Toggle mobile menu"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Mobile Menu Overlay -->
+  <div 
+    id="mobile-menu-overlay" 
+    class="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 opacity-0 invisible transition-all duration-300 lg:hidden"
+  ></div>
+
+  <!-- Mobile Menu -->
+  <div 
+    id="mobile-menu" 
+    class="fixed top-0 left-0 h-screen w-full bg-white/95 backdrop-blur-md transform -translate-x-full transition-transform duration-300 ease-in-out z-50 lg:hidden"
+  >
+    <div class="p-6">
+      <!-- Mobile Header -->
+      <div class="flex items-center justify-between mb-8">
+      <div class="flex items-center">
+        <a href="/" class="">
+            <Image src={"https://github.com/mr-zlaam/storage/blob/main/image.png?raw=true"} width={200} height={200} alt={"CADOutsource"} />
+        </a>
+      </div>
+        <button 
+          id="mobile-menu-close"
+          class="p-2 text-foreground hover:text-primary transition-colors"
+          aria-label="Close mobile menu"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <nav class="space-y-4">
+        <a href="/" class="block py-2 text-foreground hover:text-primary transition-colors font-medium">
+          Home
+        </a>
+        
+        <!-- Mobile Services -->
+        <div>
+          <button 
+            id="mobile-services-btn"
+            class="flex items-center justify-between w-full py-2 text-foreground hover:text-primary transition-colors font-medium"
+          >
+            Services
+            <svg id="mobile-services-icon" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div id="mobile-services-menu" class="mt-2 ml-4 space-y-2 max-h-0 overflow-hidden transition-all duration-300">
+            <a href="/legionella-schematic-drawing" class="block py-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+              Legionella Schematic Drawing
+            </a>
+            <a href="/solar-pv-layouts-and-wiring" class="block py-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+              Solar PV Layouts & Wiring
+            </a>
+            <a href="/commissioning-pre-commissioning-drawing" class="block py-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+              Commissioning & Pre-Commissioning
+            </a>
+            <a href="/as-built-drawings" class="block py-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+              As-Built Drawings
+            </a>
+            <a href="/hvac-drawing" class="block py-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+              HVAC Drawing
+            </a>
+            <a href="/facilities-mapping-and-gis" class="block py-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+              Facilities Mapping & GIS
+            </a>
+            <a href="/3d-rendering-and-modeling" class="block py-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+              3D Rendering & Modeling
+            </a>
+            <a href="/cad-conversion-services" class="block py-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+              
+              CAD Conversion
+            </a>
+            <a href="/2d-drafting-and-designing" class="block py-2 text-sm text-muted-foreground hover:text-primary transition-colors">
+              2D Drafting & Designing
+            </a>
+          </div>
+        </div>
+        
+        <a href="/sectors" class="block py-2 text-foreground hover:text-primary transition-colors font-medium">
+          Sectors
+        </a>
+        <a href="/about" class="block py-2 text-foreground hover:text-primary transition-colors font-medium">
+          About
+        </a>
+        <a href="/contact?#contact-form" class="block py-2 text-foreground hover:text-primary transition-colors font-medium">
+          Contact
+        </a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<script>
+  // Mobile menu functionality
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenuClose = document.getElementById('mobile-menu-close');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+  const mobileServicesBtn = document.getElementById('mobile-services-btn');
+  const mobileServicesMenu = document.getElementById('mobile-services-menu');
+  const mobileServicesIcon = document.getElementById('mobile-services-icon');
+
+  function openMobileMenu(): void {
+    mobileMenu?.classList.remove('-translate-x-full');
+    mobileMenuOverlay?.classList.remove('opacity-0', 'invisible');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMobileMenu(): void {
+    mobileMenu?.classList.add('-translate-x-full');
+    mobileMenuOverlay?.classList.add('opacity-0', 'invisible');
+    document.body.style.overflow = 'auto';
+  }
+
+  function toggleMobileServices(): void {
+    const isOpen = mobileServicesMenu?.style.maxHeight && mobileServicesMenu.style.maxHeight !== '0px';
+    
+    if (isOpen) {
+      mobileServicesMenu!.style.maxHeight = '0px';
+      mobileServicesIcon?.classList.remove('rotate-180');
+    } else {
+      mobileServicesMenu!.style.maxHeight = mobileServicesMenu!.scrollHeight + 'px';
+      mobileServicesIcon?.classList.add('rotate-180');
+    }
+  }
+
+  mobileMenuBtn?.addEventListener('click', openMobileMenu);
+  mobileMenuClose?.addEventListener('click', closeMobileMenu);
+  mobileMenuOverlay?.addEventListener('click', closeMobileMenu);
+  mobileServicesBtn?.addEventListener('click', toggleMobileServices);
+
+  // Close mobile menu when clicking on a link
+  const mobileLinks = mobileMenu?.querySelectorAll('a');
+  mobileLinks?.forEach(link => {
+    link.addEventListener('click', closeMobileMenu);
+  });
+</script>

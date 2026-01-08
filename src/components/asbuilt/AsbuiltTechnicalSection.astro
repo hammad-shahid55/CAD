@@ -1,0 +1,184 @@
+---
+import { FileText, Ruler, Database, Layers } from 'lucide-react';
+---
+
+<section class="py-20 px-4 bg-gray-50">
+  <div class="max-w-7xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        Technical Standards & Methodology
+      </h2>
+      <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+        Our as-built documentation follows industry best practices and CAD standards, 
+        ensuring accuracy, consistency, and compatibility with facility management systems.
+      </p>
+    </div>
+
+    <!-- Technical Grid -->
+    <div class="grid lg:grid-cols-2 gap-8 mb-16">
+      <!-- Survey Standards -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+        <div class="flex items-start space-x-4 mb-6">
+          <div class="bg-blue-100 p-3 rounded-xl">
+            <Ruler className="w-8 h-8 text-primary" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Survey & Measurement Standards</h3>
+            <p class="text-gray-600 mb-4">
+              Professional field surveys using calibrated equipment and proven methodologies 
+              to ensure millimeter-level accuracy in as-built documentation.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">Measurement Accuracy</span>
+            <span class="text-green-600 font-semibold">±3mm</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">Survey Equipment</span>
+            <span class="text-blue-600 font-semibold">Laser/Total Station</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">Documentation Method</span>
+            <span class="text-blue-600 font-semibold">3D Point Cloud</span>
+          </div>
+          <div class="flex justify-between items-center py-2">
+            <span class="text-gray-700">Quality Control</span>
+            <span class="text-green-600 font-semibold">Multi-point Verification</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CAD Standards -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+        <div class="flex items-start space-x-4 mb-6">
+          <div class="bg-cyan-100 p-3 rounded-xl">
+            <FileText className="w-8 h-8 text-cyan-600" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">CAD Standards & Formats</h3>
+            <p class="text-gray-600 mb-4">
+              Industry-standard CAD formats and layering conventions ensuring compatibility 
+              with existing design systems and facility management software.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">CAD Software</span>
+            <span class="text-blue-600 font-semibold">AutoCAD/Revit</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">File Formats</span>
+            <span class="text-blue-600 font-semibold">DWG/RVT/PDF</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">Layer Standards</span>
+            <span class="text-blue-600 font-semibold">AIA/NCS Compliant</span>
+          </div>
+          <div class="flex justify-between items-center py-2">
+            <span class="text-gray-700">Annotation Standards</span>
+            <span class="text-blue-600 font-semibold">Industry Standard</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data Management -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+        <div class="flex items-start space-x-4 mb-6">
+          <div class="bg-indigo-100 p-3 rounded-xl">
+            <Database className="w-8 h-8 text-indigo-600" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Data Management & Organization</h3>
+            <p class="text-gray-600 mb-4">
+              Systematic file organization and data management ensuring easy access, 
+              version control, and seamless integration with facility management systems.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">File Organization</span>
+            <span class="text-indigo-600 font-semibold">Systematic Structure</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">Version Control</span>
+            <span class="text-indigo-600 font-semibold">Revision Tracking</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">Metadata Integration</span>
+            <span class="text-indigo-600 font-semibold">Asset Information</span>
+          </div>
+          <div class="flex justify-between items-center py-2">
+            <span class="text-gray-700">Delivery Format</span>
+            <span class="text-indigo-600 font-semibold">Client Specified</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quality Assurance -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+        <div class="flex items-start space-x-4 mb-6">
+          <div class="bg-green-100 p-3 rounded-xl">
+            <Layers className="w-8 h-8 text-green-600" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Quality Assurance Process</h3>
+            <p class="text-gray-600 mb-4">
+              Multi-level quality control process ensuring accuracy, completeness, 
+              and adherence to project specifications and industry standards.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">Field Verification</span>
+            <span class="text-green-600 font-semibold">100% Checked</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">Drawing Review</span>
+            <span class="text-green-600 font-semibold">Multi-level QC</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">Accuracy Verification</span>
+            <span class="text-green-600 font-semibold">Cross-referenced</span>
+          </div>
+          <div class="flex justify-between items-center py-2">
+            <span class="text-gray-700">Final Approval</span>
+            <span class="text-green-600 font-semibold">Professional Sealed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deliverables & Timeline -->
+    <div class="bg-gradient-to-r from-slate-800 to-slate-900 text-white p-8 md:p-12 rounded-2xl">
+      <h3 class="text-2xl md:text-3xl font-bold mb-8 text-center">Deliverables & Project Timeline</h3>
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="text-3xl font-bold text-blue-400 mb-2">Week 1</div>
+          <div class="text-slate-300">Field Survey</div>
+          <div class="text-xs text-slate-400 mt-1">Site measurement</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-cyan-400 mb-2">Week 2</div>
+          <div class="text-slate-300">CAD Development</div>
+          <div class="text-xs text-slate-400 mt-1">Drawing creation</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-indigo-400 mb-2">Week 3</div>
+          <div class="text-slate-300">Quality Review</div>
+          <div class="text-xs text-slate-400 mt-1">Verification & QC</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-green-400 mb-2">Week 4</div>
+          <div class="text-slate-300">Final Delivery</div>
+          <div class="text-xs text-slate-400 mt-1">Complete package</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,128 @@
+---
+import { Target, Thermometer, Search, CheckCircle } from 'lucide-react';
+---
+
+<section class="py-20 px-4 bg-white">
+  <div class="max-w-6xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        Why Legionella Schematic Drawing is Important?
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Understanding the critical role of schematic drawings in water system safety and risk management
+      </p>
+    </div>
+
+    <!-- Main Benefits Grid -->
+    <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+      <!-- Content Side -->
+      <div class="space-y-8">
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl border border-blue-100">
+          <div class="flex items-start space-x-4">
+            <div class="bg-blue-500 p-3 rounded-xl flex-shrink-0">
+              <Target className="w-8 h-8 text-white" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-3">Risk Point Identification</h3>
+              <p class="text-gray-700 leading-relaxed">
+                Water system layout can easily be represented using schematic drawings. 
+                It helps to identify risk and temperature points/sentinel points throughout the entire system.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-cyan-50 to-blue-50 p-8 rounded-2xl border border-cyan-100">
+          <div class="flex items-start space-x-4">
+            <div class="bg-cyan-500 p-3 rounded-xl flex-shrink-0">
+              <Thermometer className="w-8 h-8 text-white" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-3">Temperature Monitoring</h3>
+              <p class="text-gray-700 leading-relaxed">
+                Critical temperature monitoring points are clearly marked, enabling effective 
+                control of water temperatures to prevent Legionella bacteria growth.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-green-50 to-cyan-50 p-8 rounded-2xl border border-green-100">
+          <div class="flex items-start space-x-4">
+            <div class="bg-green-500 p-3 rounded-xl flex-shrink-0">
+              <Search className="w-8 h-8 text-white" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-3">Problem Area Detection</h3>
+              <p class="text-gray-700 leading-relaxed">
+                Once any bacteria is removed while undertaking remedial works, 
+                key problem areas can be identified easily for targeted intervention.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual Side -->
+      <div class="relative">
+        <div class="bg-gradient-to-br from-gray-100 to-gray-200 p-8 rounded-2xl">
+          <img 
+            src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&h=500&fit=crop&crop=entropy&auto=format&q=80"
+            alt="Water system risk assessment diagram"
+            class="w-full h-96 object-cover rounded-xl shadow-lg"
+          />
+          <!-- Overlay Information -->
+          <div class="absolute top-12 right-12 bg-white/95 backdrop-blur-sm p-4 rounded-xl border border-gray-200 max-w-xs">
+            <h4 class="font-bold text-gray-900 mb-2">Risk Assessment Benefits</h4>
+            <ul class="space-y-2 text-sm text-gray-600">
+              <li class="flex items-center space-x-2">
+                <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
+                <span>Early detection</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
+                <span>Preventive maintenance</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
+                <span>Compliance assurance</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
+                <span>Cost reduction</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Key Statistics -->
+    <div class="bg-gradient-to-r from-slate-800 to-slate-900 text-white p-8 md:p-12 rounded-2xl">
+      <h3 class="text-2xl md:text-3xl font-bold mb-8 text-center">Impact of Proper Documentation</h3>
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="text-4xl font-bold text-blue-400 mb-2">85%</div>
+          <div class="text-slate-300">Risk Reduction</div>
+          <div class="text-xs text-slate-400 mt-1">With proper mapping</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold text-cyan-400 mb-2">60%</div>
+          <div class="text-slate-300">Faster Response</div>
+          <div class="text-xs text-slate-400 mt-1">Emergency situations</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold text-green-400 mb-2">40%</div>
+          <div class="text-slate-300">Cost Savings</div>
+          <div class="text-xs text-slate-400 mt-1">Maintenance efficiency</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold text-yellow-400 mb-2">100%</div>
+          <div class="text-slate-300">Compliance</div>
+          <div class="text-xs text-slate-400 mt-1">Regulatory standards</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

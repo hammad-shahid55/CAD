@@ -1,0 +1,80 @@
+---
+// src/components/cad/CadHero.astro
+import { FileType, RefreshCw, Layers } from 'lucide-react';
+---
+
+<section class="bg-gradient-to-br from-slate-800 via-blue-900 to-slate-900 min-h-screen flex items-center py-20">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      
+      <!-- Left Content -->
+      <div class="text-white space-y-8">
+        <div class="space-y-6">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+            Professional <span class="text-cyan-400">CAD Conversion</span><br />
+            Services
+          </h1>
+          
+          <p class="text-lg lg:text-xl text-slate-300 leading-relaxed max-w-2xl">
+            Transform legacy drawings and documents into modern CAD formats with precision accuracy, ensuring seamless integration with current design workflows and industry standards.
+          </p>
+        </div>
+        
+        <!-- Feature Cards -->
+        <div class="grid sm:grid-cols-3 gap-4">
+          <!-- Format Support -->
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div class="w-10 h-10 bg-cyan-500/20 rounded-lg flex items-center justify-center mb-3">
+              <FileType size={20} className="text-cyan-400" />
+            </div>
+            <h3 class="font-semibold text-white mb-1">Multi-Format</h3>
+            <p class="text-sm text-slate-300">Complete Coverage</p>
+          </div>
+          
+          <!-- Precision Conversion -->
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center mb-3">
+              <RefreshCw size={20} className="text-blue-400" />
+            </div>
+            <h3 class="font-semibold text-white mb-1">Precision Convert</h3>
+            <p class="text-sm text-slate-300">Accurate Translation</p>
+          </div>
+          
+          <!-- CAD Standards -->
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div class="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center mb-3">
+              <Layers size={20} className="text-purple-400" />
+            </div>
+            <h3 class="font-semibold text-white mb-1">CAD Standards</h3>
+            <p class="text-sm text-slate-300">Industry Compliant</p>
+          </div>
+        </div>
+        
+        <!-- CTA Buttons -->
+      </div>
+      
+      <!-- Right Image -->
+      <div class="relative">
+        <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+          <img 
+            src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="CAD Conversion Workspace"
+            class="w-full h-auto rounded-2xl"
+          />
+          
+          <!-- Premium Overlay -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
+        </div>
+        
+        <!-- Floating Icon Elements -->
+        <div class="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full flex items-center justify-center shadow-lg">
+          <FileType size={32} className="text-white" />
+        </div>
+        
+        <div class="absolute -bottom-6 -left-6 w-16 h-16 bg-gradient-to-br from-purple-500 to-cyan-400 rounded-full flex items-center justify-center shadow-lg">
+          <RefreshCw size={32} className="text-white" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

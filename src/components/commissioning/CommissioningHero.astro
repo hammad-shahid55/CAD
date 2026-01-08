@@ -1,0 +1,79 @@
+---
+import { ClipboardCheck, Settings, CheckCircle, FileText } from 'lucide-react';
+import { Image } from 'astro:assets';
+---
+
+<section class="relative bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white py-20 px-4 overflow-hidden">
+  <!-- Background Pattern -->
+  <div class="absolute inset-0 opacity-10">
+    <div class={`"absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.4"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"`}></div>
+  </div>
+  
+  <div class="relative max-w-7xl mx-auto">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Content -->
+      <div class="space-y-8">
+        <div class="space-y-4">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+            Commissioning & 
+            <span class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+              Pre-Commissioning
+            </span>
+            <span class="block text-secondary">Drawing Services</span>
+          </h1>
+          <p class="text-xl text-slate-300 leading-relaxed">
+            Professional CAD documentation for building systems commissioning, ensuring optimal performance 
+            and regulatory compliance throughout the commissioning process
+          </p>
+        </div>
+        
+        <!-- Key Features -->
+        <div class="grid sm:grid-cols-3 gap-6">
+          <div class="flex items-center space-x-3 bg-white/10 backdrop-blur-sm rounded-lg p-4">
+            <ClipboardCheck className="w-8 h-8 text-primary flex-shrink-0" />
+            <div>
+              <h3 class="font-semibold text-sm">Pre-Commissioning</h3>
+              <p class="text-xs text-slate-300">System Verification</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-3 bg-white/10 backdrop-blur-sm rounded-lg p-4">
+            <Settings className="w-8 h-8 text-cyan-400 flex-shrink-0" />
+            <div>
+              <h3 class="font-semibold text-sm">Commissioning</h3>
+              <p class="text-xs text-slate-300">Performance Testing</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-3 bg-white/10 backdrop-blur-sm rounded-lg p-4">
+            <CheckCircle className="w-8 h-8 text-indigo-400 flex-shrink-0" />
+            <div>
+              <h3 class="font-semibold text-sm">Documentation</h3>
+              <p class="text-xs text-slate-300">CAD Precision</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- CTA Buttons -->
+      </div>
+      
+      <!-- Hero Image -->
+      <div class="relative">
+        <div class="relative bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+          <Image 
+            src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&h=400&fit=crop&crop=entropy&auto=format&q=80"
+            alt="Building systems commissioning and testing"
+            width={600}
+            height={320}
+            class="w-full h-80 object-cover rounded-xl shadow-2xl"
+          />
+          <!-- Floating elements -->
+          <div class="absolute -top-4 -right-4 bg-primary text-white p-3 rounded-full shadow-lg">
+            <ClipboardCheck className="w-6 h-6" />
+          </div>
+          <div class="absolute -bottom-4 -left-4 bg-cyan-500 text-white p-3 rounded-full shadow-lg">
+            <Settings className="w-6 h-6" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

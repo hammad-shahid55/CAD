@@ -1,0 +1,104 @@
+---
+import { Phone, Mail, MessageCircle, FileText, Clock, Shield } from 'lucide-react';
+---
+
+<section class="py-20 px-4 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white relative overflow-hidden">
+  <!-- Background Pattern -->
+  <div class="absolute inset-0 opacity-10">
+    <div class={`"absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.4"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"`}></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto">
+    <!-- Main CTA -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">
+        Ready to Ensure Your Water System
+        <span class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+          Compliance?
+        </span>
+      </h2>
+      <p class="text-xl text-slate-300 max-w-3xl mx-auto mb-8 leading-relaxed">
+        Get professional Legionella schematic drawings that meet HSG 274 Part 2 standards. 
+        Protect your facility and ensure regulatory compliance with our expert CAD services.
+      </p>
+      
+      <!-- Primary CTA Buttons -->
+      </div>
+    </div>
+
+    <!-- Contact Options -->
+    <div class="grid md:grid-cols-3 gap-8 mb-16">
+      <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 text-center hover:bg-white/15 transition-all duration-300">
+        <div class="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+          <Phone className="w-8 h-8 text-white" />
+        </div>
+        <h3 class="text-xl font-bold mb-3">Call Us</h3>
+        <p class="text-slate-300 mb-4">Speak directly with our experts</p>
+        <p class="text-blue-400 font-semibold">+923138576996</p>
+      </div>
+
+      <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 text-center hover:bg-white/15 transition-all duration-300">
+        <div class="bg-cyan-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+          <Mail className="w-8 h-8 text-white" />
+        </div>
+        <h3 class="text-xl font-bold mb-3">Email Us</h3>
+        <p class="text-slate-300 mb-4">Get detailed information</p>
+        <p class="text-cyan-400 font-semibold">hamadsami672@gmail.com</p>
+      </div>
+
+      <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 text-center hover:bg-white/15 transition-all duration-300">
+        <div class="bg-indigo-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+          <MessageCircle className="w-8 h-8 text-white" />
+        </div>
+        <h3 class="text-xl font-bold mb-3">Live Chat</h3>
+        <p class="text-slate-300 mb-4">Instant support available</p>
+        <p class="text-indigo-400 font-semibold">Start Chat</p>
+      </div>
+    </div>
+
+    <!-- Service Highlights -->
+    <div class="grid md:grid-cols-3 gap-8 mb-16">
+      <div class="flex items-center space-x-4 bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10">
+        <div class="bg-green-500/20 p-3 rounded-lg">
+          <Clock className="w-8 h-8 text-green-400" />
+        </div>
+        <div>
+          <h4 class="font-bold text-lg">Fast Turnaround</h4>
+          <p class="text-slate-300 text-sm">48-hour delivery available</p>
+        </div>
+      </div>
+
+      <div class="flex items-center space-x-4 bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10">
+        <div class="bg-blue-500/20 p-3 rounded-lg">
+          <Shield className="w-8 h-8 text-blue-400" />
+        </div>
+        <div>
+          <h4 class="font-bold text-lg">100% Compliant</h4>
+          <p class="text-slate-300 text-sm">Meets all regulations</p>
+        </div>
+      </div>
+
+      <div class="flex items-center space-x-4 bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10">
+        <div class="bg-purple-500/20 p-3 rounded-lg">
+          <FileText className="w-8 h-8 text-purple-400" />
+        </div>
+        <div>
+          <h4 class="font-bold text-lg">CAD Precision</h4>
+          <p class="text-slate-300 text-sm">Professional standards</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final Call to Action -->
+    <div class="text-center bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/20">
+      <h3 class="text-2xl font-bold mb-4">Don't Wait Until It's Too Late</h3>
+      <p class="text-slate-300 mb-6 max-w-2xl mx-auto">
+        Legionella compliance is not just a regulatory requirement – it's about protecting lives. 
+        Start your risk assessment with professional schematic drawings today.
+      </p>
+      <a href="/contact?#contact-form"  class="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg">
+        Start Your Assessment Now
+      </a>
+    </div>
+  </div>
+</section>

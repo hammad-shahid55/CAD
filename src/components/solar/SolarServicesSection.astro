@@ -1,0 +1,184 @@
+---
+import { Home, Building2, Factory, Truck, Target, Shield, Zap } from 'lucide-react';
+---
+
+<section class="py-20 px-4 bg-white">
+  <div class="max-w-7xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        Solar PV Design Services
+      </h2>
+      <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+        Comprehensive solar photovoltaic design solutions for residential, commercial, and industrial 
+        applications with precision CAD documentation and electrical engineering expertise.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="grid lg:grid-cols-2 gap-8 mb-16">
+      <!-- Residential Solar -->
+      <div class="bg-gradient-to-br from-yellow-50 to-orange-50 p-8 rounded-2xl border border-yellow-100">
+        <div class="flex items-start space-x-4 mb-6">
+          <div class="bg-yellow-500 p-4 rounded-xl">
+            <Home className="w-10 h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Residential Solar Systems</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Custom rooftop solar designs optimized for residential properties. Our layouts maximize 
+              energy production while maintaining aesthetic appeal and structural integrity.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-6">
+          <div class="bg-white/70 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1">Roof Analysis</h4>
+            <p class="text-sm text-gray-600">Structural assessment and shading studies</p>
+          </div>
+          <div class="bg-white/70 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1">System Sizing</h4>
+            <p class="text-sm text-gray-600">Load analysis and optimal capacity planning</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Commercial Solar -->
+      <div class="bg-gradient-to-br from-orange-50 to-red-50 p-8 rounded-2xl border border-orange-100">
+        <div class="flex items-start space-x-4 mb-6">
+          <div class="bg-orange-500 p-4 rounded-xl">
+            <Building2 className="w-10 h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Commercial Solar Installations</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Large-scale commercial solar designs for office buildings, retail centers, and 
+              warehouses with advanced monitoring and grid-tie capabilities.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-6">
+          <div class="bg-white/70 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1">Energy Modeling</h4>
+            <p class="text-sm text-gray-600">ROI calculations and payback analysis</p>
+          </div>
+          <div class="bg-white/70 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1">Grid Integration</h4>
+            <p class="text-sm text-gray-600">Utility interconnection and net metering</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Industrial Solar -->
+      <div class="bg-gradient-to-br from-red-50 to-pink-50 p-8 rounded-2xl border border-red-100">
+        <div class="flex items-start space-x-4 mb-6">
+          <div class="bg-red-500 p-4 rounded-xl">
+            <Factory className="w-10 h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Industrial Solar Solutions</h3>
+            <p class="text-gray-700 leading-relaxed">
+              High-capacity industrial solar systems designed for manufacturing facilities, 
+              data centers, and large-scale operations requiring substantial power generation.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-6">
+          <div class="bg-white/70 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1">Load Management</h4>
+            <p class="text-sm text-gray-600">Peak demand reduction strategies</p>
+          </div>
+          <div class="bg-white/70 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1">Scalability</h4>
+            <p class="text-sm text-gray-600">Modular designs for future expansion</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile & Ground Mount -->
+      <div class="bg-gradient-to-br from-green-50 to-teal-50 p-8 rounded-2xl border border-green-100">
+        <div class="flex items-start space-x-4 mb-6">
+          <div class="bg-green-500 p-4 rounded-xl">
+            <Truck className="w-10 h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Ground Mount & Tracking Systems</h3>
+            <p class="text-gray-700 leading-relaxed">
+              Ground-mounted solar arrays with optional tracking systems for maximum energy 
+              capture, ideal for large open spaces and solar farms.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 mt-6">
+          <div class="bg-white/70 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1">Site Planning</h4>
+            <p class="text-sm text-gray-600">Terrain analysis and foundation design</p>
+          </div>
+          <div class="bg-white/70 p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1">Tracking Options</h4>
+            <p class="text-sm text-gray-600">Single and dual-axis tracking systems</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Excellence -->
+    <div class="bg-gradient-to-r from-slate-800 to-slate-900 text-white p-8 md:p-12 rounded-2xl">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h3 class="text-3xl font-bold mb-6">Technical Excellence & Precision</h3>
+          <p class="text-slate-300 leading-relaxed mb-8">
+            Our solar PV designs combine advanced engineering principles with practical installation 
+            requirements, ensuring every project delivers optimal performance and long-term reliability.
+          </p>
+          
+          <div class="space-y-4">
+            <div class="flex items-center space-x-3">
+              <Target className="w-6 h-6 text-yellow-400 flex-shrink-0" />
+              <span class="text-slate-300">Precision panel placement for maximum efficiency</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <Shield className="w-6 h-6 text-yellow-400 flex-shrink-0" />
+              <span class="text-slate-300">Code-compliant electrical designs and safety systems</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <Building2 className="w-6 h-6 text-yellow-400 flex-shrink-0" />
+              <span class="text-slate-300">Structural analysis and mounting system design</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <Zap className="w-6 h-6 text-yellow-400 flex-shrink-0" />
+              <span class="text-slate-300">Performance monitoring and optimization strategies</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <div class="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20">
+            <div class="grid grid-cols-2 gap-6">
+              <div>
+                <div class="text-4xl font-bold text-yellow-400 mb-2">500+</div>
+                <div class="text-slate-300 mb-2">Projects Designed</div>
+                <div class="text-xs text-slate-400">Residential to industrial scale</div>
+              </div>
+              <div>
+                <div class="text-4xl font-bold text-orange-400 mb-2">25MW</div>
+                <div class="text-slate-300 mb-2">Total Capacity</div>
+                <div class="text-xs text-slate-400">Designed and installed</div>
+              </div>
+              <div>
+                <div class="text-4xl font-bold text-red-400 mb-2">99.8%</div>
+                <div class="text-slate-300 mb-2">System Uptime</div>
+                <div class="text-xs text-slate-400">Average performance</div>
+              </div>
+              <div>
+                <div class="text-4xl font-bold text-green-400 mb-2">100%</div>
+                <div class="text-slate-300 mb-2">Code Compliance</div>
+                <div class="text-xs text-slate-400">First-time approvals</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,36 @@
+---
+// src/pages/about/index.astro
+import Layout from '@/layouts/main.astro';
+import AboutIntroSection from '@/components/about/AboutIntroSection.astro';
+import AboutStorySection from '@/components/about/AboutStorySection.astro';
+import AboutServicesSection from '@/components/about/AboutServicesSection.astro';
+import AboutUkOperationsSection from '@/components/about/AboutUkOperationsSection.astro';
+import AboutTestimonialsSection from '@/components/about/AboutTestimonialsSection.astro';
+import AboutCtaSection from '@/components/about/AboutCtaSection.astro';
+---
+
+<Layout
+  title="About CAD Outsource | Professional CAD Design Company Birmingham UK"
+  description="Learn about CAD Outsource, a leading Birmingham-based CAD design company. Over 4 years of experience delivering expert CAD services including 2D drafting, 3D modeling, HVAC, and specialized engineering solutions."
+  keywords={[
+    'about CAD Outsource',
+    'CAD company Birmingham',
+    'CAD services provider UK',
+    'professional CAD team',
+    'CAD design experts',
+    'engineering CAD company'
+  ]}
+  schemaType="Organization"
+  canonical="/about"
+  breadcrumbs={[
+    { name: 'Home', url: '/' },
+    { name: 'About Us', url: '/about' }
+  ]}
+>
+  <AboutIntroSection />
+  <AboutStorySection />
+  <AboutServicesSection />
+  <AboutUkOperationsSection />
+  <AboutTestimonialsSection />
+  <AboutCtaSection />
+</Layout>

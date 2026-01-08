@@ -1,0 +1,129 @@
+---
+import { TrendingUp, DollarSign, Leaf, Shield, Clock, Award } from 'lucide-react';
+---
+
+<section class="py-20 px-4 bg-white">
+  <div class="max-w-6xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        Why Choose Professional Solar PV Design?
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Proper solar system design is crucial for maximizing energy production, ensuring safety, 
+        and achieving optimal return on investment for your solar installation.
+      </p>
+    </div>
+
+    <!-- Main Benefits Grid -->
+    <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+      <!-- Content Side -->
+      <div class="space-y-8">
+        <div class="bg-gradient-to-br from-yellow-50 to-orange-50 p-8 rounded-2xl border border-yellow-100">
+          <div class="flex items-start space-x-4">
+            <div class="bg-yellow-500 p-3 rounded-xl flex-shrink-0">
+              <TrendingUp className="w-8 h-8 text-white" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-3">Maximum Energy Production</h3>
+              <p class="text-gray-700 leading-relaxed">
+                Strategic panel placement and optimal system design ensure maximum energy 
+                harvest throughout the day and across all seasons.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-green-50 to-teal-50 p-8 rounded-2xl border border-green-100">
+          <div class="flex items-start space-x-4">
+            <div class="bg-green-500 p-3 rounded-xl flex-shrink-0">
+              <DollarSign className="w-8 h-8 text-white" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-3">Cost Optimization</h3>
+              <p class="text-gray-700 leading-relaxed">
+                Efficient system design reduces installation costs, minimizes equipment needs, 
+                and maximizes return on investment through optimized performance.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl border border-blue-100">
+          <div class="flex items-start space-x-4">
+            <div class="bg-blue-500 p-3 rounded-xl flex-shrink-0">
+              <Shield className="w-8 h-8 text-white" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-3">Safety & Compliance</h3>
+              <p class="text-gray-700 leading-relaxed">
+                Code-compliant designs ensure electrical safety, proper grounding, 
+                and adherence to local building codes and utility requirements.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual Side -->
+      <div class="relative">
+        <div class="bg-gradient-to-br from-gray-100 to-gray-200 p-8 rounded-2xl">
+          <img 
+            src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=600&h=500&fit=crop&crop=entropy&auto=format&q=80"
+            alt="Solar panel efficiency and performance monitoring"
+            class="w-full h-96 object-cover rounded-xl shadow-lg"
+          />
+          <!-- Overlay Information -->
+          <div class="absolute top-12 right-12 bg-white/95 backdrop-blur-sm p-4 rounded-xl border border-gray-200 max-w-xs">
+            <h4 class="font-bold text-gray-900 mb-2">Design Benefits</h4>
+            <ul class="space-y-2 text-sm text-gray-600">
+              <li class="flex items-center space-x-2">
+                <Award className="w-4 h-4 text-yellow-500 flex-shrink-0" />
+                <span>Higher efficiency</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <Clock className="w-4 h-4 text-yellow-500 flex-shrink-0" />
+                <span>Faster installation</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <Leaf className="w-4 h-4 text-yellow-500 flex-shrink-0" />
+                <span>Environmental impact</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <Shield className="w-4 h-4 text-yellow-500 flex-shrink-0" />
+                <span>Long-term reliability</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Key Performance Metrics -->
+    <div class="bg-gradient-to-r from-slate-800 to-slate-900 text-white p-8 md:p-12 rounded-2xl">
+      <h3 class="text-2xl md:text-3xl font-bold mb-8 text-center">Performance Impact of Professional Design</h3>
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="text-4xl font-bold text-yellow-400 mb-2">25%</div>
+          <div class="text-slate-300">Higher Efficiency</div>
+          <div class="text-xs text-slate-400 mt-1">vs. basic layouts</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold text-orange-400 mb-2">30%</div>
+          <div class="text-slate-300">Faster Install</div>
+          <div class="text-xs text-slate-400 mt-1">Optimized design</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold text-green-400 mb-2">15%</div>
+          <div class="text-slate-300">Cost Reduction</div>
+          <div class="text-xs text-slate-400 mt-1">Equipment optimization</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold text-red-400 mb-2">99%</div>
+          <div class="text-slate-300">Permit Success</div>
+          <div class="text-xs text-slate-400 mt-1">First submission</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

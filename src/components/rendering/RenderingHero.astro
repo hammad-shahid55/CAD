@@ -1,0 +1,77 @@
+---
+// src/components/rendering/RenderingHero.astro
+import { FileImage, Layers, Box } from 'lucide-react';
+---
+
+<section class="bg-gradient-to-br from-slate-800 via-blue-900 to-slate-900 min-h-screen flex items-center py-20">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      
+      <!-- Left Content -->
+      <div class="text-white space-y-8">
+        <div class="space-y-6">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+            Professional <span class="text-cyan-400">3D Rendering</span><br />
+            & Modeling Services
+          </h1>
+          
+          <p class="text-lg lg:text-xl text-slate-300 leading-relaxed max-w-2xl">
+            Transform your architectural concepts into stunning photorealistic visualizations with cutting-edge 3D technology, bringing designs to life before construction begins.
+          </p>
+        </div>
+        
+        <!-- Feature Cards -->
+        <div class="grid sm:grid-cols-3 gap-4">
+          <!-- Photorealistic Quality -->
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+            <div class="w-10 h-10 bg-cyan-500/20 rounded-lg flex items-center justify-center mb-3">
+              <FileImage size={20} className="text-cyan-400" />
+            </div>
+            <h3 class="font-semibold text-white mb-1">Photorealistic</h3>
+            <p class="text-sm text-slate-300">Ultra HD Quality</p>
+          </div>
+          
+          <!-- Multiple Formats -->
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+            <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center mb-3">
+              <Layers size={20} className="text-blue-400" />
+            </div>
+            <h3 class="font-semibold text-white mb-1">Multi-Format</h3>
+            <p class="text-sm text-slate-300">Complete Coverage</p>
+          </div>
+          
+          <!-- 3D Standards -->
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+            <div class="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center mb-3">
+              <Box size={20} className="text-purple-400" />
+            </div>
+            <h3 class="font-semibold text-white mb-1">3D Standards</h3>
+            <p class="text-sm text-slate-300">Industry Compliant</p>
+          </div>
+        </div>
+        
+        <!-- CTA Buttons -->
+      </div>
+      
+      <!-- Right Image -->
+      <div class="relative">
+        <div class="relative rounded-2xl overflow-hidden">
+          <img 
+            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="3D Rendering Workspace"
+            class="w-full h-auto rounded-2xl"
+          />
+        </div>
+        
+        <!-- Floating Icon Elements -->
+        <div class="absolute -top-4 -right-4 w-16 h-16 bg-cyan-500 rounded-full flex items-center justify-center">
+          <FileImage size={32} className="text-white" />
+        </div>
+        
+        <div class="absolute -bottom-6 -left-6 w-16 h-16 bg-cyan-400 rounded-full flex items-center justify-center">
+          <Box size={32} className="text-white" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

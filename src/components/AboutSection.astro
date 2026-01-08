@@ -1,0 +1,237 @@
+---
+import { Image } from "astro:assets";
+
+// About Section based on content from HTML site
+---
+
+<section id="about" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <!-- Left Content -->
+      <div>
+        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          About <span class="text-primary">LegionellaCAD</span>
+        </h2>
+        <p class="text-lg text-gray-600 mb-8">
+          With over two decades of experience in CAD design and engineering services, 
+          we have established ourselves as a trusted partner for businesses seeking 
+          precision, reliability, and innovation in their technical drawings and designs.
+        </p>
+        
+        <!-- Key Features -->
+        <div class="space-y-6 mb-8">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">4+ Years of Experience</h3>
+              <p class="text-gray-600">
+                Extensive expertise in CAD design, drafting, and engineering solutions across multiple industries.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Precision Guaranteed</h3>
+              <p class="text-gray-600">
+                Every project undergoes rigorous quality checks to ensure 100% accuracy and compliance with industry standards.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Fast Turnaround</h3>
+              <p class="text-gray-600">
+                Streamlined processes and dedicated teams ensure quick delivery without compromising on quality.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-2 gap-8 pt-8 border-t border-gray-200">
+          <div class="text-center">
+            <div class="text-3xl font-bold text-primary mb-2">500+</div>
+            <div class="text-gray-600">Projects Completed</div>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl font-bold text-primary mb-2">98%</div>
+            <div class="text-gray-600">Client Satisfaction</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Content - Image -->
+      <div class="relative">
+        <Image
+          src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2070&auto=format&fit=crop" 
+          alt="CAD Design Team"
+          class="w-full h-auto rounded-2xl shadow-2xl"
+          loading="lazy"
+          inferSize
+        />
+        
+        <!-- Floating Card -->
+        <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+          <div class="flex items-center gap-4">
+            <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center">
+              <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="font-bold text-gray-900">Expert Team</p>
+              <p class="text-sm text-gray-600">Certified CAD Professionals</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Background Pattern -->
+        <div class="absolute -top-4 -right-4 w-24 h-24 bg-primary/5 rounded-full -z-10"></div>
+        <div class="absolute top-1/2 -right-8 w-16 h-16 bg-primary/10 rounded-full -z-10"></div>
+      </div>
+    </div>
+
+    <!-- Why Choose Us Section -->
+    <div class="mt-20">
+      <div class="text-center mb-12">
+        <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Why Choose <span class="text-primary">LegionellaCAD?</span>
+        </h3>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          We combine technical expertise with innovative solutions to deliver exceptional results for every project.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Advantage 1 -->
+        <div class="text-center">
+          <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
+            </svg>
+          </div>
+          <h4 class="text-xl font-bold text-gray-900 mb-3">Comprehensive Services</h4>
+          <p class="text-gray-600">
+            From initial concept to final documentation, we provide end-to-end CAD solutions tailored to your needs.
+          </p>
+        </div>
+
+        <!-- Advantage 2 -->
+        <div class="text-center">
+          <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/>
+            </svg>
+          </div>
+          <h4 class="text-xl font-bold text-gray-900 mb-3">Lightning Fast</h4>
+          <p class="text-gray-600">
+            Advanced tools and optimized workflows enable us to deliver high-quality results in record time.
+          </p>
+        </div>
+
+        <!-- Advantage 3 -->
+        <div class="text-center">
+          <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+            </svg>
+          </div>
+          <h4 class="text-xl font-bold text-gray-900 mb-3">Quality Assured</h4>
+          <p class="text-gray-600">
+            Rigorous quality control processes and industry certifications ensure every deliverable meets the highest standards.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technologies Section -->
+    <div class="mt-20">
+      <div class="text-center mb-12">
+        <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Technologies We <span class="text-primary">Master</span>
+        </h3>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+          We leverage industry-leading software and cutting-edge technologies to deliver superior CAD solutions.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+        <!-- Tech 1 -->
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow text-center">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"/>
+            </svg>
+          </div>
+          <p class="text-sm font-medium text-gray-900">AutoCAD</p>
+        </div>
+
+        <!-- Tech 2 -->
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow text-center">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z"/>
+            </svg>
+          </div>
+          <p class="text-sm font-medium text-gray-900">SolidWorks</p>
+        </div>
+
+        <!-- Tech 3 -->
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow text-center">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+            </svg>
+          </div>
+          <p class="text-sm font-medium text-gray-900">Revit</p>
+        </div>
+
+        <!-- Tech 4 -->
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow text-center">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
+            </svg>
+          </div>
+          <p class="text-sm font-medium text-gray-900">Inventor</p>
+        </div>
+
+        <!-- Tech 5 -->
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow text-center">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/>
+            </svg>
+          </div>
+          <p class="text-sm font-medium text-gray-900">Fusion 360</p>
+        </div>
+
+        <!-- Tech 6 -->
+        <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow text-center">
+          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-3">
+            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"/>
+            </svg>
+          </div>
+          <p class="text-sm font-medium text-gray-900">MicroStation</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,48 @@
+---
+// src/pages/cad-conversion/index.astro
+import CadConversionBenefitsSection from '@/components/cadConversion/CadConversionBenefitsSection.astro';
+import CadConversionCtaSection from '@/components/cadConversion/CadConversionCtaSection.astro';
+import CadConversionFaqSection from '@/components/cadConversion/CadConversionFaqSection.astro';
+import CadConversionHero from '@/components/cadConversion/CadConversionHero.astro';
+import CadConversionImpactSection from '@/components/cadConversion/CadConversionImpactSection.astro';
+import CadConversionIntroSection from '@/components/cadConversion/CadConversionIntroSection.astro';
+import CadConversionProcessSection from '@/components/cadConversion/CadConversionProcessSection.astro';
+import CadConversionServicesSection from '@/components/cadConversion/CadConversionServicesSection.astro';
+import CadConversionStandardsSection from '@/components/cadConversion/CadConversionStandardsSection.astro';
+import CadConversionTechnicalSection from '@/components/cadConversion/CadConversionTechnicalSection.astro';
+import Layout from '@/layouts/main.astro';
+---
+
+<Layout
+  title="CAD File Conversion Services UK | PDF to CAD, DWG to DXF Conversion"
+  description="Professional CAD file conversion services in Birmingham. Expert PDF to CAD, DWG to DXF, paper to CAD conversion, and file format migration for AutoCAD, Revit, and other CAD platforms."
+  keywords={[
+    'CAD conversion services UK',
+    'PDF to CAD conversion',
+    'DWG to DXF conversion',
+    'paper to CAD digitization',
+    'CAD file migration',
+    'AutoCAD conversion Birmingham',
+    'drawing digitization services',
+    'CAD format conversion',
+    'scan to CAD services',
+    'legacy drawing conversion'
+  ]}
+  schemaType="Service"
+  canonical="/cad-conversion-services"
+  breadcrumbs={[
+    { name: 'Home', url: '/' },
+    { name: 'CAD Conversion Services', url: '/cad-conversion-services' }
+  ]}
+>
+  <CadConversionHero/>
+  <CadConversionIntroSection />
+  <CadConversionProcessSection />
+  <CadConversionServicesSection />
+  <CadConversionStandardsSection />
+  <CadConversionBenefitsSection />
+  <CadConversionImpactSection />
+  <CadConversionTechnicalSection />
+  <CadConversionFaqSection />
+  <CadConversionCtaSection />
+</Layout>

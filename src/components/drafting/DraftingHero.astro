@@ -1,0 +1,80 @@
+---
+// src/components/drafting/DraftingHero.astro
+import { PenTool, Grid, Compass } from 'lucide-react';
+---
+
+<section class="bg-gradient-to-br from-slate-800 via-blue-900 to-slate-900 min-h-screen flex items-center py-20">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      
+      <!-- Left Content -->
+      <div class="text-white space-y-8">
+        <div class="space-y-6">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+            Professional <span class="text-cyan-400">2D Drafting</span><br />
+            & Designing Services
+          </h1>
+          
+          <p class="text-lg lg:text-xl text-slate-300 leading-relaxed max-w-2xl">
+            Create precise technical drawings and detailed design documentation with professional 2D drafting services, ensuring accuracy, compliance, and seamless integration with engineering workflows.
+          </p>
+        </div>
+        
+        <!-- Feature Cards -->
+        <div class="grid sm:grid-cols-3 gap-4">
+          <!-- Technical Precision -->
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div class="w-10 h-10 bg-cyan-500/20 rounded-lg flex items-center justify-center mb-3">
+              <PenTool size={20} className="text-cyan-400" />
+            </div>
+            <h3 class="font-semibold text-white mb-1">Technical Precision</h3>
+            <p class="text-sm text-slate-300">CAD Standards</p>
+          </div>
+          
+          <!-- Design Accuracy -->
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center mb-3">
+              <Grid size={20} className="text-blue-400" />
+            </div>
+            <h3 class="font-semibold text-white mb-1">Design Accuracy</h3>
+            <p class="text-sm text-slate-300">Detailed Documentation</p>
+          </div>
+          
+          <!-- Professional Standards -->
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20 hover:bg-white/15 transition-all duration-300">
+            <div class="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center mb-3">
+              <Compass size={20} className="text-purple-400" />
+            </div>
+            <h3 class="font-semibold text-white mb-1">Pro Standards</h3>
+            <p class="text-sm text-slate-300">Industry Compliant</p>
+          </div>
+        </div>
+        
+        <!-- CTA Buttons -->
+      </div>
+      
+      <!-- Right Image -->
+      <div class="relative">
+        <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+          <img 
+            src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            alt="2D Drafting & Design Workspace"
+            class="w-full h-auto rounded-2xl"
+          />
+          
+          <!-- Premium Overlay -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
+        </div>
+        
+        <!-- Floating Icon Elements -->
+        <div class="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full flex items-center justify-center shadow-lg">
+          <PenTool size={32} className="text-white" />
+        </div>
+        
+        <div class="absolute -bottom-6 -left-6 w-16 h-16 bg-gradient-to-br from-purple-500 to-cyan-400 rounded-full flex items-center justify-center shadow-lg">
+          <Compass size={32} className="text-white" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

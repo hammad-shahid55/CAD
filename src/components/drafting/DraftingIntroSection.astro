@@ -1,0 +1,116 @@
+---
+// src/components/drafting/DraftingIntroSection.astro
+import { Image } from 'astro:assets';
+import { Ruler, Edit,Fingerprint } from 'lucide-react';
+---
+
+<section class="py-16 sm:py-20 lg:py-24 bg-slate-50">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-12 lg:mb-16">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+          Professional 2D Drafting & Designing Services
+        </h2>
+        <p class="text-lg lg:text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
+          Comprehensive 2D drafting and design services for technical documentation, engineering drawings, and architectural plans, delivering precise CAD drawings with professional standards, accurate dimensioning, and detailed specifications for effective project communication and construction documentation.
+        </p>
+      </div>
+      
+      <!-- Main Content Grid -->
+      <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16">
+        
+        <!-- Left Content -->
+        <div class="space-y-8">
+          
+          <!-- Feature 1: Technical Drawing Creation -->
+          <div class="bg-white rounded-2xl p-6 lg:p-8 shadow-lg border border-slate-200 hover:shadow-xl transition-all duration-300">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                <Ruler size={24} className="text-blue-600" />
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl lg:text-2xl font-bold text-slate-900 mb-3">
+                  Technical Drawing Creation
+                </h3>
+                <p class="text-slate-600 leading-relaxed">
+                  Professional 2D technical drawings including detailed plans, elevations, sections, and construction details with precise dimensioning, annotation standards, and comprehensive documentation for engineering and architectural projects.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Feature 2: CAD Design Development -->
+          <div class="bg-white rounded-2xl p-6 lg:p-8 shadow-lg border border-slate-200 hover:shadow-xl transition-all duration-300">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-cyan-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                <Edit size={24} className="text-cyan-600" />
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl lg:text-2xl font-bold text-slate-900 mb-3">
+                  CAD Design Development
+                </h3>
+                <p class="text-slate-600 leading-relaxed">
+                  Complete CAD design development from concept to detailed drawings using industry-standard software with proper layer management, annotation styles, and drawing standards for seamless integration with project workflows and collaboration requirements.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Image with Stats -->
+        <div class="relative">
+          <div class="relative rounded-2xl overflow-hidden shadow-xl">
+            <Image 
+              src="https://images.unsplash.com/photo-1503681355143-d5485eea7f14?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="2D Drafting Process"
+              class="w-full h-auto rounded-2xl"
+              inferSize
+            />
+            
+            <!-- Premium gradient overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent rounded-2xl"></div>
+          </div>
+          
+          <!-- Stats Overlay -->
+          <div class="absolute bottom-6 right-6 bg-white/90 backdrop-blur-sm rounded-xl p-4 border border-white/20 shadow-lg">
+            <div class="grid grid-cols-3 gap-4 text-center">
+              <div>
+                <div class="text-2xl font-bold text-slate-900">99%</div>
+                <div class="text-xs text-slate-600">Accuracy</div>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-cyan-600">2D</div>
+                <div class="text-xs text-slate-600">CAD Expert</div>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-purple-600">Pro</div>
+                <div class="text-xs text-slate-600">Standards</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Third Feature -->
+      <div class="mb-16">
+        <div class="bg-white rounded-2xl p-6 lg:p-8 shadow-lg border border-slate-200 hover:shadow-xl transition-all duration-300">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
+              <Fingerprint size={24} className="text-purple-600" />
+            </div>
+            <div class="flex-1">
+              <h3 class="text-xl lg:text-2xl font-bold text-slate-900 mb-3">
+                Fingerprint & Documentation Services
+              </h3>
+              <p class="text-slate-600 leading-relaxed">
+                Complete blueprint preparation and technical documentation services including construction drawings, assembly details, and specification sheets with professional formatting, standard title blocks, and comprehensive annotation systems for regulatory approval and construction implementation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

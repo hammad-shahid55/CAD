@@ -1,0 +1,139 @@
+---
+import { Calendar, RefreshCw, AlertCircle, Building, Database, BriefcaseMedical} from 'lucide-react';
+---
+
+<section class="py-20 px-4 bg-gray-50">
+  <div class="max-w-6xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        When Should You Acquire a Legionella Schematic Drawing?
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Understanding the critical timing and frequency requirements for maintaining 
+        up-to-date water system documentation
+      </p>
+    </div>
+
+    <!-- Timeline Grid -->
+    <div class="grid lg:grid-cols-2 gap-8 mb-16">
+      <!-- Left Column -->
+      <div class="space-y-6">
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+          <div class="flex items-start space-x-4">
+            <div class="bg-blue-100 p-3 rounded-xl flex-shrink-0">
+              <Building className="w-8 h-8 text-blue-600" />
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Infrastructure Alterations</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Any alterations made to the water system infrastructure require immediate 
+                documentation updates to maintain accuracy and compliance.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+          <div class="flex items-start space-x-4">
+            <div class="bg-cyan-100 p-3 rounded-xl flex-shrink-0">
+              <RefreshCw className="w-8 h-8 text-cyan-600" />
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Building Usage Changes</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Modifications in the usage or purpose of the building housing the system 
+                necessitate comprehensive schematic review and updates.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+          <div class="flex items-start space-x-4">
+            <div class="bg-indigo-100 p-3 rounded-xl flex-shrink-0">
+              <Database className="w-8 h-8 text-indigo-600" />
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">New Risk Data</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Newly acquired data or insights concerning potential hazards or 
+                control methods require immediate documentation integration.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="space-y-6">
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+          <div class="flex items-start space-x-4">
+            <div class="bg-amber-100 p-3 rounded-xl flex-shrink-0">
+              <AlertCircle className="w-8 h-8 text-amber-600" />
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Control Measure Failure</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Results from checks highlighting that implemented control measures 
+                are no longer efficient demand immediate schematic revision.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+          <div class="flex items-start space-x-4">
+            <div class="bg-red-100 p-3 rounded-xl flex-shrink-0">
+              <BriefcaseMedical className="w-8 h-8 text-red-600" />
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Disease Identification</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Identification of a case of Legionnaires disease triggers mandatory 
+                comprehensive system review and documentation updates.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+          <div class="flex items-start space-x-4">
+            <div class="bg-green-100 p-3 rounded-xl flex-shrink-0">
+              <Calendar className="w-8 h-8 text-green-600" />
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Regular Reviews</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Scheduled periodic reviews ensure ongoing accuracy and compliance 
+                with evolving safety standards and regulations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Frequency Guidelines -->
+    <div class="bg-gradient-to-br from-slate-800 to-slate-900 text-white p-8 md:p-12 rounded-2xl">
+      <h3 class="text-2xl md:text-3xl font-bold mb-8 text-center">Recommended Review Frequency</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+          <div class="text-3xl font-bold text-blue-400 mb-3">Annual</div>
+          <div class="text-lg font-semibold mb-2">Standard Review</div>
+          <div class="text-sm text-slate-300">Comprehensive system assessment and documentation update</div>
+        </div>
+        <div class="text-center bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+          <div class="text-3xl font-bold text-cyan-400 mb-3">Quarterly</div>
+          <div class="text-lg font-semibold mb-2">High-Risk Facilities</div>
+          <div class="text-sm text-slate-300">Healthcare, elderly care, and complex industrial systems</div>
+        </div>
+        <div class="text-center bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+          <div class="text-3xl font-bold text-green-400 mb-3">Immediate</div>
+          <div class="text-lg font-semibold mb-2">Trigger Events</div>
+          <div class="text-sm text-slate-300">System changes, incidents, or control measure failures</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

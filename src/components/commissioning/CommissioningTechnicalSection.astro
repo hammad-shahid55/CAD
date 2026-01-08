@@ -1,0 +1,184 @@
+---
+import { FileText, Settings, Database, Clipboard } from 'lucide-react';
+---
+
+<section class="py-20 px-4 bg-gray-50">
+  <div class="max-w-7xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        Technical Standards & Documentation
+      </h2>
+      <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+        Our commissioning documentation meets the highest industry standards including ASHRAE Guidelines, 
+        LEED requirements, and local building codes for comprehensive system verification.
+      </p>
+    </div>
+
+    <!-- Technical Grid -->
+    <div class="grid lg:grid-cols-2 gap-8 mb-16">
+      <!-- ASHRAE Standards -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+        <div class="flex items-start space-x-4 mb-6">
+          <div class="bg-blue-100 p-3 rounded-xl">
+            <FileText className="w-8 h-8 text-primary" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">ASHRAE Standards</h3>
+            <p class="text-gray-600 mb-4">
+              All documentation complies with ASHRAE Guidelines for building commissioning 
+              ensuring systematic verification of building systems performance.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">ASHRAE Guideline 0</span>
+            <span class="text-green-600 font-semibold">✓ Compliant</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">ASHRAE Guideline 1.1</span>
+            <span class="text-green-600 font-semibold">✓ Compliant</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">ASHRAE Standard 202</span>
+            <span class="text-green-600 font-semibold">✓ Compliant</span>
+          </div>
+          <div class="flex justify-between items-center py-2">
+            <span class="text-gray-700">Local Code Requirements</span>
+            <span class="text-green-600 font-semibold">✓ Verified</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testing Protocols -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+        <div class="flex items-start space-x-4 mb-6">
+          <div class="bg-cyan-100 p-3 rounded-xl">
+            <Settings className="w-8 h-8 text-cyan-600" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Testing Protocols</h3>
+            <p class="text-gray-600 mb-4">
+              Comprehensive testing procedures for all building systems with detailed 
+              measurement points and performance verification criteria.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">Functional Performance Testing</span>
+            <span class="text-blue-600 font-semibold">Comprehensive</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">Integrated Systems Testing</span>
+            <span class="text-blue-600 font-semibold">Multi-discipline</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">Seasonal Testing</span>
+            <span class="text-blue-600 font-semibold">Year-round</span>
+          </div>
+          <div class="flex justify-between items-center py-2">
+            <span class="text-gray-700">Warranty Period Testing</span>
+            <span class="text-blue-600 font-semibold">Extended Support</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- LEED Requirements -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+        <div class="flex items-start space-x-4 mb-6">
+          <div class="bg-green-100 p-3 rounded-xl">
+            <Database className="w-8 h-8 text-green-600" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">LEED Compliance</h3>
+            <p class="text-gray-600 mb-4">
+              Complete documentation packages supporting LEED certification including 
+              enhanced commissioning and measurement & verification requirements.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">Fundamental Cx (Ea Prerequisite 1)</span>
+            <span class="text-green-600 font-semibold">Required</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">Enhanced Commissioning (Ea Credit 3)</span>
+            <span class="text-green-600 font-semibold">6 Points</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">Measurement & Verification (Ea Credit 5)</span>
+            <span class="text-green-600 font-semibold">3 Points</span>
+          </div>
+          <div class="flex justify-between items-center py-2">
+            <span class="text-gray-700">Systems Performance (Ea Credit 4)</span>
+            <span class="text-green-600 font-semibold">16 Points</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Documentation Deliverables -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+        <div class="flex items-start space-x-4 mb-6">
+          <div class="bg-indigo-100 p-3 rounded-xl">
+            <Clipboard className="w-8 h-8 text-indigo-600" />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">CAD Deliverables</h3>
+            <p class="text-gray-600 mb-4">
+              Complete CAD documentation package including system layouts, testing protocols, 
+              and as-built drawings for comprehensive project documentation.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">Pre-Commissioning Plans</span>
+            <span class="text-indigo-600 font-semibold">CAD Format</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">Testing Point Layouts</span>
+            <span class="text-indigo-600 font-semibold">Detailed Mapping</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700">System Integration Drawings</span>
+            <span class="text-indigo-600 font-semibold">Multi-discipline</span>
+          </div>
+          <div class="flex justify-between items-center py-2">
+            <span class="text-gray-700">As-Built Documentation</span>
+            <span class="text-indigo-600 font-semibold">Final Updates</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Process Standards -->
+    <div class="bg-gradient-to-r from-slate-800 to-slate-900 text-white p-8 md:p-12 rounded-2xl">
+      <h3 class="text-2xl md:text-3xl font-bold mb-8 text-center">Commissioning Process Standards</h3>
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="text-3xl font-bold text-green-500 mb-2">Phase 1</div>
+          <div class="text-slate-300">Design Review</div>
+          <div class="text-xs text-slate-400 mt-1">Systems verification</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-cyan-400 mb-2">Phase 2</div>
+          <div class="text-slate-300">Installation</div>
+          <div class="text-xs text-slate-400 mt-1">Progress monitoring</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-indigo-400 mb-2">Phase 3</div>
+          <div class="text-slate-300">Testing</div>
+          <div class="text-xs text-slate-400 mt-1">Performance validation</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-green-400 mb-2">Phase 4</div>
+          <div class="text-slate-300">Handover</div>
+          <div class="text-xs text-slate-400 mt-1">Documentation transfer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

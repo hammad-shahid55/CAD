@@ -1,0 +1,137 @@
+---
+import { Globe, Database, BarChart, CheckCircle } from 'lucide-react';
+import { Image } from 'astro:assets';
+---
+
+<section class="py-16 sm:py-20 px-4 bg-gray-50">
+  <div class="max-w-6xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-12 sm:mb-16">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
+        Professional GIS & Facilities Mapping
+      </h2>
+      <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Comprehensive geographic information systems and facility mapping services. 
+        Transform complex spatial data into intuitive maps and actionable insights for strategic planning.
+      </p>
+    </div>
+
+    <!-- Main Content Grid -->
+    <div class="grid lg:grid-cols-2 gap-8 sm:gap-12 items-start mb-12 sm:mb-16">
+      <!-- Content -->
+      <div class="space-y-6 sm:space-y-8">
+        <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-100">
+          <div class="flex items-start space-x-4 mb-4 sm:mb-6">
+            <div class="bg-blue-100 p-3 rounded-xl">
+              <Globe className="w-6 sm:w-8 h-6 sm:h-8 text-primary" />
+            </div>
+            <div>
+              <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Spatial Data Analysis</h3>
+              <p class="text-gray-600 text-sm sm:text-base">
+                Advanced GIS analysis to understand spatial relationships, patterns, and trends. 
+                Transform raw location data into meaningful insights for better decision-making.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-100">
+          <div class="flex items-start space-x-4 mb-4 sm:mb-6">
+            <div class="bg-cyan-100 p-3 rounded-xl">
+              <Database className="w-6 sm:w-8 h-6 sm:h-8 text-cyan-600" />
+            </div>
+            <div>
+              <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Asset Management Integration</h3>
+              <p class="text-gray-600 text-sm sm:text-base">
+                Comprehensive facility asset mapping with database integration. 
+                Track equipment, infrastructure, and resources with precise location data.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-100">
+          <div class="flex items-start space-x-4 mb-4 sm:mb-6">
+            <div class="bg-indigo-100 p-3 rounded-xl">
+              <BarChart className="w-6 sm:w-8 h-6 sm:h-8 text-indigo-600" />
+            </div>
+            <div>
+              <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Data Visualization & Reporting</h3>
+              <p class="text-gray-600 text-sm sm:text-base">
+                Interactive maps, dashboards, and reports that communicate complex spatial information 
+                clearly to stakeholders and decision-makers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual Element -->
+      <div class="relative">
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 sm:p-8 rounded-2xl">
+          <Image 
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=500&fit=crop&crop=entropy&auto=format&q=80"
+            alt="GIS mapping and spatial data analysis technology"
+            width={600}
+            height={384}
+            class="w-full h-80 sm:h-96 object-cover rounded-xl shadow-lg"
+          />
+          <!-- Overlay Stats -->
+          <div class="absolute bottom-4 left-4 right-4">
+            <div class="bg-white/90 backdrop-blur-sm p-4 sm:p-6 rounded-xl border border-white/20">
+              <div class="grid grid-cols-3 gap-2 sm:gap-4 text-center">
+                <div>
+                  <div class="text-lg sm:text-2xl font-bold text-primary">GIS</div>
+                  <div class="text-xs sm:text-sm text-gray-600">Technology</div>
+                </div>
+                <div>
+                  <div class="text-lg sm:text-2xl font-bold text-cyan-600">Real-time</div>
+                  <div class="text-xs sm:text-sm text-gray-600">Data</div>
+                </div>
+                <div>
+                  <div class="text-lg sm:text-2xl font-bold text-indigo-600">Cloud</div>
+                  <div class="text-xs sm:text-sm text-gray-600">Based</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Key Process Steps -->
+    <div class="bg-gradient-to-r from-slate-800 to-slate-900 text-white p-6 sm:p-8 md:p-12 rounded-2xl">
+      <h3 class="text-xl sm:text-2xl md:text-3xl font-bold mb-6 sm:mb-8 text-center">GIS Mapping Process</h3>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        <div class="text-center space-y-4">
+          <div class="bg-blue-500/20 w-12 sm:w-16 h-12 sm:h-16 rounded-full flex items-center justify-center mx-auto">
+            <span class="text-lg sm:text-2xl font-bold text-blue-400">1</span>
+          </div>
+          <h4 class="text-lg sm:text-xl font-semibold">Data Collection</h4>
+          <p class="text-slate-300 text-sm sm:text-base">Survey, GPS, and existing data gathering for comprehensive mapping</p>
+        </div>
+        <div class="text-center space-y-4">
+          <div class="bg-cyan-500/20 w-12 sm:w-16 h-12 sm:h-16 rounded-full flex items-center justify-center mx-auto">
+            <span class="text-lg sm:text-2xl font-bold text-cyan-400">2</span>
+          </div>
+          <h4 class="text-lg sm:text-xl font-semibold">GIS Development</h4>
+          <p class="text-slate-300 text-sm sm:text-base">Database creation, spatial analysis, and map layer development</p>
+        </div>
+        <div class="text-center space-y-4">
+          <div class="bg-indigo-500/20 w-12 sm:w-16 h-12 sm:h-16 rounded-full flex items-center justify-center mx-auto">
+            <span class="text-lg sm:text-2xl font-bold text-indigo-400">3</span>
+          </div>
+          <h4 class="text-lg sm:text-xl font-semibold">Integration & Testing</h4>
+          <p class="text-slate-300 text-sm sm:text-base">System integration, validation, and performance optimization</p>
+        </div>
+        <div class="text-center space-y-4">
+          <div class="bg-green-500/20 w-12 sm:w-16 h-12 sm:h-16 rounded-full flex items-center justify-center mx-auto">
+            <span class="text-lg sm:text-2xl font-bold text-green-400">4</span>
+          </div>
+          <h4 class="text-lg sm:text-xl font-semibold">Deployment & Training</h4>
+          <p class="text-slate-300 text-sm sm:text-base">System deployment, user training, and ongoing support</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

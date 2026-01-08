@@ -1,0 +1,231 @@
+---
+// Premium Sectors Grid Component
+const sectors = [
+  {
+    id: 'healthcare',
+    title: 'Healthcare & Medical',
+    description: 'Precision CAD services for hospitals, clinics, and medical facilities with strict compliance and patient safety requirements.',
+    icon: 'medical',
+    gradient: 'from-rose-500 via-pink-500 to-red-500',
+    bgGradient: 'from-rose-50 to-pink-50',
+    features: ['Medical Equipment Layouts', 'Compliance Documentation', 'Water Safety Systems', 'Infection Control Drawings'],
+    stats: '150+ Medical Facilities',
+    color: 'rose'
+  },
+  {
+    id: 'construction',
+    title: 'Construction & Building',
+    description: 'Comprehensive construction documentation, MEP coordination, and as-built drawings for residential and commercial projects.',
+    icon: 'building',
+    gradient: 'from-orange-500 via-amber-500 to-yellow-500',
+    bgGradient: 'from-orange-50 to-amber-50',
+    features: ['MEP Coordination', 'As-Built Documentation', 'Construction Drawings', 'Building Information Modeling'],
+    stats: '500+ Projects Completed',
+    color: 'orange'
+  },
+  {
+    id: 'manufacturing',
+    title: 'Manufacturing & Industrial',
+    description: 'Precision CAD for machinery, production lines, and industrial equipment with exacting tolerances and specifications.',
+    icon: 'factory',
+    gradient: 'from-blue-500 via-cyan-500 to-teal-500',
+    bgGradient: 'from-blue-50 to-cyan-50',
+    features: ['Production Line Layouts', 'Machinery Documentation', 'Plant Optimization', 'Industrial Equipment'],
+    stats: '22% Efficiency Increase',
+    color: 'blue'
+  },
+  {
+    id: 'energy',
+    title: 'Energy & Utilities',
+    description: 'CAD solutions for renewable energy projects, power generation facilities, and utility infrastructure systems.',
+    icon: 'energy',
+    gradient: 'from-green-500 via-emerald-500 to-teal-500',
+    bgGradient: 'from-green-50 to-emerald-50',
+    features: ['Solar PV Systems', 'Power Plant Layouts', 'Utility Infrastructure', 'Renewable Energy'],
+    stats: '1000+ Energy Projects',
+    color: 'green'
+  },
+  {
+    id: 'education',
+    title: 'Education & Research',
+    description: 'Campus facility documentation, laboratory layouts, and educational building projects with safety-first approach.',
+    icon: 'education',
+    gradient: 'from-purple-500 via-violet-500 to-indigo-500',
+    bgGradient: 'from-purple-50 to-violet-50',
+    features: ['Campus Planning', 'Laboratory Layouts', 'Research Facilities', 'Educational Buildings'],
+    stats: '200+ Educational Facilities',
+    color: 'purple'
+  },
+  {
+    id: 'hospitality',
+    title: 'Hospitality & Leisure',
+    description: 'CAD services for hotels, resorts, and leisure facilities balancing safety compliance with aesthetic excellence.',
+    icon: 'hospitality',
+    gradient: 'from-indigo-500 via-blue-500 to-cyan-500',
+    bgGradient: 'from-indigo-50 to-blue-50',
+    features: ['Hotel Layouts', 'Resort Planning', 'Safety Compliance', 'Aesthetic Design'],
+    stats: '300+ Hospitality Projects',
+    color: 'indigo'
+  }
+];
+---
+
+<section id="sectors-grid" class="relative py-24 md:py-32 bg-gradient-to-br from-gray-50 via-white to-blue-50 overflow-hidden">
+  <!-- Background Elements -->
+  <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPjxwYXRoIGQ9Ik0gMTAwIDAgTCAwIDAgMCAxMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLW9wYWNpdHk9IjAuMDIiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] opacity-50"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <!-- Section Header -->
+    <div class="text-center mb-16 md:mb-20">
+      <div class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-blue-100 to-purple-100 border border-blue-200 mb-6">
+        <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z" />
+        </svg>
+        <span class="text-gray-700 font-bold text-sm uppercase tracking-wider">Industry Solutions</span>
+      </div>
+
+      <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+        Sector-Specific
+        <span class="block bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+          CAD Expertise
+        </span>
+      </h2>
+
+      <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Every industry has unique requirements. Our specialized CAD services are tailored to meet the exact compliance, safety, and technical standards of your sector.
+      </p>
+    </div>
+
+    <!-- Sectors Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+      {sectors.map((sector, index) => (
+        <div
+          class="group relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 hover:border-gray-200 hover:-translate-y-2 flex flex-col"
+        >
+          <!-- Gradient Top Border -->
+          <div class={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${sector.gradient}`}></div>
+
+          <!-- Card Content -->
+          <div class="relative p-6 sm:p-8 flex flex-col flex-1">
+            <!-- Icon Container -->
+            <div class="relative mb-4 sm:mb-6">
+              <div class={`absolute inset-0 bg-gradient-to-r ${sector.gradient} opacity-10 rounded-2xl blur-xl group-hover:opacity-20 transition-opacity duration-300`}></div>
+              <div class={`relative w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-gradient-to-br ${sector.bgGradient} border-2 border-${sector.color}-200 flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}>
+                {sector.icon === 'medical' && (
+                  <svg class="w-10 h-10 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                )}
+                {sector.icon === 'building' && (
+                  <svg class="w-10 h-10 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  </svg>
+                )}
+                {sector.icon === 'factory' && (
+                  <svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                  </svg>
+                )}
+                {sector.icon === 'energy' && (
+                  <svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                )}
+                {sector.icon === 'education' && (
+                  <svg class="w-10 h-10 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                )}
+                {sector.icon === 'hospitality' && (
+                  <svg class="w-10 h-10 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                  </svg>
+                )}
+              </div>
+            </div>
+
+            <!-- Title -->
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-purple-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
+              {sector.title}
+            </h3>
+
+            <!-- Description -->
+            <p class="text-gray-600 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
+              {sector.description}
+            </p>
+
+            <!-- Features List -->
+            <div class="space-y-2 sm:space-y-3 mb-4 sm:mb-6 flex-1">
+              {sector.features.map(feature => (
+                <div class="flex items-start gap-2 sm:gap-3">
+                  <div class={`mt-0.5 sm:mt-1 flex-shrink-0 w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-gradient-to-r ${sector.gradient} flex items-center justify-center`}>
+                    <svg class="w-2.5 h-2.5 sm:w-3 sm:h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                  </div>
+                  <span class="text-xs sm:text-sm text-gray-700 font-medium">{feature}</span>
+                </div>
+              ))}
+            </div>
+
+            <!-- Bottom Section - Stats & CTA (Always at bottom) -->
+            <div class="mt-auto space-y-4">
+              <!-- Stats Badge -->
+              <div class={`inline-flex items-center gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl bg-gradient-to-r ${sector.bgGradient} border-2 border-${sector.color}-200`}>
+                <svg class={`w-4 h-4 sm:w-5 sm:h-5 text-${sector.color}-600`} fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" />
+                </svg>
+                <span class="text-xs sm:text-sm font-bold text-gray-800">{sector.stats}</span>
+              </div>
+
+              <!-- CTA Button -->
+              <a
+                href="/contact?#contact-form"
+                class={`group/btn block w-full py-3 sm:py-4 px-4 sm:px-6 rounded-xl sm:rounded-2xl font-bold text-white bg-gradient-to-r ${sector.gradient} hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 text-center text-sm sm:text-base`}
+              >
+                <span class="flex items-center justify-center gap-2">
+                  Get Sector Quote
+                  <svg class="w-4 h-4 sm:w-5 sm:h-5 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hover Glow Effect -->
+          <div class={`absolute -inset-1 bg-gradient-to-r ${sector.gradient} opacity-0 group-hover:opacity-20 blur-2xl transition-opacity duration-500 -z-10`}></div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Bottom CTA -->
+    <div class="mt-20 text-center">
+      <div class="inline-flex items-center gap-2 text-gray-600 mb-4">
+        <span class="text-sm font-medium">Can't find your industry?</span>
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+        </svg>
+      </div>
+      <a
+        href="/contact?#contact-form"
+        class="inline-flex items-center gap-2 px-8 py-4 bg-white border-2 border-gray-200 rounded-2xl font-bold text-gray-900 hover:border-blue-500 hover:text-blue-600 hover:shadow-xl transition-all duration-300"
+      >
+        Contact Us for Custom Solutions
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

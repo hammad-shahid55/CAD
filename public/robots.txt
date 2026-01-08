@@ -1,0 +1,14 @@
+# robots.txt for CAD Outsource
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow admin and API routes
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://cadoutsource.co.uk/sitemap-index.xml
+
+# Crawl delay (optional, helps prevent server overload)
+Crawl-delay: 1

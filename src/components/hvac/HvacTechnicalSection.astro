@@ -1,0 +1,184 @@
+---
+import { FileText, Calculator, Settings, Layers } from 'lucide-react';
+---
+
+<section class="py-16 sm:py-20 px-4 bg-gray-50">
+  <div class="max-w-7xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-12 sm:mb-16">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
+        Technical Standards & Methodology
+      </h2>
+      <p class="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+        Our HVAC designs follow ASHRAE standards and industry best practices, ensuring optimal performance, 
+        energy efficiency, and compliance with local building codes and regulations.
+      </p>
+    </div>
+
+    <!-- Technical Grid -->
+    <div class="grid lg:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
+      <!-- Load Calculations -->
+      <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-100">
+        <div class="flex items-start space-x-4 mb-4 sm:mb-6">
+          <div class="bg-blue-100 p-3 rounded-xl">
+            <Calculator className="w-6 sm:w-8 h-6 sm:h-8 text-primary" />
+          </div>
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Load Calculation Methods</h3>
+            <p class="text-gray-600 mb-4 text-sm sm:text-base">
+              Precise heating and cooling load calculations using ASHRAE methods 
+              and industry-standard software for accurate system sizing.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-2 sm:space-y-3">
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700 text-sm sm:text-base">ASHRAE Fundamentals</span>
+            <span class="text-green-600 font-semibold text-sm sm:text-base">✓ Compliant</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700 text-sm sm:text-base">Manual J/S/D Methods</span>
+            <span class="text-blue-600 font-semibold text-sm sm:text-base">Certified</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700 text-sm sm:text-base">Energy Modeling</span>
+            <span class="text-blue-600 font-semibold text-sm sm:text-base">eQUEST/EnergyPlus</span>
+          </div>
+          <div class="flex justify-between items-center py-2">
+            <span class="text-gray-700 text-sm sm:text-base">Climate Data</span>
+            <span class="text-green-600 font-semibold text-sm sm:text-base">Local TMY3</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Design Standards -->
+      <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-100">
+        <div class="flex items-start space-x-4 mb-4 sm:mb-6">
+          <div class="bg-cyan-100 p-3 rounded-xl">
+            <FileText className="w-6 sm:w-8 h-6 sm:h-8 text-cyan-600" />
+          </div>
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Design Standards & Codes</h3>
+            <p class="text-gray-600 mb-4 text-sm sm:text-base">
+              Adherence to national and local codes ensuring safety, efficiency, 
+              and regulatory compliance for all HVAC installations.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-2 sm:space-y-3">
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700 text-sm sm:text-base">ASHRAE 90.1</span>
+            <span class="text-blue-600 font-semibold text-sm sm:text-base">Energy Standard</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700 text-sm sm:text-base">IMC/UMC Codes</span>
+            <span class="text-blue-600 font-semibold text-sm sm:text-base">Mechanical Codes</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700 text-sm sm:text-base">NFPA Standards</span>
+            <span class="text-blue-600 font-semibold text-sm sm:text-base">Safety Compliance</span>
+          </div>
+          <div class="flex justify-between items-center py-2">
+            <span class="text-gray-700 text-sm sm:text-base">Local Amendments</span>
+            <span class="text-green-600 font-semibold text-sm sm:text-base">Verified</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CAD & BIM -->
+      <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-100">
+        <div class="flex items-start space-x-4 mb-4 sm:mb-6">
+          <div class="bg-indigo-100 p-3 rounded-xl">
+            <Layers className="w-6 sm:w-8 h-6 sm:h-8 text-indigo-600" />
+          </div>
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">CAD & BIM Standards</h3>
+            <p class="text-gray-600 mb-4 text-sm sm:text-base">
+              Professional CAD documentation and BIM modeling for seamless coordination 
+              and integration with architectural and structural systems.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-2 sm:space-y-3">
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700 text-sm sm:text-base">AutoCAD/Revit MEP</span>
+            <span class="text-indigo-600 font-semibold text-sm sm:text-base">Professional</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700 text-sm sm:text-base">BIM Coordination</span>
+            <span class="text-indigo-600 font-semibold text-sm sm:text-base">3D Modeling</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700 text-sm sm:text-base">Layer Standards</span>
+            <span class="text-indigo-600 font-semibold text-sm sm:text-base">AIA/NCS</span>
+          </div>
+          <div class="flex justify-between items-center py-2">
+            <span class="text-gray-700 text-sm sm:text-base">File Formats</span>
+            <span class="text-indigo-600 font-semibold text-sm sm:text-base">DWG/RVT/PDF</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Equipment Selection -->
+      <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-100">
+        <div class="flex items-start space-x-4 mb-4 sm:mb-6">
+          <div class="bg-green-100 p-3 rounded-xl">
+            <Settings className="w-6 sm:w-8 h-6 sm:h-8 text-green-600" />
+          </div>
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Equipment Selection Process</h3>
+            <p class="text-gray-600 mb-4 text-sm sm:text-base">
+              Comprehensive equipment evaluation considering efficiency, lifecycle costs, 
+              maintenance requirements, and manufacturer support.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-2 sm:space-y-3">
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700 text-sm sm:text-base">Efficiency Ratings</span>
+            <span class="text-green-600 font-semibold text-sm sm:text-base">ENERGY STAR</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700 text-sm sm:text-base">Lifecycle Analysis</span>
+            <span class="text-green-600 font-semibold text-sm sm:text-base">4+ Years</span>
+          </div>
+          <div class="flex justify-between items-center py-2 border-b border-gray-100">
+            <span class="text-gray-700 text-sm sm:text-base">Manufacturer Support</span>
+            <span class="text-green-600 font-semibold text-sm sm:text-base">Tier 1 Brands</span>
+          </div>
+          <div class="flex justify-between items-center py-2">
+            <span class="text-gray-700 text-sm sm:text-base">Warranty Coverage</span>
+            <span class="text-green-600 font-semibold text-sm sm:text-base">Extended</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Deliverables -->
+    <div class="bg-gradient-to-r from-slate-800 to-slate-900 text-white p-6 sm:p-8 md:p-12 rounded-2xl">
+      <h3 class="text-xl sm:text-2xl md:text-3xl font-bold mb-6 sm:mb-8 text-center">Project Deliverables & Timeline</h3>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8">
+        <div class="text-center">
+          <div class="text-2xl sm:text-3xl font-bold text-blue-400 mb-2">Week 1-2</div>
+          <div class="text-slate-300 text-sm sm:text-base">Load Calculations</div>
+          <div class="text-xs text-slate-400 mt-1">System sizing</div>
+        </div>
+        <div class="text-center">
+          <div class="text-2xl sm:text-3xl font-bold text-cyan-400 mb-2">Week 3-4</div>
+          <div class="text-slate-300 text-sm sm:text-base">System Design</div>
+          <div class="text-xs text-slate-400 mt-1">Equipment layout</div>
+        </div>
+        <div class="text-center">
+          <div class="text-2xl sm:text-3xl font-bold text-indigo-400 mb-2">Week 5-6</div>
+          <div class="text-slate-300 text-sm sm:text-base">CAD Development</div>
+          <div class="text-xs text-slate-400 mt-1">Detailed drawings</div>
+        </div>
+        <div class="text-center">
+          <div class="text-2xl sm:text-3xl font-bold text-green-400 mb-2">Week 7-8</div>
+          <div class="text-slate-300 text-sm sm:text-base">Final Review</div>
+          <div class="text-xs text-slate-400 mt-1">Quality assurance</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

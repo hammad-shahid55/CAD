@@ -1,0 +1,189 @@
+---
+import { Image } from "astro:assets";
+
+// src/components/ServicesSection.astro
+
+// Services data with real images
+const ourServices = [
+  {
+    title: "WATER HYGIENE",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop",
+    description: "We specialize in producing high-quality CAD Diagrams that can be delivered in various digital formats."
+  },
+  {
+    title: "AIR HYGIENE", 
+    image: "https://images.pexels.com/photos/5499417/pexels-photo-5499417.jpeg",
+    description: "We deliver cost-effective solutions that prioritize Air Hygiene's financial impact and maximize value."
+  },
+  {
+    title: "WASTE WATER MANAGEMENT",
+    image: "https://images.pexels.com/photos/2480807/pexels-photo-2480807.jpeg", 
+    description: "We wastewater design compliance, ensuring your projects consistently excel in both functionality and industry standards."
+  },
+  {
+    title: "HVAC",
+    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&h=300&fit=crop",
+    description: "Our HVAC modeling and design services ensure that your HVAC systems are modeled in line with shared specifications."
+  }
+];
+
+const cadServices = [
+  {
+    title: "2D DRAFTING",
+    image: "https://images.unsplash.com/photo-1586473219010-2ffc57b0d282?w=400&h=300&fit=crop",
+    description: "200+ trained and certified CAD drafters for accuracy and turnaround time."
+  },
+  {
+    title: "CAD CONVERSION",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=300&fit=crop", 
+    description: "Quantum Kurv converted 500,000+ legacy engineering drawings into CAD file."
+  },
+  {
+    title: "CAD MIGRATION",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
+    description: "Migrate to new-age CAD software – Revit, SolidWorks, Inventor, and more."
+  },
+  {
+    title: "3D MODELING",
+    image: "https://images.pexels.com/photos/8470847/pexels-photo-8470847.jpeg",
+    description: "3D modeling for architectural, mechanical engineering, & animation projects."
+  }
+];
+
+// Project images
+const projectImages = [
+  "https://demo1.qubitkurv.com/wp-content/uploads/2024/03/pdf-to-cad-for-retail-shop-texas-transformed-2.jpeg",
+  "https://demo1.qubitkurv.com/wp-content/uploads/2024/03/glazing-shop-drawing-australia-project-transformed-1.jpeg",
+  "https://demo1.qubitkurv.com/wp-content/uploads/2024/03/residential-apartment-architectural-drawing-australia_1-transformed-1.jpeg",
+  "https://demo1.qubitkurv.com/wp-content/uploads/2024/03/Schematic-3-1-1.webp",
+  "https://demo1.qubitkurv.com/wp-content/uploads/2024/03/Minimalist-Business-Letterhead-500-x-544-px.png",
+  "https://demo1.qubitkurv.com/wp-content/uploads/2024/03/Minimalist-Business-Letterhead-500-x-544-px.webp",
+  "https://demo1.qubitkurv.com/wp-content/uploads/2024/03/eng_design.jpg",
+  "https://demo1.qubitkurv.com/wp-content/uploads/2024/03/yellow-Minimalist-Business-Card-668-x-377-px-2.png"
+];
+---
+
+<!-- Our Services Section -->
+<section class="py-12 md:py-16 bg-white">
+  <div class="container mx-auto px-4 lg:px-8">
+    <!-- Section Header -->
+    <div class="text-center mb-8 md:mb-12">
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-4">
+        OUR SERVICES
+      </h2>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+      {ourServices.map((service, index) => (
+        <div class="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col h-full">
+          <!-- Header -->
+          <div class="bg-primary text-white text-center py-4 px-4">
+            <h3 class="font-bold text-sm md:text-base tracking-wide">
+              {service.title}
+            </h3>
+          </div>
+          
+          <!-- Image -->
+          <div class="h-56 bg-gradient-to-b from-pink-50 to-pink-100 p-4 flex items-center justify-center">
+            <Image 
+              src={service.image}
+              alt={service.title}
+              width={280}
+              height={180}
+              class="w-full h-full object-cover rounded-lg shadow-md"
+              loading={index < 2 ? "eager" : "lazy"}
+            />
+          </div>
+          
+          <!-- Content - Flex grow to push button to bottom -->
+          <div class="bg-gradient-to-b from-pink-50 to-pink-100 p-5 flex flex-col flex-grow">
+            <p class="text-gray-700 text-sm leading-relaxed mb-6 flex-grow">
+              {service.description}
+            </p>
+            
+            <!-- Premium Button -->
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- CAD Services Section -->
+<section class="py-12 md:py-16 bg-gray-50">
+  <div class="container mx-auto px-4 lg:px-8">
+    <!-- Section Header -->
+    <div class="text-center mb-8 md:mb-12">
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-4">
+        CAD SERVICES OFFERING
+      </h2>
+    </div>
+
+    <!-- CAD Services Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+      {cadServices.map((service, index) => (
+        <div class="bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col h-full">
+          <!-- Header -->
+          <div class="bg-primary text-white text-center py-4 px-4">
+            <h3 class="font-bold text-sm md:text-base tracking-wide">
+              {service.title}
+            </h3>
+          </div>
+          
+          <!-- Image -->
+          <div class="h-56 bg-gradient-to-b from-pink-50 to-pink-100 p-4 flex items-center justify-center">
+            <Image 
+              src={service.image}
+              alt={service.title}
+              width={280}
+              height={180}
+              class="w-full h-full object-cover rounded-lg shadow-md"
+              loading={index < 2 ? "eager" : "lazy"}
+            />
+          </div>
+          
+        {/* <!-- Content - Flex grow to push button to bottom --> */}
+          <div class="bg-white p-5 flex flex-col flex-grow">
+            <p class="text-gray-700 text-sm leading-relaxed mb-6 flex-grow">
+              {service.description}
+            </p>
+            
+            <!-- Premium Button -->
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- Our Projects Section -->
+<section class="py-12 md:py-16 bg-white">
+  <div class="container mx-auto px-4 lg:px-8">
+    <!-- Section Header -->
+    <div class="text-center mb-8 md:mb-12">
+      <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-4">
+        OUR PROJECTS
+      </h2>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+      {projectImages.map((image, index) => (
+        <div class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+          <!-- Project Image -->
+          <div class="h-48 md:h-56 overflow-hidden">
+            <Image 
+              src={image}
+              alt={`Project ${index + 1}`}
+              width={320}
+              height={200}
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              loading={index < 4 ? "eager" : "lazy"}
+            />
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

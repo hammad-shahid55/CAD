@@ -1,0 +1,265 @@
+---
+import { Home, Building2, Factory, Wind, Thermometer, Zap } from 'lucide-react';
+---
+
+<section class="py-16 sm:py-20 px-4 bg-white">
+  <div class="max-w-7xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-12 sm:mb-16">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
+        HVAC Drawing Services
+      </h2>
+      <p class="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+        Comprehensive HVAC design and documentation services for residential, commercial, and industrial projects. 
+        From simple retrofits to complex new construction with energy-efficient solutions.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="grid lg:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
+      <!-- Residential HVAC -->
+      <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 sm:p-8 rounded-2xl border border-blue-100">
+        <div class="flex items-start space-x-4 mb-4 sm:mb-6">
+          <div class="bg-primary p-3 sm:p-4 rounded-xl">
+            <Home className="w-8 sm:w-10 h-8 sm:h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Residential HVAC Systems</h3>
+            <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+              Custom HVAC design for homes including central air, heat pumps, ductless systems, 
+              and radiant heating with optimal comfort and energy efficiency.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4 sm:mt-6">
+          <div class="bg-white/70 p-3 sm:p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1 text-sm sm:text-base">Central Systems</h4>
+            <p class="text-xs sm:text-sm text-gray-600">Forced air, heat pumps, zoning</p>
+          </div>
+          <div class="bg-white/70 p-3 sm:p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1 text-sm sm:text-base">Ductless Solutions</h4>
+            <p class="text-xs sm:text-sm text-gray-600">Mini-splits, VRF systems</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Commercial HVAC -->
+      <div class="bg-gradient-to-br from-cyan-50 to-blue-50 p-6 sm:p-8 rounded-2xl border border-cyan-100">
+        <div class="flex items-start space-x-4 mb-4 sm:mb-6">
+          <div class="bg-cyan-500 p-3 sm:p-4 rounded-xl">
+            <Building2 className="w-8 sm:w-10 h-8 sm:h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Commercial HVAC Design</h3>
+            <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+              Advanced commercial systems including rooftop units, chillers, VAV systems, 
+              and energy recovery with building automation integration.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4 sm:mt-6">
+          <div class="bg-white/70 p-3 sm:p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1 text-sm sm:text-base">Large Systems</h4>
+            <p class="text-xs sm:text-sm text-gray-600">Chillers, cooling towers, AHUs</p>
+          </div>
+          <div class="bg-white/70 p-3 sm:p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1 text-sm sm:text-base">VAV Systems</h4>
+            <p class="text-xs sm:text-sm text-gray-600">Variable air volume control</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Industrial HVAC -->
+      <div class="bg-gradient-to-br from-indigo-50 to-purple-50 p-6 sm:p-8 rounded-2xl border border-indigo-100">
+        <div class="flex items-start space-x-4 mb-4 sm:mb-6">
+          <div class="bg-indigo-500 p-3 sm:p-4 rounded-xl">
+            <Factory className="w-8 sm:w-10 h-8 sm:h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Industrial HVAC Solutions</h3>
+            <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+              Specialized industrial HVAC systems for manufacturing, process cooling, 
+              clean rooms, and hazardous environments with compliance requirements.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4 sm:mt-6">
+          <div class="bg-white/70 p-3 sm:p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1 text-sm sm:text-base">Process Cooling</h4>
+            <p class="text-xs sm:text-sm text-gray-600">Equipment cooling, heat recovery</p>
+          </div>
+          <div class="bg-white/70 p-3 sm:p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1 text-sm sm:text-base">Clean Rooms</h4>
+            <p class="text-xs sm:text-sm text-gray-600">Controlled environments</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Specialty Systems -->
+      <div class="bg-gradient-to-br from-green-50 to-teal-50 p-6 sm:p-8 rounded-2xl border border-green-100">
+        <div class="flex items-start space-x-4 mb-4 sm:mb-6">
+          <div class="bg-green-500 p-3 sm:p-4 rounded-xl">
+            <Wind className="w-8 sm:w-10 h-8 sm:h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Specialty HVAC Systems</h3>
+            <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+              Custom solutions for unique applications including data centers, healthcare, 
+              laboratories, and energy-efficient green building designs.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4 sm:mt-6">
+          <div class="bg-white/70 p-3 sm:p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1 text-sm sm:text-base">Data Centers</h4>
+            <p class="text-xs sm:text-sm text-gray-600">Precision cooling, redundancy</p>
+          </div>
+          <div class="bg-white/70 p-3 sm:p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1 text-sm sm:text-base">Healthcare</h4>
+            <p class="text-xs sm:text-sm text-gray-600">Critical environments</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- System Components -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
+      <div class="bg-gradient-to-br from-red-50 to-orange-50 p-6 sm:p-8 rounded-2xl border border-red-100">
+        <div class="flex items-start space-x-4 mb-4 sm:mb-6">
+          <div class="bg-red-500 p-3 sm:p-4 rounded-xl">
+            <Thermometer className="w-8 sm:w-10 h-8 sm:h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Heating Systems</h3>
+            <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+              Complete heating system design including boilers, furnaces, heat pumps, 
+              and radiant systems with distribution networks.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-2 sm:space-y-3">
+          <div class="bg-white/70 p-2 sm:p-3 rounded-lg">
+            <span class="text-xs sm:text-sm font-medium text-gray-900">✓ Boiler Systems</span>
+          </div>
+          <div class="bg-white/70 p-2 sm:p-3 rounded-lg">
+            <span class="text-xs sm:text-sm font-medium text-gray-900">✓ Heat Pump Design</span>
+          </div>
+          <div class="bg-white/70 p-2 sm:p-3 rounded-lg">
+            <span class="text-xs sm:text-sm font-medium text-gray-900">✓ Radiant Heating</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-6 sm:p-8 rounded-2xl border border-purple-100">
+        <div class="flex items-start space-x-4 mb-4 sm:mb-6">
+          <div class="bg-purple-500 p-3 sm:p-4 rounded-xl">
+            <Wind className="w-8 sm:w-10 h-8 sm:h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Ventilation Design</h3>
+            <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+              Indoor air quality solutions including fresh air systems, exhaust design, 
+              and energy recovery ventilation.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-2 sm:space-y-3">
+          <div class="bg-white/70 p-2 sm:p-3 rounded-lg">
+            <span class="text-xs sm:text-sm font-medium text-gray-900">✓ Fresh Air Systems</span>
+          </div>
+          <div class="bg-white/70 p-2 sm:p-3 rounded-lg">
+            <span class="text-xs sm:text-sm font-medium text-gray-900">✓ Energy Recovery</span>
+          </div>
+          <div class="bg-white/70 p-2 sm:p-3 rounded-lg">
+            <span class="text-xs sm:text-sm font-medium text-gray-900">✓ IAQ Solutions</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gradient-to-br from-yellow-50 to-orange-50 p-6 sm:p-8 rounded-2xl border border-yellow-100 sm:col-span-2 lg:col-span-1">
+        <div class="flex items-start space-x-4 mb-4 sm:mb-6">
+          <div class="bg-yellow-500 p-3 sm:p-4 rounded-xl">
+            <Zap className="w-8 sm:w-10 h-8 sm:h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Controls & Automation</h3>
+            <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+              Advanced building automation and control systems for optimal efficiency 
+              and occupant comfort.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-2 sm:space-y-3">
+          <div class="bg-white/70 p-2 sm:p-3 rounded-lg">
+            <span class="text-xs sm:text-sm font-medium text-gray-900">✓ BAS Integration</span>
+          </div>
+          <div class="bg-white/70 p-2 sm:p-3 rounded-lg">
+            <span class="text-xs sm:text-sm font-medium text-gray-900">✓ Smart Controls</span>
+          </div>
+          <div class="bg-white/70 p-2 sm:p-3 rounded-lg">
+            <span class="text-xs sm:text-sm font-medium text-gray-900">✓ Energy Management</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Excellence -->
+    <div class="bg-gradient-to-r from-slate-800 to-slate-900 text-white p-6 sm:p-8 md:p-12 rounded-2xl">
+      <div class="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
+        <div>
+          <h3 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Engineering Excellence & Standards</h3>
+          <p class="text-slate-300 leading-relaxed mb-6 sm:mb-8 text-sm sm:text-base">
+            Our HVAC designs follow ASHRAE standards and building codes, ensuring energy efficiency, 
+            optimal indoor air quality, and long-term system reliability for every project.
+          </p>
+          
+          <div class="space-y-3 sm:space-y-4">
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+              <span class="text-slate-300 text-sm sm:text-base">ASHRAE 90.1 energy efficiency compliance</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+              <span class="text-slate-300 text-sm sm:text-base">Load calculation per ASHRAE standards</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-indigo-400 rounded-full"></div>
+              <span class="text-slate-300 text-sm sm:text-base">BIM-ready 3D modeling and coordination</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-green-400 rounded-full"></div>
+              <span class="text-slate-300 text-sm sm:text-base">Energy modeling and optimization</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <div class="bg-white/10 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-white/20">
+            <div class="grid grid-cols-2 gap-4 sm:gap-6">
+              <div>
+                <div class="text-2xl sm:text-4xl font-bold text-blue-400 mb-2">500+</div>
+                <div class="text-slate-300 mb-1 sm:mb-2 text-sm sm:text-base">HVAC Projects</div>
+                <div class="text-xs text-slate-400">Designed & installed</div>
+              </div>
+              <div>
+                <div class="text-2xl sm:text-4xl font-bold text-cyan-400 mb-2">30%</div>
+                <div class="text-slate-300 mb-1 sm:mb-2 text-sm sm:text-base">Energy Savings</div>
+                <div class="text-xs text-slate-400">Average efficiency gain</div>
+              </div>
+              <div>
+                <div class="text-2xl sm:text-4xl font-bold text-indigo-400 mb-2">100%</div>
+                <div class="text-slate-300 mb-1 sm:mb-2 text-sm sm:text-base">Code Compliant</div>
+                <div class="text-xs text-slate-400">First-time approvals</div>
+              </div>
+              <div>
+                <div class="text-2xl sm:text-4xl font-bold text-green-400 mb-2">24/7</div>
+                <div class="text-slate-300 mb-1 sm:mb-2 text-sm sm:text-base">Support</div>
+                <div class="text-xs text-slate-400">Design to installation</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

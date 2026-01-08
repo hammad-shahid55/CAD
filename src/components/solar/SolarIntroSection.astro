@@ -1,0 +1,126 @@
+---
+import { Layout, Zap, Calculator, CheckCircle } from 'lucide-react';
+---
+
+<section class="py-20 px-4 bg-gray-50">
+  <div class="max-w-6xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        Professional Solar PV System Design
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Comprehensive CAD services for solar photovoltaic installations, from initial layout design 
+        to detailed electrical wiring diagrams that ensure optimal performance and code compliance.
+      </p>
+    </div>
+
+    <!-- Main Content Grid -->
+    <div class="grid lg:grid-cols-2 gap-12 items-start mb-16">
+      <!-- Content -->
+      <div class="space-y-8">
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+          <div class="flex items-start space-x-4 mb-6">
+            <div class="bg-yellow-100 p-3 rounded-xl">
+              <Layout className="w-8 h-8 text-yellow-600" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Optimal Panel Layout Design</h3>
+              <p class="text-gray-600">
+                Strategic positioning of solar panels to maximize energy production while considering 
+                roof constraints, shading analysis, and structural limitations for peak efficiency.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+          <div class="flex items-start space-x-4 mb-6">
+            <div class="bg-orange-100 p-3 rounded-xl">
+              <Zap className="w-8 h-8 text-orange-600" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Electrical Wiring Systems</h3>
+              <p class="text-gray-600">
+                Detailed electrical schematics including DC and AC wiring, inverter connections, 
+                grounding systems, and safety disconnects meeting NEC standards.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+          <div class="flex items-start space-x-4 mb-6">
+            <div class="bg-green-100 p-3 rounded-xl">
+              <Calculator className="w-8 h-8 text-green-600" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Performance Calculations</h3>
+              <p class="text-gray-600">
+                Precise energy yield calculations, load analysis, and system sizing to ensure 
+                optimal performance and return on investment for your solar installation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual Element -->
+      <div class="relative">
+        <div class="bg-gradient-to-br from-yellow-50 to-orange-50 p-8 rounded-2xl">
+          <img 
+            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=500&fit=crop&crop=entropy&auto=format&q=80"
+            alt="Solar panel technical drawings and blueprints"
+            class="w-full h-96 object-cover rounded-xl shadow-lg"
+          />
+          <!-- Overlay Stats -->
+          <div class="absolute bottom-4 left-4 right-4">
+            <div class="bg-white/90 backdrop-blur-sm p-6 rounded-xl border border-white/20">
+              <div class="grid grid-cols-3 gap-4 text-center">
+                <div>
+                  <div class="text-2xl font-bold text-yellow-600">99%</div>
+                  <div class="text-sm text-gray-600">Efficiency</div>
+                </div>
+                <div>
+                  <div class="text-2xl font-bold text-orange-600">NEC</div>
+                  <div class="text-sm text-gray-600">Compliant</div>
+                </div>
+                <div>
+                  <div class="text-2xl font-bold text-red-600">3D</div>
+                  <div class="text-sm text-gray-600">Modeling</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gradient-to-r from-slate-800 to-slate-900 text-white p-8 md:p-12 rounded-2xl">
+      <h3 class="text-2xl md:text-3xl font-bold mb-8 text-center">What Our Solar PV Designs Include</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center space-y-4">
+          <div class="bg-yellow-500/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
+            <span class="text-2xl font-bold">1</span>
+          </div>
+          <h4 class="text-xl font-semibold">Panel Layout & Spacing</h4>
+          <p class="text-slate-300">Optimal panel positioning with proper spacing for maintenance and maximum solar exposure</p>
+        </div>
+        <div class="text-center space-y-4">
+          <div class="bg-orange-500/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
+            <span class="text-2xl font-bold">2</span>
+          </div>
+          <h4 class="text-xl font-semibold">Electrical Schematics</h4>
+          <p class="text-slate-300">Complete wiring diagrams including DC combiner boxes, inverters, and grid connection points</p>
+        </div>
+        <div class="text-center space-y-4">
+          <div class="bg-red-500/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
+            <span class="text-2xl font-bold">3</span>
+          </div>
+          <h4 class="text-xl font-semibold">Code Compliance</h4>
+          <p class="text-slate-300">All designs meet local electrical codes, building permits, and utility interconnection requirements</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

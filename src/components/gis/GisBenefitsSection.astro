@@ -1,0 +1,132 @@
+---
+import { TrendingUp, Shield, Clock, Award, CheckCircle, Target } from 'lucide-react';
+import { Image } from 'astro:assets';
+---
+
+<section class="py-16 sm:py-20 px-4 bg-white">
+  <div class="max-w-6xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-12 sm:mb-16">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
+        Why GIS & Facilities Mapping Transforms Operations
+      </h2>
+      <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Professional GIS solutions provide unprecedented visibility into spatial relationships, 
+        enabling data-driven decisions that improve efficiency, reduce costs, and enhance planning capabilities.
+      </p>
+    </div>
+
+    <!-- Main Benefits Grid -->
+    <div class="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-12 sm:mb-16">
+      <!-- Content Side -->
+      <div class="space-y-6 sm:space-y-8">
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 sm:p-8 rounded-2xl border border-blue-100">
+          <div class="flex items-start space-x-4">
+            <div class="bg-primary p-3 rounded-xl flex-shrink-0">
+              <TrendingUp className="w-6 sm:w-8 h-6 sm:h-8 text-white" />
+            </div>
+            <div>
+              <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">Enhanced Decision Making</h3>
+              <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+                Spatial analysis reveals patterns and relationships invisible in traditional data, 
+                enabling strategic decisions based on location intelligence and comprehensive insights.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-cyan-50 to-blue-50 p-6 sm:p-8 rounded-2xl border border-cyan-100">
+          <div class="flex items-start space-x-4">
+            <div class="bg-cyan-500 p-3 rounded-xl flex-shrink-0">
+              <Shield className="w-6 sm:w-8 h-6 sm:h-8 text-white" />
+            </div>
+            <div>
+              <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">Improved Asset Management</h3>
+              <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+                Real-time asset tracking and condition monitoring reduce maintenance costs, 
+                extend equipment life, and prevent costly failures through predictive analytics.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-indigo-50 to-purple-50 p-6 sm:p-8 rounded-2xl border border-indigo-100">
+          <div class="flex items-start space-x-4">
+            <div class="bg-indigo-500 p-3 rounded-xl flex-shrink-0">
+              <Clock className="w-6 sm:w-8 h-6 sm:h-8 text-white" />
+            </div>
+            <div>
+              <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">Operational Efficiency</h3>
+              <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+                Streamlined workflows, optimized routing, and automated reporting reduce 
+                operational overhead by 30-40% while improving service quality.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual Side -->
+      <div class="relative">
+        <div class="bg-gradient-to-br from-gray-100 to-gray-200 p-6 sm:p-8 rounded-2xl">
+          <Image 
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=500&fit=crop&crop=entropy&auto=format&q=80"
+            alt="GIS technology improving operational efficiency and decision making"
+            width={600}
+            height={384}
+            class="w-full h-80 sm:h-96 object-cover rounded-xl shadow-lg"
+          />
+          <!-- Overlay Information -->
+          <div class="absolute top-4 sm:top-12 right-4 sm:right-12 bg-white/95 backdrop-blur-sm p-3 sm:p-4 rounded-xl border border-gray-200 max-w-48 sm:max-w-xs">
+            <h4 class="font-bold text-gray-900 mb-2 text-sm sm:text-base">GIS Benefits</h4>
+            <ul class="space-y-1 sm:space-y-2 text-xs sm:text-sm text-gray-600">
+              <li class="flex items-center space-x-2">
+                <Award className="w-3 sm:w-4 h-3 sm:h-4 text-primary flex-shrink-0" />
+                <span>Data visualization</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <Target className="w-3 sm:w-4 h-3 sm:h-4 text-primary flex-shrink-0" />
+                <span>Spatial analysis</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <CheckCircle className="w-3 sm:w-4 h-3 sm:h-4 text-primary flex-shrink-0" />
+                <span>Real-time monitoring</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <Shield className="w-3 sm:w-4 h-3 sm:h-4 text-primary flex-shrink-0" />
+                <span>Risk assessment</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Key Performance Metrics -->
+    <div class="bg-gradient-to-r from-slate-800 to-slate-900 text-white p-6 sm:p-8 md:p-12 rounded-2xl">
+      <h3 class="text-xl sm:text-2xl md:text-3xl font-bold mb-6 sm:mb-8 text-center">Impact of Professional GIS Implementation</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8">
+        <div class="text-center">
+          <div class="text-2xl sm:text-4xl font-bold text-blue-400 mb-1 sm:mb-2">40%</div>
+          <div class="text-slate-300 text-sm sm:text-base">Cost Reduction</div>
+          <div class="text-xs text-slate-400 mt-1">Operational savings</div>
+        </div>
+        <div class="text-center">
+          <div class="text-2xl sm:text-4xl font-bold text-cyan-400 mb-1 sm:mb-2">60%</div>
+          <div class="text-slate-300 text-sm sm:text-base">Faster Response</div>
+          <div class="text-xs text-slate-400 mt-1">Emergency situations</div>
+        </div>
+        <div class="text-center">
+          <div class="text-2xl sm:text-4xl font-bold text-indigo-400 mb-1 sm:mb-2">90%</div>
+          <div class="text-slate-300 text-sm sm:text-base">Data Accuracy</div>
+          <div class="text-xs text-slate-400 mt-1">Spatial precision</div>
+        </div>
+        <div class="text-center">
+          <div class="text-2xl sm:text-4xl font-bold text-green-400 mb-1 sm:mb-2">100%</div>
+          <div class="text-slate-300 text-sm sm:text-base">Mobile Access</div>
+          <div class="text-xs text-slate-400 mt-1">Real-time updates</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

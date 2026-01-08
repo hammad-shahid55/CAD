@@ -1,0 +1,41 @@
+---
+import Layout from '@/layouts/main.astro';
+import GisHero from '@/components/gis/GisHero.astro';
+import GisIntroSection from '@/components/gis/GisIntroSection.astro';
+import GisServicesSection from '@/components/gis/GisServicesSection.astro';
+import GisBenefitsSection from '@/components/gis/GisBenefitsSection.astro';
+import GisTechnicalSection from '@/components/gis/GisTechnicalSection.astro';
+import GisFaqSection from '@/components/gis/GisFaqSection.astro';
+import GisCtaSection from '@/components/gis/GisCtaSection.astro';
+---
+
+<Layout
+  title="Facilities Mapping & GIS Services UK | Spatial Data & CAD Integration"
+  description="Professional facilities mapping and GIS services in Birmingham. Expert spatial data management, facility mapping, asset tracking, and CAD to GIS integration for infrastructure and facility management."
+  keywords={[
+    'facilities mapping UK',
+    'GIS services Birmingham',
+    'spatial data management',
+    'facility asset mapping',
+    'CAD to GIS conversion',
+    'infrastructure mapping',
+    'utility mapping CAD',
+    'spatial intelligence services',
+    'facility management GIS',
+    'geospatial CAD services'
+  ]}
+  schemaType="Service"
+  canonical="/facilities-mapping-and-gis"
+  breadcrumbs={[
+    { name: 'Home', url: '/' },
+    { name: 'Facilities Mapping & GIS', url: '/facilities-mapping-and-gis' }
+  ]}
+>
+  <GisHero />
+  <GisIntroSection />
+  <GisServicesSection />
+  <GisBenefitsSection />
+  <GisTechnicalSection />
+  <GisFaqSection />
+  <GisCtaSection />
+</Layout>

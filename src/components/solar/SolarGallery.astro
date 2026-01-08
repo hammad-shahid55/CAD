@@ -1,0 +1,153 @@
+---
+import { ZoomIn, Download, Eye } from 'lucide-react';
+---
+
+<section class="py-20 px-4 bg-gray-50">
+  <div class="max-w-7xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        Solar PV Design Portfolio
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Explore our comprehensive portfolio of solar photovoltaic system designs, showcasing 
+        innovative layouts, precise wiring diagrams, and optimized energy solutions.
+      </p>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12">
+      <!-- Gallery Item 1 -->
+      <div class="group relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img 
+            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=450&fit=crop&crop=entropy&auto=format&q=80"
+            alt="Residential rooftop solar panel layout design"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div class="absolute bottom-4 left-4 right-4">
+            <h3 class="text-white text-xl font-bold mb-2">Residential Rooftop System</h3>
+            <p class="text-gray-200 text-sm mb-4">15kW residential installation with optimal panel placement and string wiring</p>
+            <div class="flex space-x-2">
+              <button class="bg-yellow-500 hover:bg-yellow-600 text-white p-2 rounded-lg transition-colors">
+                <ZoomIn className="w-4 h-4" />
+              </button>
+              <button class="bg-green-500 hover:bg-green-600 text-white p-2 rounded-lg transition-colors">
+                <Download className="w-4 h-4" />
+              </button>
+              <button class="bg-purple-500 hover:bg-purple-600 text-white p-2 rounded-lg transition-colors">
+                <Eye className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="absolute top-4 left-4">
+          <span class="bg-yellow-500 text-white px-3 py-1 rounded-full text-xs font-semibold">Residential</span>
+        </div>
+      </div>
+
+      <!-- Gallery Item 2 -->
+      <div class="group relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img 
+            src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&h=450&fit=crop&crop=entropy&auto=format&q=80"
+            alt="Commercial building solar installation layout"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div class="absolute bottom-4 left-4 right-4">
+            <h3 class="text-white text-xl font-bold mb-2">Commercial Office Complex</h3>
+            <p class="text-gray-200 text-sm mb-4">250kW commercial system with advanced monitoring and grid-tie capabilities</p>
+            <div class="flex space-x-2">
+              <button class="bg-yellow-500 hover:bg-yellow-600 text-white p-2 rounded-lg transition-colors">
+                <ZoomIn className="w-4 h-4" />
+              </button>
+              <button class="bg-green-500 hover:bg-green-600 text-white p-2 rounded-lg transition-colors">
+                <Download className="w-4 h-4" />
+              </button>
+              <button class="bg-purple-500 hover:bg-purple-600 text-white p-2 rounded-lg transition-colors">
+                <Eye className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="absolute top-4 left-4">
+          <span class="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-semibold">Commercial</span>
+        </div>
+      </div>
+
+      <!-- Gallery Item 3 -->
+      <div class="group relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img 
+            src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=600&h=450&fit=crop&crop=entropy&auto=format&q=80"
+            alt="Industrial solar farm layout design"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div class="absolute bottom-4 left-4 right-4">
+            <h3 class="text-white text-xl font-bold mb-2">Industrial Solar Farm</h3>
+            <p class="text-gray-200 text-sm mb-4">2MW ground-mounted solar farm with single-axis tracking systems</p>
+            <div class="flex space-x-2">
+              <button class="bg-yellow-500 hover:bg-yellow-600 text-white p-2 rounded-lg transition-colors">
+                <ZoomIn className="w-4 h-4" />
+              </button>
+              <button class="bg-green-500 hover:bg-green-600 text-white p-2 rounded-lg transition-colors">
+                <Download className="w-4 h-4" />
+              </button>
+              <button class="bg-purple-500 hover:bg-purple-600 text-white p-2 rounded-lg transition-colors">
+                <Eye className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="absolute top-4 left-4">
+          <span class="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-semibold">Industrial</span>
+        </div>
+      </div>
+
+      <!-- Gallery Item 4 -->
+      <div class="group relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img 
+            src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=600&h=450&fit=crop&crop=entropy&auto=format&q=80"
+            alt="Ground-mounted solar tracking system"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div class="absolute bottom-4 left-4 right-4">
+            <h3 class="text-white text-xl font-bold mb-2">Ground Mount with Tracking</h3>
+            <p class="text-gray-200 text-sm mb-4">500kW ground-mounted system with dual-axis tracking for maximum efficiency</p>
+            <div class="flex space-x-2">
+              <button class="bg-yellow-500 hover:bg-yellow-600 text-white p-2 rounded-lg transition-colors">
+                <ZoomIn className="w-4 h-4" />
+              </button>
+              <button class="bg-green-500 hover:bg-green-600 text-white p-2 rounded-lg transition-colors">
+                <Download className="w-4 h-4" />
+              </button>
+              <button class="bg-purple-500 hover:bg-purple-600 text-white p-2 rounded-lg transition-colors">
+                <Eye className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="absolute top-4 left-4">
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold">Ground Mount</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="text-center">
+      <a href="/contact?#contact-form" class="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg inline-block">
+        Start Working With Us
+      </a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,46 @@
+---
+import Layout from '@/layouts/main.astro';
+import Hero from '@/components/legionella/Hero.astro';
+import IntroSection from '@/components/legionella/IntroSection.astro';
+import WaterSystemSection from '@/components/legionella/WaterSystemSection.astro';
+import Gallery from '@/components/legionella/Gallery.astro';
+import ImportanceSection from '@/components/legionella/ImportanceSection.astro';
+import WhenAcquireSection from '@/components/legionella/WhenAcquireSection.astro';
+import CadServicesSection from '@/components/legionella/CadServicesSection.astro';
+import FaqSection from '@/components/legionella/FaqSection.astro';
+import CtaSection from '@/components/legionella/CtaSection.astro';
+import LegionellaSection from '@/components/legionella/LegionellaSection.astro';
+---
+
+<Layout
+  title="Legionella Schematic Drawings UK | Water System CAD Risk Assessment"
+  description="Professional legionella schematic drawing services in Birmingham. Expert water system CAD diagrams, hot and cold water schematics, and legionella risk assessment drawings for compliance and safety."
+  keywords={[
+    'legionella schematic drawings',
+    'water system CAD diagrams',
+    'legionella risk assessment drawings',
+    'hot water system schematics',
+    'cold water system CAD',
+    'legionella compliance drawings',
+    'water hygiene schematics UK',
+    'L8 compliance drawings',
+    'water system documentation Birmingham'
+  ]}
+  schemaType="Service"
+  canonical="/legionella-schematic-drawing"
+  breadcrumbs={[
+    { name: 'Home', url: '/' },
+    { name: 'Legionella Schematic Drawings', url: '/legionella-schematic-drawing' }
+  ]}
+>
+  <Hero />
+  <IntroSection />
+  <LegionellaSection/>
+  <WaterSystemSection />
+  <Gallery />
+  <ImportanceSection />
+  <WhenAcquireSection />
+  <CadServicesSection />
+  <FaqSection />
+  <CtaSection />
+</Layout>

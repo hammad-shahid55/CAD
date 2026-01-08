@@ -1,0 +1,172 @@
+---
+// src/components/about/AboutServicesSection.astro
+import { Building, Box, PenTool, RefreshCw, FileText, Layers, Zap, Database, Grid } from 'lucide-react';
+---
+
+<section class="py-20 lg:py-32 relative">
+  <!-- Dynamic gradient background -->
+  <div class="absolute inset-0 bg-gradient-to-br from-slate-50 via-indigo-50/30 to-cyan-50/50"></div>
+  
+  <div class="relative container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-16 lg:mb-20">
+        <div class="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm border border-indigo-200 text-indigo-700 rounded-full text-sm font-medium mb-6">
+          <Grid size={16} />
+          Our Expertise
+        </div>
+        
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 leading-tight">
+          Comprehensive CAD Solutions
+          <span class="block text-indigo-600">Across Every Industry</span>
+        </h2>
+        
+        <p class="text-lg lg:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+          From initial concept to final implementation, we provide end-to-end CAD design services that bring your vision to life with unmatched precision and creativity.
+        </p>
+      </div>
+      
+      <!-- Services Mosaic Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        
+        <!-- Large Featured Service -->
+        <div class="md:col-span-2 lg:col-span-1 lg:row-span-2">
+          <div class="h-full bg-gradient-to-br from-indigo-600 to-purple-600 rounded-3xl p-8 text-white relative overflow-hidden group hover:scale-[1.02] transition-transform duration-300">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
+            <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12"></div>
+            
+            <div class="relative z-10 h-full flex flex-col">
+              <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
+                <Building size={32} className="text-white" />
+              </div>
+              
+              <h3 class="text-2xl font-bold mb-4">Architectural Design</h3>
+              <p class="text-indigo-100 leading-relaxed mb-6 flex-grow">
+                Complete architectural documentation including floor plans, elevations, sections, and construction details with precise measurements and professional presentation.
+              </p>
+              
+              <div class="space-y-2">
+                <div class="flex items-center gap-2 text-indigo-200 text-sm">
+                  <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+                  <span>Floor Plans & Elevations</span>
+                </div>
+                <div class="flex items-center gap-2 text-indigo-200 text-sm">
+                  <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+                  <span>Construction Details</span>
+                </div>
+                <div class="flex items-center gap-2 text-indigo-200 text-sm">
+                  <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+                  <span>Building Regulations</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 3D Rendering -->
+        <div class="group">
+          <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-indigo-100 hover:border-indigo-200 hover:shadow-xl transition-all duration-300 h-full">
+            <div class="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-xl flex items-center justify-center mb-4">
+              <Box size={24} className="text-white" />
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-3">3D Rendering</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Photorealistic 3D visualizations that bring your designs to life with stunning detail and accuracy.
+            </p>
+          </div>
+        </div>
+        
+        <!-- 2D Drafting -->
+        <div class="group">
+          <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-indigo-100 hover:border-indigo-200 hover:shadow-xl transition-all duration-300 h-full">
+            <div class="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-xl flex items-center justify-center mb-4">
+              <PenTool size={24} className="text-white" />
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-3">2D Drafting</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Precise technical drawings and detailed documentation for engineering and manufacturing applications.
+            </p>
+          </div>
+        </div>
+        
+        <!-- CAD Conversion -->
+        <div class="group">
+          <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-indigo-100 hover:border-indigo-200 hover:shadow-xl transition-all duration-300 h-full">
+            <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mb-4">
+              <RefreshCw size={24} className="text-white" />
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-3">CAD Conversion</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Transform legacy drawings and documents into modern CAD formats with precision and accuracy.
+            </p>
+          </div>
+        </div>
+        
+        <!-- As-Built Drawings -->
+        <div class="group">
+          <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-indigo-100 hover:border-indigo-200 hover:shadow-xl transition-all duration-300 h-full">
+            <div class="w-12 h-12 bg-gradient-to-br from-amber-500 to-orange-500 rounded-xl flex items-center justify-center mb-4">
+              <FileText size={24} className="text-white" />
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 mb-3">As-Built Drawings</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Accurate documentation of completed construction projects for facility management and future renovations.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Wide Service Card -->
+        <div class="md:col-span-2">
+          <div class="bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl p-6 lg:p-8 text-white relative overflow-hidden group hover:scale-[1.02] transition-transform duration-300">
+            <div class="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -mr-20 -mt-20"></div>
+            
+            <div class="relative z-10 grid md:grid-cols-2 gap-6 items-center">
+              <div>
+                <div class="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center mb-4">
+                  <Layers size={28} className="text-white" />
+                </div>
+                <h3 class="text-xl font-bold mb-3">Specialized Services</h3>
+                <p class="text-cyan-100 leading-relaxed">
+                  Custom CAD solutions tailored to your specific industry requirements and technical specifications.
+                </p>
+              </div>
+              
+              <div class="grid grid-cols-2 gap-4">
+                <div class="text-center">
+                  <div class="text-2xl font-bold text-white mb-1">HVAC</div>
+                  <div class="text-cyan-200 text-xs">System Design</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-2xl font-bold text-white mb-1">GIS</div>
+                  <div class="text-cyan-200 text-xs">Mapping Services</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-2xl font-bold text-white mb-1">Solar</div>
+                  <div class="text-cyan-200 text-xs">PV Layouts</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-2xl font-bold text-white mb-1">MEP</div>
+                  <div class="text-cyan-200 text-xs">Engineering</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Bottom CTA -->
+      <div class="text-center mt-16 lg:mt-20">
+        <div class="inline-flex flex-col sm:flex-row gap-4 items-center p-6 lg:p-8 bg-white/60 backdrop-blur-sm rounded-2xl border border-indigo-200">
+          <div class="flex-grow text-left">
+            <h4 class="text-xl font-bold text-slate-900 mb-2">Ready to Transform Your Project?</h4>
+            <p class="text-slate-600">Let's discuss how our expertise can bring your vision to life with precision and innovation.</p>
+          </div>
+          <a href="/contact?#contact-form" class="px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 whitespace-nowrap">
+            Start Your Project
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

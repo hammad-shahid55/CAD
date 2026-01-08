@@ -1,0 +1,265 @@
+---
+import { Building2, Factory, TreePine, Zap, Navigation, Shield } from 'lucide-react';
+---
+
+<section class="py-16 sm:py-20 px-4 bg-white">
+  <div class="max-w-7xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-12 sm:mb-16">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
+        GIS & Mapping Services
+      </h2>
+      <p class="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+        Comprehensive GIS solutions for diverse industries and applications. 
+        From facility management to environmental monitoring with cutting-edge spatial technology.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="grid lg:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
+      <!-- Facility Management GIS -->
+      <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 sm:p-8 rounded-2xl border border-blue-100">
+        <div class="flex items-start space-x-4 mb-4 sm:mb-6">
+          <div class="bg-primary p-3 sm:p-4 rounded-xl">
+            <Building2 className="w-8 sm:w-10 h-8 sm:h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Facility Management GIS</h3>
+            <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+              Comprehensive facility mapping with asset tracking, space management, 
+              and maintenance scheduling integrated into interactive GIS platforms.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4 sm:mt-6">
+          <div class="bg-white/70 p-3 sm:p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1 text-sm sm:text-base">Asset Tracking</h4>
+            <p class="text-xs sm:text-sm text-gray-600">Equipment location, status monitoring</p>
+          </div>
+          <div class="bg-white/70 p-3 sm:p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1 text-sm sm:text-base">Space Management</h4>
+            <p class="text-xs sm:text-sm text-gray-600">Occupancy, utilization analysis</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Industrial GIS -->
+      <div class="bg-gradient-to-br from-cyan-50 to-blue-50 p-6 sm:p-8 rounded-2xl border border-cyan-100">
+        <div class="flex items-start space-x-4 mb-4 sm:mb-6">
+          <div class="bg-cyan-500 p-3 sm:p-4 rounded-xl">
+            <Factory className="w-8 sm:w-10 h-8 sm:h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Industrial & Manufacturing GIS</h3>
+            <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+              Industrial site mapping with process flow visualization, safety zone management, 
+              and supply chain optimization through spatial analysis.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4 sm:mt-6">
+          <div class="bg-white/70 p-3 sm:p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1 text-sm sm:text-base">Process Mapping</h4>
+            <p class="text-xs sm:text-sm text-gray-600">Workflow, production line tracking</p>
+          </div>
+          <div class="bg-white/70 p-3 sm:p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1 text-sm sm:text-base">Safety Zones</h4>
+            <p class="text-xs sm:text-sm text-gray-600">Hazard mapping, emergency planning</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Environmental GIS -->
+      <div class="bg-gradient-to-br from-green-50 to-teal-50 p-6 sm:p-8 rounded-2xl border border-green-100">
+        <div class="flex items-start space-x-4 mb-4 sm:mb-6">
+          <div class="bg-green-500 p-3 sm:p-4 rounded-xl">
+            <TreePine className="w-8 sm:w-10 h-8 sm:h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Environmental & Land Use GIS</h3>
+            <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+              Environmental monitoring, land use planning, and natural resource management 
+              with comprehensive spatial analysis and impact assessment.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4 sm:mt-6">
+          <div class="bg-white/70 p-3 sm:p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1 text-sm sm:text-base">Environmental Monitoring</h4>
+            <p class="text-xs sm:text-sm text-gray-600">Air quality, water resources, biodiversity</p>
+          </div>
+          <div class="bg-white/70 p-3 sm:p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1 text-sm sm:text-base">Land Use Planning</h4>
+            <p class="text-xs sm:text-sm text-gray-600">Zoning, development impact analysis</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Infrastructure GIS -->
+      <div class="bg-gradient-to-br from-indigo-50 to-purple-50 p-6 sm:p-8 rounded-2xl border border-indigo-100">
+        <div class="flex items-start space-x-4 mb-4 sm:mb-6">
+          <div class="bg-indigo-500 p-3 sm:p-4 rounded-xl">
+            <Zap className="w-8 sm:w-10 h-8 sm:h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Infrastructure & Utilities GIS</h3>
+            <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+              Utility network mapping, infrastructure asset management, and maintenance 
+              planning with real-time monitoring and outage management capabilities.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4 sm:mt-6">
+          <div class="bg-white/70 p-3 sm:p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1 text-sm sm:text-base">Network Mapping</h4>
+            <p class="text-xs sm:text-sm text-gray-600">Utilities, telecommunications, transportation</p>
+          </div>
+          <div class="bg-white/70 p-3 sm:p-4 rounded-lg">
+            <h4 class="font-semibold text-gray-900 mb-1 text-sm sm:text-base">Asset Management</h4>
+            <p class="text-xs sm:text-sm text-gray-600">Condition assessment, lifecycle planning</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Specialized Solutions -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-16">
+      <div class="bg-gradient-to-br from-red-50 to-orange-50 p-6 sm:p-8 rounded-2xl border border-red-100">
+        <div class="flex items-start space-x-4 mb-4 sm:mb-6">
+          <div class="bg-red-500 p-3 sm:p-4 rounded-xl">
+            <Navigation className="w-8 sm:w-10 h-8 sm:h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Emergency Management GIS</h3>
+            <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+              Emergency response planning, evacuation routing, and real-time incident 
+              management with integrated communication systems.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-2 sm:space-y-3">
+          <div class="bg-white/70 p-2 sm:p-3 rounded-lg">
+            <span class="text-xs sm:text-sm font-medium text-gray-900">✓ Evacuation Planning</span>
+          </div>
+          <div class="bg-white/70 p-2 sm:p-3 rounded-lg">
+            <span class="text-xs sm:text-sm font-medium text-gray-900">✓ Resource Allocation</span>
+          </div>
+          <div class="bg-white/70 p-2 sm:p-3 rounded-lg">
+            <span class="text-xs sm:text-sm font-medium text-gray-900">✓ Real-time Tracking</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-6 sm:p-8 rounded-2xl border border-purple-100">
+        <div class="flex items-start space-x-4 mb-4 sm:mb-6">
+          <div class="bg-purple-500 p-3 sm:p-4 rounded-xl">
+            <Shield className="w-8 sm:w-10 h-8 sm:h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Security & Risk Assessment</h3>
+            <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+              Security zone mapping, threat assessment, and vulnerability analysis 
+              with integrated surveillance and access control systems.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-2 sm:space-y-3">
+          <div class="bg-white/70 p-2 sm:p-3 rounded-lg">
+            <span class="text-xs sm:text-sm font-medium text-gray-900">✓ Threat Modeling</span>
+          </div>
+          <div class="bg-white/70 p-2 sm:p-3 rounded-lg">
+            <span class="text-xs sm:text-sm font-medium text-gray-900">✓ Access Control</span>
+          </div>
+          <div class="bg-white/70 p-2 sm:p-3 rounded-lg">
+            <span class="text-xs sm:text-sm font-medium text-gray-900">✓ Incident Response</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gradient-to-br from-yellow-50 to-orange-50 p-6 sm:p-8 rounded-2xl border border-yellow-100 sm:col-span-2 lg:col-span-1">
+        <div class="flex items-start space-x-4 mb-4 sm:mb-6">
+          <div class="bg-yellow-500 p-3 sm:p-4 rounded-xl">
+            <Building2 className="w-8 sm:w-10 h-8 sm:h-10 text-white" />
+          </div>
+          <div>
+            <h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Smart City Solutions</h3>
+            <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
+              Integrated smart city platforms with IoT sensors, traffic management, 
+              and citizen services through advanced GIS technology.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-2 sm:space-y-3">
+          <div class="bg-white/70 p-2 sm:p-3 rounded-lg">
+            <span class="text-xs sm:text-sm font-medium text-gray-900">✓ IoT Integration</span>
+          </div>
+          <div class="bg-white/70 p-2 sm:p-3 rounded-lg">
+            <span class="text-xs sm:text-sm font-medium text-gray-900">✓ Traffic Management</span>
+          </div>
+          <div class="bg-white/70 p-2 sm:p-3 rounded-lg">
+            <span class="text-xs sm:text-sm font-medium text-gray-900">✓ Citizen Services</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Excellence -->
+    <div class="bg-gradient-to-r from-slate-800 to-slate-900 text-white p-6 sm:p-8 md:p-12 rounded-2xl">
+      <div class="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
+        <div>
+          <h3 class="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Advanced GIS Technology & Integration</h3>
+          <p class="text-slate-300 leading-relaxed mb-6 sm:mb-8 text-sm sm:text-base">
+            Our GIS solutions leverage cutting-edge technology including cloud platforms, 
+            real-time data integration, and mobile applications for comprehensive spatial management.
+          </p>
+          
+          <div class="space-y-3 sm:space-y-4">
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-blue-400 rounded-full"></div>
+              <span class="text-slate-300 text-sm sm:text-base">ArcGIS Enterprise and QGIS platforms</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+              <span class="text-slate-300 text-sm sm:text-base">Real-time data feeds and IoT integration</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-indigo-400 rounded-full"></div>
+              <span class="text-slate-300 text-sm sm:text-base">Cloud-based solutions and mobile access</span>
+            </div>
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-green-400 rounded-full"></div>
+              <span class="text-slate-300 text-sm sm:text-base">Custom dashboard and reporting tools</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <div class="bg-white/10 backdrop-blur-sm p-6 sm:p-8 rounded-2xl border border-white/20">
+            <div class="grid grid-cols-2 gap-4 sm:gap-6">
+              <div>
+                <div class="text-2xl sm:text-4xl font-bold text-blue-400 mb-2">250+</div>
+                <div class="text-slate-300 mb-1 sm:mb-2 text-sm sm:text-base">GIS Projects</div>
+                <div class="text-xs text-slate-400">Delivered successfully</div>
+              </div>
+              <div>
+                <div class="text-2xl sm:text-4xl font-bold text-cyan-400 mb-2">Real-time</div>
+                <div class="text-slate-300 mb-1 sm:mb-2 text-sm sm:text-base">Data Updates</div>
+                <div class="text-xs text-slate-400">Live monitoring</div>
+              </div>
+              <div>
+                <div class="text-2xl sm:text-4xl font-bold text-indigo-400 mb-2">100%</div>
+                <div class="text-slate-300 mb-1 sm:mb-2 text-sm sm:text-base">Cloud Ready</div>
+                <div class="text-xs text-slate-400">Scalable solutions</div>
+              </div>
+              <div>
+                <div class="text-2xl sm:text-4xl font-bold text-green-400 mb-2">24/7</div>
+                <div class="text-slate-300 mb-1 sm:mb-2 text-sm sm:text-base">Support</div>
+                <div class="text-xs text-slate-400">System monitoring</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

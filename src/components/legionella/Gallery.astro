@@ -1,0 +1,149 @@
+---
+import { ZoomIn, Download, Eye } from 'lucide-react';
+---
+
+<section class="py-20 px-4 bg-gray-50">
+  <div class="max-w-7xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        Schematic Drawing Examples
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Explore our portfolio of professional Legionella schematic drawings, showcasing 
+        precision, clarity, and compliance across various building types and water systems.
+      </p>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mb-12">
+      <!-- Gallery Item 1 -->
+      <div class="group relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img 
+            src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&h=450&fit=crop&crop=entropy&auto=format&q=80"
+            alt="Complex water system schematic drawing"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div class="absolute bottom-4 left-4 right-4">
+            <h3 class="text-white text-xl font-bold mb-2">Commercial Building System</h3>
+            <p class="text-gray-200 text-sm mb-4">Complex multi-floor water distribution network with cooling towers</p>
+            <div class="flex space-x-2">
+              <button class="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-lg transition-colors">
+                <ZoomIn className="w-4 h-4" />
+              </button>
+              <button class="bg-green-500 hover:bg-green-600 text-white p-2 rounded-lg transition-colors">
+                <Download className="w-4 h-4" />
+              </button>
+              <button class="bg-purple-500 hover:bg-purple-600 text-white p-2 rounded-lg transition-colors">
+                <Eye className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Info Badge -->
+        <div class="absolute top-4 left-4">
+          <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-semibold">Commercial</span>
+        </div>
+      </div>
+
+      <!-- Gallery Item 2 -->
+      <div class="group relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img 
+            src="https://images.unsplash.com/photo-1586281380117-5a60ae2050cc?w=600&h=450&fit=crop&crop=entropy&auto=format&q=80"
+            alt="Residential water system schematic"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div class="absolute bottom-4 left-4 right-4">
+            <h3 class="text-white text-xl font-bold mb-2">Residential Complex</h3>
+            <p class="text-gray-200 text-sm mb-4">Multi-unit residential building with shared water systems</p>
+            <div class="flex space-x-2">
+              <button class="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-lg transition-colors">
+                <ZoomIn className="w-4 h-4" />
+              </button>
+              <button class="bg-green-500 hover:bg-green-600 text-white p-2 rounded-lg transition-colors">
+                <Download className="w-4 h-4" />
+              </button>
+              <button class="bg-purple-500 hover:bg-purple-600 text-white p-2 rounded-lg transition-colors">
+                <Eye className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="absolute top-4 left-4">
+          <span class="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-semibold">Residential</span>
+        </div>
+      </div>
+
+      <!-- Gallery Item 3 -->
+      <div class="group relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img 
+            src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=450&fit=crop&crop=entropy&auto=format&q=80"
+            alt="Healthcare facility water system"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div class="absolute bottom-4 left-4 right-4">
+            <h3 class="text-white text-xl font-bold mb-2">Healthcare Facility</h3>
+            <p class="text-gray-200 text-sm mb-4">Hospital-grade water system with specialized safety requirements</p>
+            <div class="flex space-x-2">
+              <button class="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-lg transition-colors">
+                <ZoomIn className="w-4 h-4" />
+              </button>
+              <button class="bg-green-500 hover:bg-green-600 text-white p-2 rounded-lg transition-colors">
+                <Download className="w-4 h-4" />
+              </button>
+              <button class="bg-purple-500 hover:bg-purple-600 text-white p-2 rounded-lg transition-colors">
+                <Eye className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="absolute top-4 left-4">
+          <span class="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-semibold">Healthcare</span>
+        </div>
+      </div>
+
+      <!-- Gallery Item 4 -->
+      <div class="group relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img 
+            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=450&fit=crop&crop=entropy&auto=format&q=80"
+            alt="Industrial facility schematic"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div class="absolute bottom-4 left-4 right-4">
+            <h3 class="text-white text-xl font-bold mb-2">Industrial Complex</h3>
+            <p class="text-gray-200 text-sm mb-4">Manufacturing facility with cooling towers and process water</p>
+            <div class="flex space-x-2">
+              <button class="bg-blue-500 hover:bg-blue-600 text-white p-2 rounded-lg transition-colors">
+                <ZoomIn className="w-4 h-4" />
+              </button>
+              <button class="bg-green-500 hover:bg-green-600 text-white p-2 rounded-lg transition-colors">
+                <Download className="w-4 h-4" />
+              </button>
+              <button class="bg-purple-500 hover:bg-purple-600 text-white p-2 rounded-lg transition-colors">
+                <Eye className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="absolute top-4 left-4">
+          <span class="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-semibold">Industrial</span>
+        </div>
+      </div>
+    </div>
+
+    <>
+  </>
+</section>

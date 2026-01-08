@@ -1,0 +1,38 @@
+---
+// src/pages/sectors/index.astro
+import Layout from '@/layouts/main.astro';
+import SectorsHero from '@/components/sectors/SectorsHero.astro';
+import SectorIntro from '@/components/sectors/SectorIntro.astro';
+import SectorsGrid from '@/components/sectors/SectorsGrid.astro';
+import SectorStats from '@/components/sectors/SectorStats.astro';
+import SectorTestimonials from '@/components/sectors/SectorTestimonials.astro';
+---
+
+<Layout
+  title="Industry Sectors CAD Services UK | Healthcare, Construction & Manufacturing"
+  description="Specialized CAD services for Healthcare, Construction, Manufacturing, Energy, Education, and Hospitality sectors. Industry-specific compliance, precision drawings, and expert documentation in Birmingham."
+  keywords={[
+    'healthcare CAD services',
+    'construction CAD drawings',
+    'manufacturing CAD solutions',
+    'energy sector CAD',
+    'education facility CAD',
+    'hospitality CAD design',
+    'industry-specific CAD Birmingham',
+    'sector CAD services UK',
+    'medical facility CAD',
+    'industrial CAD drawings'
+  ]}
+  schemaType="Service"
+  canonical="/sectors"
+  breadcrumbs={[
+    { name: 'Home', url: '/' },
+    { name: 'Industry Sectors', url: '/sectors' }
+  ]}
+>
+  <SectorsHero />
+  <SectorIntro />
+  <SectorsGrid />
+  <SectorStats />
+  <SectorTestimonials />
+</Layout>

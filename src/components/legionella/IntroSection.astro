@@ -1,0 +1,127 @@
+---
+import { Droplets, Map, AlertTriangle } from 'lucide-react';
+---
+
+<section class="py-20 px-4 bg-gray-50">
+  <div class="max-w-6xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        Essential Water System Documentation
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Legionella schematic drawings are critical components of comprehensive risk assessments, 
+        designed to identify potential sources of Legionella bacteria growth and transmission.
+      </p>
+    </div>
+
+    <!-- Main Content Grid -->
+    <div class="grid lg:grid-cols-2 gap-12 items-start mb-16">
+      <!-- Content -->
+      <div class="space-y-8">
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+          <div class="flex items-start space-x-4 mb-6">
+            <div class="bg-blue-100 p-3 rounded-xl">
+              <Map className="w-8 h-8 text-blue-600" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Comprehensive System Mapping</h3>
+              <p class="text-gray-600">
+                Our schematic drawings include all water systems within buildings - hot and cold water systems, 
+                cooling towers, and other water systems that could potentially harbor Legionella bacteria.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+          <div class="flex items-start space-x-4 mb-6">
+            <div class="bg-cyan-100 p-3 rounded-xl">
+              <Droplets className="w-8 h-8 text-cyan-600" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Outlet Location Tracking</h3>
+              <p class="text-gray-600">
+                Detailed documentation of all water outlets including taps, showers, and other water sources 
+                with precise positioning for effective risk management.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+          <div class="flex items-start space-x-4 mb-6">
+            <div class="bg-amber-100 p-3 rounded-xl">
+              <AlertTriangle className="w-8 h-8 text-amber-600" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Easy to Read & Understand</h3>
+              <p class="text-gray-600">
+                Designed to be easily comprehensible without specialized training, ensuring accessibility 
+                for all stakeholders involved in water system management.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual Element -->
+      <div class="relative">
+        <div class="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-2xl">
+          <img 
+            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=500&fit=crop&crop=entropy&auto=format&q=80"
+            alt="Technical drawing and blueprints"
+            class="w-full h-96 object-cover rounded-xl shadow-lg"
+          />
+          <!-- Overlay Stats -->
+          <div class="absolute bottom-4 left-4 right-4">
+            <div class="bg-white/90 backdrop-blur-sm p-6 rounded-xl border border-white/20">
+              <div class="grid grid-cols-3 gap-4 text-center">
+                <div>
+                  <div class="text-2xl font-bold text-blue-600">100%</div>
+                  <div class="text-sm text-gray-600">Compliance</div>
+                </div>
+                <div>
+                  <div class="text-2xl font-bold text-cyan-600">24/7</div>
+                  <div class="text-sm text-gray-600">Updates</div>
+                </div>
+                <div>
+                  <div class="text-2xl font-bold text-indigo-600">CAD</div>
+                  <div class="text-sm text-gray-600">Precision</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Key Requirements -->
+    <div class="bg-gradient-to-r from-slate-800 to-slate-900 text-white p-8 md:p-12 rounded-2xl">
+      <h3 class="text-2xl md:text-3xl font-bold mb-8 text-center">What Your Schematic Drawing Must Include</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center space-y-4">
+          <div class="bg-blue-500/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
+            <span class="text-2xl font-bold">1</span>
+          </div>
+          <h4 class="text-xl font-semibold">All Water Systems</h4>
+          <p class="text-slate-300">Complete documentation of hot/cold water systems, cooling towers, and auxiliary systems</p>
+        </div>
+        <div class="text-center space-y-4">
+          <div class="bg-cyan-500/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
+            <span class="text-2xl font-bold">2</span>
+          </div>
+          <h4 class="text-xl font-semibold">Regular Updates</h4>
+          <p class="text-slate-300">Maintained to reflect equipment changes, layout modifications, and system upgrades</p>
+        </div>
+        <div class="text-center space-y-4">
+          <div class="bg-indigo-500/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
+            <span class="text-2xl font-bold">3</span>
+          </div>
+          <h4 class="text-xl font-semibold">Temporary Fixtures</h4>
+          <p class="text-slate-300">Even short-term installations must be documented for complete risk management</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

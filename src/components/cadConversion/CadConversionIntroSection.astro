@@ -1,0 +1,114 @@
+---
+// src/components/cad/CadIntroSection.astro
+import { FileText, RefreshCw, Database } from 'lucide-react';
+---
+
+<section class="py-16 sm:py-20 lg:py-24 bg-slate-50">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-12 lg:mb-16">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+          Professional CAD Conversion Services
+        </h2>
+        <p class="text-lg lg:text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
+          Comprehensive CAD conversion services for transforming legacy drawings, paper documents, and obsolete file formats into modern digital CAD systems, ensuring accuracy, compatibility, and seamless integration with current design workflows and industry standards.
+        </p>
+      </div>
+      
+      <!-- Main Content Grid -->
+      <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16">
+        
+        <!-- Left Content -->
+        <div class="space-y-8">
+          
+          <!-- Feature 1: Legacy Drawing Conversion -->
+          <div class="bg-white rounded-2xl p-6 lg:p-8 shadow-lg border border-slate-200 hover:shadow-xl transition-all duration-300">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                <FileText size={24} className="text-blue-600" />
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl lg:text-2xl font-bold text-slate-900 mb-3">
+                  Legacy Drawing Conversion
+                </h3>
+                <p class="text-slate-600 leading-relaxed">
+                  Transform paper drawings, blueprints, and legacy CAD files into modern digital formats with precise vectorization, accurate dimensioning, and proper layering for seamless integration with current design workflows.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Feature 2: Format Migration -->
+          <div class="bg-white rounded-2xl p-6 lg:p-8 shadow-lg border border-slate-200 hover:shadow-xl transition-all duration-300">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-cyan-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                <RefreshCw size={24} className="text-cyan-600" />
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl lg:text-2xl font-bold text-slate-900 mb-3">
+                  CAD Format Migration
+                </h3>
+                <p class="text-slate-600 leading-relaxed">
+                  Professional conversion between CAD platforms including AutoCAD, Revit, SolidWorks, and other industry-standard software with maintained geometric accuracy, annotations, and metadata preservation for complete project continuity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Image with Stats -->
+        <div class="relative">
+          <div class="relative rounded-2xl overflow-hidden shadow-xl">
+            <img 
+              src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="CAD Conversion Process"
+              class="w-full h-auto rounded-2xl"
+            />
+            
+            <!-- Premium gradient overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent rounded-2xl"></div>
+          </div>
+          
+          <!-- Stats Overlay -->
+          <div class="absolute bottom-6 right-6 bg-white/90 backdrop-blur-sm rounded-xl p-4 border border-white/20 shadow-lg">
+            <div class="grid grid-cols-3 gap-4 text-center">
+              <div>
+                <div class="text-2xl font-bold text-slate-900">99%</div>
+                <div class="text-xs text-slate-600">Accuracy</div>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-cyan-600">Multi</div>
+                <div class="text-xs text-slate-600">Format</div>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-purple-600">CAD</div>
+                <div class="text-xs text-slate-600">Standards</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Third Feature -->
+      <div class="mb-16">
+        <div class="bg-white rounded-2xl p-6 lg:p-8 shadow-lg border border-slate-200 hover:shadow-xl transition-all duration-300">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
+              <Database size={24} className="text-purple-600" />
+            </div>
+            <div class="flex-1">
+              <h3 class="text-xl lg:text-2xl font-bold text-slate-900 mb-3">
+                Digital Asset Modernization
+              </h3>
+              <p class="text-slate-600 leading-relaxed">
+                Complete digitization and modernization of engineering documentation including technical drawings, schematics, and design specifications with enhanced CAD standards, organized layer management, and comprehensive metadata integration for improved project accessibility and future-proof asset management.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

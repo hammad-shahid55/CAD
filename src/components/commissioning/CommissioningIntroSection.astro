@@ -1,0 +1,131 @@
+---
+import { FileSearch, TestTube, Database, CheckCircle } from 'lucide-react';
+import { Image } from 'astro:assets';
+---
+
+<section class="py-20 px-4 bg-gray-50">
+  <div class="max-w-6xl mx-auto">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        Professional Commissioning Documentation
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+        Comprehensive CAD services for building systems commissioning, from pre-commissioning verification 
+        to final performance documentation ensuring optimal system operation and compliance.
+      </p>
+    </div>
+
+    <!-- Main Content Grid -->
+    <div class="grid lg:grid-cols-2 gap-12 items-start mb-16">
+      <!-- Content -->
+      <div class="space-y-8">
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+          <div class="flex items-start space-x-4 mb-6">
+            <div class="bg-blue-100 p-3 rounded-xl">
+              <FileSearch className="w-8 h-8 text-primary" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Pre-Commissioning Drawings</h3>
+              <p class="text-gray-600">
+                Detailed system verification drawings documenting all building systems before commissioning, 
+                including HVAC, electrical, plumbing, and fire safety systems with checkpoint locations.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+          <div class="flex items-start space-x-4 mb-6">
+            <div class="bg-cyan-100 p-3 rounded-xl">
+              <TestTube className="w-8 h-8 text-cyan-600" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">Performance Testing Documentation</h3>
+              <p class="text-gray-600">
+                Comprehensive testing protocols and measurement point layouts for functional performance 
+                testing, ensuring all systems operate according to design specifications.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+          <div class="flex items-start space-x-4 mb-6">
+            <div class="bg-indigo-100 p-3 rounded-xl">
+              <Database className="w-8 h-8 text-indigo-600" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">System Integration Mapping</h3>
+              <p class="text-gray-600">
+                Detailed integration drawings showing system interconnections, control sequences, 
+                and commissioning agent verification points for seamless operation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual Element -->
+      <div class="relative">
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl">
+          <Image 
+            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=500&fit=crop&crop=entropy&auto=format&q=80"
+            alt="Building commissioning documentation and testing"
+            width={600}
+            height={384}
+            class="w-full h-96 object-cover rounded-xl shadow-lg"
+          />
+          <!-- Overlay Stats -->
+          <div class="absolute bottom-4 left-4 right-4">
+            <div class="bg-white/90 backdrop-blur-sm p-6 rounded-xl border border-white/20">
+              <div class="grid grid-cols-3 gap-4 text-center">
+                <div>
+                  <div class="text-2xl font-bold text-primary">100%</div>
+                  <div class="text-sm text-gray-600">Verified</div>
+                </div>
+                <div>
+                  <div class="text-2xl font-bold text-cyan-600">LEED</div>
+                  <div class="text-sm text-gray-600">Compliant</div>
+                </div>
+                <div>
+                  <div class="text-2xl font-bold text-indigo-600">CAD</div>
+                  <div class="text-sm text-gray-600">Precision</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Key Process Steps -->
+    <div class="bg-gradient-to-r from-slate-800 to-slate-900 text-white p-8 md:p-12 rounded-2xl">
+      <h3 class="text-2xl md:text-3xl font-bold mb-8 text-center">Commissioning Documentation Process</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center space-y-4">
+          <div class="bg-blue-500/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
+            <span class="text-2xl font-bold text-primary">1</span>
+          </div>
+          <h4 class="text-xl font-semibold">Pre-Commissioning Review</h4>
+          <p class="text-slate-300">System installation verification, startup documentation, and initial testing protocols</p>
+        </div>
+        <div class="text-center space-y-4">
+          <div class="bg-cyan-500/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
+            <span class="text-2xl font-bold">2</span>
+          </div>
+          <h4 class="text-xl font-semibold">Functional Performance Testing</h4>
+          <p class="text-slate-300">Comprehensive testing procedures, measurement points, and performance criteria documentation</p>
+        </div>
+        <div class="text-center space-y-4">
+          <div class="bg-indigo-500/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto">
+            <span class="text-2xl font-bold">3</span>
+          </div>
+          <h4 class="text-xl font-semibold">Final Documentation</h4>
+          <p class="text-slate-300">As-built updates, O&M manual integration, and warranty documentation</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

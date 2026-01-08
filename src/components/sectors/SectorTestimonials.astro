@@ -1,0 +1,129 @@
+---
+// SectorTestimonials.astro
+const testimonials = [
+  {
+    id: 1,
+    quote: "CAD Outsource helped our hospital system achieve 100% compliance in water safety documentation, saving us significant time and resources.",
+    author: "Sarah Mitchell",
+    position: "Healthcare Facilities Manager",
+    company: "NHS Trust",
+    sector: "Healthcare",
+    avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b64c?w=150&h=150&fit=crop&crop=face",
+    gradient: "from-red-500 to-pink-500"
+  },
+  {
+    id: 2,
+    quote: "The as-built documentation provided was instrumental in our large-scale renovation project, reducing change orders by 35%.",
+    author: "Michael Chen",
+    position: "Project Manager",
+    company: "BuildTech Solutions",
+    sector: "Construction",
+    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+    gradient: "from-orange-500 to-amber-500"
+  },
+  {
+    id: 3,
+    quote: "The production line layouts helped us increase throughput by 22% while reducing material handling costs significantly.",
+    author: "Amanda Rodriguez",
+    position: "Operations Director",
+    company: "TechManufacturing Inc",
+    sector: "Manufacturing",
+    avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=face",
+    gradient: "from-blue-500 to-cyan-500"
+  }
+];
+---
+
+<section class="py-24 bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900 relative overflow-hidden">
+  <!-- Background Elements -->
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute top-1/4 left-10 w-72 h-72 bg-blue-500 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-1/4 right-10 w-96 h-96 bg-purple-500 rounded-full blur-3xl"></div>
+  </div>
+  
+  <!-- Grid Pattern -->
+  <div class={`"absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.02"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"`}></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <!-- Section Header -->
+    <div class="text-center mb-20">
+      <div class="inline-flex items-center px-6 py-2 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm mb-6">
+        <span class="w-2 h-2 bg-blue-400 rounded-full animate-pulse mr-3"></span>
+        <span class="text-blue-200 font-semibold">Client Success Stories</span>
+      </div>
+      
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+        What Our
+        <span class="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+          Clients Say
+        </span>
+      </h2>
+      
+      <p class="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+        Real results from real clients across different industry sectors
+      </p>
+    </div>
+
+    <!-- Testimonials Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      {testimonials.map((testimonial, index) => (
+        <div 
+          class="group relative bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-white/20 hover:bg-white/10 transition-all duration-500 hover:-translate-y-2"
+          style={`animation-delay: ${index * 150}ms`}
+        >
+          <!-- Quote Icon -->
+          <div class="absolute -top-4 left-8">
+            <div class={`w-8 h-8 rounded-full bg-gradient-to-r ${testimonial.gradient} p-2`}>
+              <svg class="w-full h-full text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Testimonial Content -->
+          <div class="pt-8">
+            <!-- Quote -->
+            <blockquote class="text-white text-lg leading-relaxed mb-8 italic">
+              "{testimonial.quote}"
+            </blockquote>
+
+            <!-- Author Info -->
+            <div class="flex items-center space-x-4">
+              <!-- Avatar -->
+              <div class="relative">
+                <img 
+                  src={testimonial.avatar} 
+                  alt={testimonial.author}
+                  class="w-14 h-14 rounded-full object-cover border-2 border-white/20"
+                />
+                <div class={`absolute -bottom-1 -right-1 w-5 h-5 bg-gradient-to-r ${testimonial.gradient} rounded-full border-2 border-gray-900`}></div>
+              </div>
+
+              <!-- Author Details -->
+              <div>
+                <h4 class="text-white font-semibold text-lg">{testimonial.author}</h4>
+                <p class="text-slate-300 text-sm">{testimonial.position}</p>
+                <p class="text-slate-400 text-sm">{testimonial.company}</p>
+              </div>
+            </div>
+
+            <!-- Sector Badge -->
+            <div class="mt-6">
+              <span class={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r ${testimonial.gradient} text-white`}>
+                {testimonial.sector} Sector
+              </span>
+            </div>
+          </div>
+
+          <!-- Hover Glow Effect -->
+          <div class={`absolute inset-0 rounded-2xl bg-gradient-to-r ${testimonial.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none`}></div>
+          
+          <!-- Border Glow -->
+          <div class={`absolute inset-0 rounded-2xl bg-gradient-to-r ${testimonial.gradient} opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300 pointer-events-none`}></div>
+        </div>
+      ))}
+    </div>
+
+    <!-- Bottom CTA -->
+  </div>
+</section>

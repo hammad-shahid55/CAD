@@ -1,0 +1,44 @@
+---
+import Main from "@/layouts/main.astro";
+import HeroSection from "@/components/homeComponents/HeroSection.astro";
+import AboutSection from "@/components/homeComponents/AboutSection.astro"
+import ServicesSection from "@/components/homeComponents/ServicesSection.astro";
+import StatsSection from "@/components/homeComponents/StatsSection.astro"
+import Techwe from "@/components/homeComponents/techWeMaster.astro";
+import Testmonials from "@/components/homeComponents/TestimonialsSection.astro"
+---
+
+<Main
+  title="CAD Outsource | Professional CAD Design & Engineering Services UK"
+  description="Leading UK CAD outsourcing company specializing in 2D drafting, 3D modeling, as-built drawings, HVAC design, solar PV layouts, commissioning drawings, and CAD conversion. Expert CAD services in Birmingham and across the UK."
+  keywords={[
+    'CAD outsourcing UK',
+    'CAD design services Birmingham',
+    'professional CAD services',
+    '2D CAD drafting',
+    '3D CAD modeling',
+    'as-built drawings UK',
+    'HVAC CAD drawings',
+    'solar PV CAD design',
+    'commissioning drawings',
+    'legionella schematic drawings',
+    'CAD conversion services',
+    'facilities mapping',
+    'GIS CAD services',
+    'technical drawing services',
+    'engineering CAD solutions',
+    'architectural CAD services'
+  ]}
+  schemaType="Organization"
+  canonical="/"
+>
+  <main>
+    <HeroSection />
+    <AboutSection/>
+    <ServicesSection/>
+    <Techwe/>
+    <StatsSection/>
+    <Testmonials/>
+
+  </main>
+</Main>

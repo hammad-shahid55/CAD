@@ -1,0 +1,44 @@
+---
+import Layout from "@/layouts/main.astro";
+import SolarHero from "@/components/solar/Hero.astro";
+import SolarIntroSection from "@/components/solar/SolarIntroSection.astro";
+import SolarServicesSection from "@/components/solar/SolarServicesSection.astro";
+import SolarGallery from "@/components/solar/SolarGallery.astro";
+import SolarBenefitsSection from "@/components/solar/SolarBenefitsSection.astro";
+import SolarTechnicalSection from "@/components/solar/SolarTechnicalSection.astro";
+import SolarFaqSection from "@/components/solar/SolarFaqSection.astro";
+import SolarCtaSection from "@/components/solar/SolarCtaSection.astro";
+
+---
+
+<Layout
+  title="Solar PV CAD Layouts & Wiring Diagrams UK | Photovoltaic Design Services"
+  description="Professional solar PV CAD design services in Birmingham. Expert photovoltaic system layouts, wiring diagrams, electrical schematics, and installation drawings for residential and commercial solar projects."
+  keywords={[
+    'solar PV CAD design',
+    'solar panel layout drawings',
+    'photovoltaic CAD services',
+    'solar wiring diagrams',
+    'solar PV design UK',
+    'solar installation drawings',
+    'PV system CAD Birmingham',
+    'solar electrical schematics',
+    'renewable energy CAD',
+    'solar panel installation plans'
+  ]}
+  schemaType="Service"
+  canonical="/solar-pv-layouts-and-wiring"
+  breadcrumbs={[
+    { name: 'Home', url: '/' },
+    { name: 'Solar PV Layouts', url: '/solar-pv-layouts-and-wiring' }
+  ]}
+>
+  <SolarHero />
+  <SolarIntroSection />
+  <SolarServicesSection />
+  <SolarGallery />
+  <SolarBenefitsSection />
+  <SolarTechnicalSection />
+  <SolarFaqSection />
+  <SolarCtaSection />
+</Layout>

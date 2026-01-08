@@ -1,0 +1,115 @@
+---
+// src/components/rendering/RenderingIntroSection.astro
+import { Image } from 'astro:assets';
+import { Camera, Monitor } from 'lucide-react';
+---
+
+<section class="py-16 sm:py-20 lg:py-24 bg-slate-50">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-12 lg:mb-16">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+          Professional 3D Rendering & Modeling
+        </h2>
+        <p class="text-lg lg:text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
+          Comprehensive 3D visualization services for architectural concepts, product designs, and spatial planning, delivering photorealistic renderings that transform ideas into compelling visual experiences for effective project communication and client presentations.
+        </p>
+      </div>
+      
+      <!-- Main Content Grid -->
+      <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16">
+        
+        <!-- Left Content -->
+        <div class="space-y-8">
+          
+          <!-- Feature 1: Architectural Visualization -->
+          <div class="bg-white rounded-2xl p-6 lg:p-8 shadow-lg border border-slate-200">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                <Camera size={24} className="text-blue-600" />
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl lg:text-2xl font-bold text-slate-900 mb-3">
+                  Architectural Visualization
+                </h3>
+                <p class="text-slate-600 leading-relaxed">
+                  Detailed photorealistic renderings of architectural designs including exterior facades, interior spaces, and environmental contexts with precise lighting, materials, and atmospheric effects for compelling project presentations.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Feature 2: Product Modeling -->
+          <div class="bg-white rounded-2xl p-6 lg:p-8 shadow-lg border border-slate-200">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 bg-cyan-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                <Monitor size={24} className="text-cyan-600" />
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl lg:text-2xl font-bold text-slate-900 mb-3">
+                  3D Product Modeling
+                </h3>
+                <p class="text-slate-600 leading-relaxed">
+                  Complete 3D modeling and visualization of products, equipment, and industrial components with accurate material representation, detailed geometry, and multiple viewing angles for marketing and technical documentation purposes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Image with Stats -->
+        <div class="relative">
+          <div class="relative rounded-2xl overflow-hidden">
+            <Image 
+              src="https://images.unsplash.com/photo-1601315488950-3b5047998b38?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="3D Modeling Process"
+              class="w-full h-auto rounded-2xl"
+              height={500
+              }
+              width={800}
+            />
+          </div>
+          
+          <!-- Stats Overlay -->
+          <div class="absolute bottom-6 right-6 bg-white/90 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+            <div class="grid grid-cols-3 gap-4 text-center">
+              <div>
+                <div class="text-2xl font-bold text-slate-900">99%</div>
+                <div class="text-xs text-slate-600">Accuracy</div>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-cyan-600">Multi</div>
+                <div class="text-xs text-slate-600">Format</div>
+              </div>
+              <div>
+                <div class="text-2xl font-bold text-purple-600">4K</div>
+                <div class="text-xs text-slate-600">Quality</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Third Feature -->
+      <div class="mb-16">
+        <div class="bg-white rounded-2xl p-6 lg:p-8 shadow-lg border border-slate-200">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
+              <Monitor size={24} className="text-purple-600" />
+            </div>
+            <div class="flex-1">
+              <h3 class="text-xl lg:text-2xl font-bold text-slate-900 mb-3">
+                Interactive 3D Experiences
+              </h3>
+              <p class="text-slate-600 leading-relaxed">
+                Advanced 3D modeling with interactive capabilities including virtual reality walkthroughs, 360-degree panoramic views, and real-time material modifications for immersive client presentations and design validation processes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,42 @@
+---
+import Layout from "@/layouts/main.astro";
+import CommissioningHero from '@/components/commissioning/CommissioningHero.astro';
+import CommissioningIntroSection from '@/components/commissioning/CommissioningIntroSection.astro';
+import CommissioningServicesSection from '@/components/commissioning/CommissioningServicesSection.astro';
+import CommissioningGallery from '@/components/commissioning/CommissioningGallery.astro';
+import CommissioningBenefitsSection from '@/components/commissioning/CommissioningBenefitsSection.astro';
+import CommissioningTechnicalSection from '@/components/commissioning/CommissioningTechnicalSection.astro';
+import CommissioningFaqSection from '@/components/commissioning/CommissioningFaqSection.astro';
+import CommissioningCtaSection from '@/components/commissioning/CommissioningCtaSection.astro';
+---
+
+<Layout
+  title="Commissioning & Pre-Commissioning CAD Drawings UK | MEP Systems"
+  description="Expert commissioning and pre-commissioning CAD drawing services in Birmingham. Professional mechanical, electrical, and plumbing system drawings for testing, validation, and handover documentation."
+  keywords={[
+    'commissioning drawings UK',
+    'pre-commissioning CAD',
+    'MEP commissioning drawings',
+    'system commissioning documentation',
+    'building commissioning CAD Birmingham',
+    'handover drawings',
+    'installation verification drawings',
+    'testing and commissioning CAD',
+    'MEP system documentation'
+  ]}
+  schemaType="Service"
+  canonical="/commissioning-pre-commissioning-drawing"
+  breadcrumbs={[
+    { name: 'Home', url: '/' },
+    { name: 'Commissioning Drawings', url: '/commissioning-pre-commissioning-drawing' }
+  ]}
+>
+  <CommissioningHero />
+  <CommissioningIntroSection />
+  <CommissioningServicesSection />
+  <CommissioningGallery />
+  <CommissioningBenefitsSection />
+  <CommissioningTechnicalSection />
+  <CommissioningFaqSection />
+  <CommissioningCtaSection />
+</Layout>
