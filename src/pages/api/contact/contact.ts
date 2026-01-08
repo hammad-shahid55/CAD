@@ -29,7 +29,9 @@ const contactSchema = z.object({
 export const POST: APIRoute = async ({ request }) => {
   const secret = import.meta.env.RESEND_API_KEY;
   const resend = new Resend(secret);
-  const fromEmail = import.meta.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev';
+  // Always use Resend's test domain for FROM address (Gmail domains are not allowed by Resend)
+  // Hardcode to onboarding@resend.dev to prevent any Gmail domain issues
+  const fromEmail = 'onboarding@resend.dev';
   const officialMail = import.meta.env.OFFICIAL_EMAIL;
 
   try {
