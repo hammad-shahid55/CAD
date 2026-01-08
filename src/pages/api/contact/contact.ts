@@ -29,10 +29,22 @@ const contactSchema = z.object({
 export const POST: APIRoute = async ({ request }) => {
   const secret = import.meta.env.RESEND_API_KEY;
   const resend = new Resend(secret);
-  // Always use Resend's test domain for FROM address (Gmail domains are not allowed by Resend)
+  // CRITICAL: Always use Resend's test domain for FROM address (Gmail domains are not allowed by Resend)
   // Hardcode to onboarding@resend.dev to prevent any Gmail domain issues
   const fromEmail = 'onboarding@resend.dev';
   const officialMail = import.meta.env.OFFICIAL_EMAIL;
+  
+  // Double-check: Ensure FROM email is never a Gmail address
+  if (fromEmail.includes('gmail.com')) {
+    console.error('ERROR: Attempted to use Gmail as FROM address. This should never happen!');
+    return new Response(
+      JSON.stringify({ 
+        success: false, 
+        error: 'Configuration error: Cannot use Gmail as FROM address' 
+      }),
+      { status: 500, headers: { 'Content-Type': 'application/json' } }
+    );
+  }
 
   try {
     const data = await request.json();
